@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */; };
 		2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */; };
-		2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */; };
 		2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */; };
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
 		2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBDA1266E306400C90A28 /* MainViewController.swift */; };
+		B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */; };
+		B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */; };
+		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0BBD81266E2FAA00C90A28 /* Mini2 Athens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini2 Athens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D0BBD8B266E2FAA00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0BBD8E266E2FAA00C90A28 /* Mini2_Athens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mini2_Athens.xcdatamodel; sourceTree = "<group>"; };
 		2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0BBDA1266E306400C90A28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = movementAnalyzer.storyboard; sourceTree = "<group>"; };
+		B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzerViewController.swift; sourceTree = "<group>"; };
+		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
+				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
+				B8389025266E69AB00A293A6 /* CameraView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -80,8 +86,8 @@
 		2D0BBD9E266E2FF900C90A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */,
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
+				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,7 +159,7 @@
 			files = (
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
-				2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */,
+				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,21 +173,15 @@
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
+				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
+				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D0BBD8B266E2FAA00C90A28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -315,13 +315,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 577NLUCH43;
+				DEVELOPMENT_TEAM = D2R8L25XGM;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Athens.Mini2-Athens";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -334,13 +334,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 577NLUCH43;
+				DEVELOPMENT_TEAM = D2R8L25XGM;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Athens.Mini2-Athens";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
