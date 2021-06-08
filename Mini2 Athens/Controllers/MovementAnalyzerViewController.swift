@@ -24,7 +24,8 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        overlayLayer.frame = view.layer.bounds
+        view.layer.addSublayer(overlayLayer)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,6 +82,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         session.commitConfiguration()
         cameraFeedSession = session
         
+    
     }
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         
@@ -104,7 +106,11 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             rightShoulder = CGPoint(x: rightShoulderPoint.location.x, y: 1 - rightShoulderPoint.location.y )
             
             print("Right Wrist \(rightWrist.x) \nRight Elbow \(rightElbow.x) \nRight Shoulder \(rightShoulder.x)")
-            //drawHumanBodyPose()
+            DispatchQueue.main.async { [self] in
+                self.drawHumanBodyPose()
+            }
+            
+            
         }catch{
             return
         }
