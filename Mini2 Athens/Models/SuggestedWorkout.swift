@@ -6,9 +6,18 @@
 //
 
 import Foundation
+import UIKit
+
 
 struct SuggestedWorkout {
-    var name: String
+    var name: String?
     //dalam detik
-    var duration: Int
+    var duration: Int?
+    var icon: UIImage?
+    
+    init(name: String?, duration: Int?, icon: UIImage?) {
+        self.name = name
+        self.duration = duration
+        self.icon = icon
+    }
 }
