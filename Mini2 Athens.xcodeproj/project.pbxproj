@@ -14,6 +14,8 @@
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
 		2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBDA1266E306400C90A28 /* MainViewController.swift */; };
+		60B6CF5B266F5396003B91D4 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B6CF5A266F5396003B91D4 /* ExerciseTimer.swift */; };
+		60B6CF5D266F5904003B91D4 /* SuggestedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B6CF5C266F5904003B91D4 /* SuggestedWorkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0BBDA1266E306400C90A28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		60B6CF5A266F5396003B91D4 /* ExerciseTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
+		60B6CF5C266F5904003B91D4 /* SuggestedWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedWorkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		2D0BBD83266E2FAA00C90A28 /* Mini2 Athens */ = {
 			isa = PBXGroup;
 			children = (
+				60B6CF59266F537F003B91D4 /* Utilities */,
 				2D0BBDA0266E301400C90A28 /* Models */,
 				2D0BBD9E266E2FF900C90A28 /* Views */,
 				2D0BBD9D266E2FD000C90A28 /* Controllers */,
@@ -90,8 +95,17 @@
 			isa = PBXGroup;
 			children = (
 				2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */,
+				60B6CF5C266F5904003B91D4 /* SuggestedWorkout.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		60B6CF59266F537F003B91D4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				60B6CF5A266F5396003B91D4 /* ExerciseTimer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,8 +179,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
+				60B6CF5D266F5904003B91D4 /* SuggestedWorkout.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
+				60B6CF5B266F5396003B91D4 /* ExerciseTimer.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
