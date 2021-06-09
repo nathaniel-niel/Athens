@@ -16,6 +16,8 @@
 		B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */; };
 		B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */; };
 		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
+		B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */; };
+		B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = movementAnalyzer.storyboard; sourceTree = "<group>"; };
 		B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzerViewController.swift; sourceTree = "<group>"; };
 		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 			children = (
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
 				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
+				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
 			);
 			path = Controllers;
@@ -88,6 +93,7 @@
 			children = (
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
+				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -160,6 +166,7 @@
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
+				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +179,7 @@
 			files = (
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
+				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,

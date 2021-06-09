@@ -42,17 +42,43 @@ class CameraView: UIView {
         previewLayer.addSublayer(overlayLayer)
     }
     
-    func showPoints(_ points: [CGPoint], color: UIColor) {
+    func showPoints(_ upperPoints: [CGPoint], lowerPoints: [CGPoint], color: UIColor) {
         pointsPath.removeAllPoints()
-        for point in points {
+        pointsPath.miterLimit = 20
+        var currentPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: upperPoints.first!)
+        // draw both hand
+        for point in upperPoints {
             let newPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: point)
-            pointsPath.move(to: point)
-            pointsPath.addArc(withCenter: newPoint, radius: 20, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
+            pointsPath.move(to: currentPoint)
+            pointsPath.addArc(withCenter: newPoint, radius: 2.5, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
+            pointsPath.addLine(to: newPoint)
+            currentPoint = newPoint
         }
+        // draw both Leg
+        currentPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: lowerPoints.first!)
+        for point in lowerPoints {
+            let newPoint = previewLayer.layerPointConverted(fromCaptureDevicePoint: point)
+            pointsPath.move(to: currentPoint)
+            pointsPath.addArc(withCenter: newPoint, radius: 2.5, startAngle: 0, endAngle: 2 * .pi, clockwise: true)
+            pointsPath.addLine(to: newPoint)
+            currentPoint = newPoint
+        }
+        // connect lower body and upper body
+        do{
+            pointsPath.move(to: previewLayer.layerPointConverted(fromCaptureDevicePoint: upperPoints[2]))
+            pointsPath.addLine(to: previewLayer.layerPointConverted(fromCaptureDevicePoint: lowerPoints[2]))
+            pointsPath.move(to: previewLayer.layerPointConverted(fromCaptureDevicePoint: upperPoints[3]))
+            pointsPath.addLine(to: previewLayer.layerPointConverted(fromCaptureDevicePoint: lowerPoints[3]))
+        }
+        
+        
+        
         overlayLayer.fillColor = color.cgColor
         CATransaction.begin()
         CATransaction.setDisableActions(true)
         overlayLayer.path = pointsPath.cgPath
+        overlayLayer.lineWidth = 5
+        overlayLayer.strokeColor = color.cgColor
         CATransaction.commit()
     }
 }
