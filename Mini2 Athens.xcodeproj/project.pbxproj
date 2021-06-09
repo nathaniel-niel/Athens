@@ -14,6 +14,11 @@
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
 		2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBDA1266E306400C90A28 /* MainViewController.swift */; };
+		2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */; };
+		2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */; };
+		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
+		2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8226708C08009C1438 /* HistoryViewController.swift */; };
+		2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8326708C08009C1438 /* HistoryViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0BBDA1266E306400C90A28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTutorialViewController.swift; sourceTree = "<group>"; };
+		2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovementTutorialViewController.xib; sourceTree = "<group>"; };
+		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
+		2D6FFA8226708C08009C1438 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		2D6FFA8326708C08009C1438 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 				2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */,
 				2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */,
 				2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */,
+				2D6FFA7F2670899F009C1438 /* video-asset */,
 				2D0BBD95266E2FAB00C90A28 /* Info.plist */,
 			);
 			path = "Mini2 Athens";
@@ -72,6 +83,8 @@
 		2D0BBD9D266E2FD000C90A28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */,
+				2D6FFA8226708C08009C1438 /* HistoryViewController.swift */,
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
 			);
 			path = Controllers;
@@ -80,6 +93,8 @@
 		2D0BBD9E266E2FF900C90A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2D6FFA8326708C08009C1438 /* HistoryViewController.xib */,
+				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
 				2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */,
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 			);
@@ -92,6 +107,14 @@
 				2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2D6FFA7F2670899F009C1438 /* video-asset */ = {
+			isa = PBXGroup;
+			children = (
+				2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */,
+			);
+			path = "video-asset";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,8 +175,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
+				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
+				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */,
+				2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
+				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 			);
