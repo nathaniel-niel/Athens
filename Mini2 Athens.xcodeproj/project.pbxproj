@@ -18,6 +18,9 @@
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8226708C08009C1438 /* HistoryViewController.swift */; };
 		2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8326708C08009C1438 /* HistoryViewController.xib */; };
+		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
+		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
+		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
 		B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */; };
 		B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */; };
 		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
@@ -39,6 +42,9 @@
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D6FFA8226708C08009C1438 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8326708C08009C1438 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
+		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
+		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
 		B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = movementAnalyzer.storyboard; sourceTree = "<group>"; };
 		B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzerViewController.swift; sourceTree = "<group>"; };
 		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
 				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
+				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,10 +113,11 @@
 			children = (
 				2D6FFA8326708C08009C1438 /* HistoryViewController.xib */,
 				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
-				2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */,
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
 				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
+				7C7E96E22670EEEB008379D5 /* Rest.storyboard */,
+				7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,10 +196,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
+				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
 				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
-				2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */,
+				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
 				2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
@@ -210,6 +219,7 @@
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
 				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
+				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
