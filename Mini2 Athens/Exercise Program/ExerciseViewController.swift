@@ -1,20 +1,20 @@
 //
-//  HistoryViewController.swift
+//  ExerciseViewController.swift
 //  Mini2 Athens
 //
-//  Created by Nathaniel Andrian on 09/06/21.
+//  Created by Maurice Tin on 09/06/21.
 //
 
 import UIKit
 
-class HistoryViewController: UIViewController {
+class ExerciseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation
