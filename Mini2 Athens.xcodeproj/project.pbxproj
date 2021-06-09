@@ -9,57 +9,33 @@
 /* Begin PBXBuildFile section */
 		2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */; };
 		2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */; };
+		2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */; };
 		2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */; };
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
 		2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBDA1266E306400C90A28 /* MainViewController.swift */; };
-
-		2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */; };
-		2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */; };
-		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
-		2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8226708C08009C1438 /* HistoryViewController.swift */; };
-		2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8326708C08009C1438 /* HistoryViewController.xib */; };
-		B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */; };
-		B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */; };
-		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
-		B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */; };
-		B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */; };
-
 		60385CE226708E0F00F26F24 /* ExerciseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60385CE126708E0F00F26F24 /* ExerciseStoryboard.storyboard */; };
 		60385CE426708F3800F26F24 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60385CE326708F3800F26F24 /* ExerciseViewController.swift */; };
 		60385CE72670907B00F26F24 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60385CE62670907B00F26F24 /* HomeStoryboard.storyboard */; };
 		60B6CF5B266F5396003B91D4 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B6CF5A266F5396003B91D4 /* ExerciseTimer.swift */; };
 		60B6CF5D266F5904003B91D4 /* SuggestedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B6CF5C266F5904003B91D4 /* SuggestedWorkout.swift */; };
-
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D0BBD81266E2FAA00C90A28 /* Mini2 Athens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini2 Athens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2D0BBD8B266E2FAA00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0BBD8E266E2FAA00C90A28 /* Mini2_Athens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mini2_Athens.xcdatamodel; sourceTree = "<group>"; };
 		2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0BBDA1266E306400C90A28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-
-		2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTutorialViewController.swift; sourceTree = "<group>"; };
-		2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovementTutorialViewController.xib; sourceTree = "<group>"; };
-		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
-		2D6FFA8226708C08009C1438 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
-		2D6FFA8326708C08009C1438 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
-		B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = movementAnalyzer.storyboard; sourceTree = "<group>"; };
-		B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzerViewController.swift; sourceTree = "<group>"; };
-		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
-		B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-
 		60385CE126708E0F00F26F24 /* ExerciseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExerciseStoryboard.storyboard; sourceTree = "<group>"; };
 		60385CE326708F3800F26F24 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		60385CE62670907B00F26F24 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		60B6CF5A266F5396003B91D4 /* ExerciseTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
 		60B6CF5C266F5904003B91D4 /* SuggestedWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestedWorkout.swift; sourceTree = "<group>"; };
-
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +77,6 @@
 				2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */,
 				2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */,
 				2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */,
-				2D6FFA7F2670899F009C1438 /* video-asset */,
 				2D0BBD95266E2FAB00C90A28 /* Info.plist */,
 			);
 			path = "Mini2 Athens";
@@ -110,12 +85,7 @@
 		2D0BBD9D266E2FD000C90A28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */,
-				2D6FFA8226708C08009C1438 /* HistoryViewController.swift */,
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
-				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
-				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
-				B8389025266E69AB00A293A6 /* CameraView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,12 +93,8 @@
 		2D0BBD9E266E2FF900C90A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D6FFA8326708C08009C1438 /* HistoryViewController.xib */,
-				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
 				2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */,
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
-				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
-				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,14 +108,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-
-		2D6FFA7F2670899F009C1438 /* video-asset */ = {
-			isa = PBXGroup;
-			children = (
-				2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */,
-			);
-			path = "video-asset";
-
 		60385CE026708BB000F26F24 /* Exercise Program */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,7 +131,6 @@
 				60B6CF5A266F5396003B91D4 /* ExerciseTimer.swift */,
 			);
 			path = Utilities;
-
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,19 +191,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
-
-				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
-				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
+				60385CE226708E0F00F26F24 /* ExerciseStoryboard.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */,
-				2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */,
-				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
-				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
-
-				60385CE226708E0F00F26F24 /* ExerciseStoryboard.storyboard in Resources */,
-			
 				60385CE72670907B00F26F24 /* HomeStoryboard.storyboard in Resources */,
-
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,27 +205,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				60385CE426708F3800F26F24 /* ExerciseViewController.swift in Sources */,
 				60B6CF5D266F5904003B91D4 /* SuggestedWorkout.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
-				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
-				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
-
-				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
-
 				60B6CF5B266F5396003B91D4 /* ExerciseTimer.swift in Sources */,
-
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
-				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D0BBD8B266E2FAA00C90A28 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,13 +359,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2R8L25XGM;
+				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Athens.Mini2-Athens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,13 +378,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2R8L25XGM;
+				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Athens.Mini2-Athens";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

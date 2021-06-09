@@ -11,9 +11,6 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-     
-        
 
         // Do any additional setup after loading the view.
     }
@@ -29,9 +26,4 @@ class MainViewController: UIViewController {
     }
     */
 
-    @IBAction func didNextTapped(_ sender: Any) {
-        let vc = MovementTutorialViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
-    }
 }
