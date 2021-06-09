@@ -1,23 +1,20 @@
 //
-//  MainViewController.swift
+//  HistoryViewController.swift
 //  Mini2 Athens
 //
-//  Created by Nathaniel Andrian on 07/06/21.
+//  Created by Nathaniel Andrian on 09/06/21.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class HistoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-     
-        
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
@@ -29,9 +26,4 @@ class MainViewController: UIViewController {
     }
     */
 
-    @IBAction func didNextTapped(_ sender: Any) {
-        let vc = MovementTutorialViewController()
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)
-    }
 }
