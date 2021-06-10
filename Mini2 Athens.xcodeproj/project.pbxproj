@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */; };
 		2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */; };
-		2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */; };
 		2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */; };
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
-		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
 		2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBDA1266E306400C90A28 /* MainViewController.swift */; };
 		60385CE226708E0F00F26F24 /* ExerciseStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60385CE126708E0F00F26F24 /* ExerciseStoryboard.storyboard */; };
 		60385CE426708F3800F26F24 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60385CE326708F3800F26F24 /* ExerciseViewController.swift */; };
@@ -25,10 +23,8 @@
 		2D0BBD81266E2FAA00C90A28 /* Mini2 Athens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mini2 Athens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D0BBD84266E2FAA00C90A28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D0BBD86266E2FAA00C90A28 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2D0BBD8B266E2FAA00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D0BBD8E266E2FAA00C90A28 /* Mini2_Athens.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mini2_Athens.xcdatamodel; sourceTree = "<group>"; };
 		2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D0BBDA1266E306400C90A28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		60385CE126708E0F00F26F24 /* ExerciseStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExerciseStoryboard.storyboard; sourceTree = "<group>"; };
@@ -93,8 +89,6 @@
 		2D0BBD9E266E2FF900C90A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */,
-				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,10 +184,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				60385CE226708E0F00F26F24 /* ExerciseStoryboard.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
-				2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */,
 				60385CE72670907B00F26F24 /* HomeStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,25 +208,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D0BBD8B266E2FAA00C90A28 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D0BBD93266E2FAB00C90A28 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2D0BBD96266E2FAB00C90A28 /* Debug */ = {
