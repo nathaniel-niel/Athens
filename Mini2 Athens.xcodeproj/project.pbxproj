@@ -18,6 +18,9 @@
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8226708C08009C1438 /* HistoryViewController.swift */; };
 		2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8326708C08009C1438 /* HistoryViewController.xib */; };
+		6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */; };
+		6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */; };
+		6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
 		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
 		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
@@ -45,6 +48,9 @@
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D6FFA8226708C08009C1438 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8326708C08009C1438 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedWorkout.swift; sourceTree = "<group>"; };
+		6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
 		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
 		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +134,8 @@
 		2D0BBDA0266E301400C90A28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */,
+				6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */,
 				2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */,
 			);
 			path = Models;
@@ -153,6 +161,7 @@
 		2D7574DE2671CA5D00CB970C /* StoryBoards */ = {
 			isa = PBXGroup;
 			children = (
+				6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */,
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
 				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
@@ -220,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				C286C3492671F3DC00416A35 /* exerciseProgram.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
@@ -243,6 +253,8 @@
 				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
+				6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */,
+				6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */,
 				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
 				C286C3472671F31000416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
