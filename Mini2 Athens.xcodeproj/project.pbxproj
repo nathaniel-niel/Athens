@@ -27,6 +27,8 @@
 		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
 		B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */; };
 		B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */; };
+		C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */; };
+		C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */; };
 		C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */; };
 		C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */; };
 /* End PBXBuildFile section */
@@ -54,6 +56,8 @@
 		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListTableViewCell.swift; sourceTree = "<group>"; };
+		C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListViewController.swift; sourceTree = "<group>"; };
 		C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgram.swift; sourceTree = "<group>"; };
 		C286C34F2671F9FC00416A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/exerciseProgram.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,8 @@
 				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
 				7C7E96EC2671048C008379D5 /* restViewController.swift */,
 				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
+				C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */,
+				C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -243,6 +249,7 @@
 				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
+				C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */,
 				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
 				C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
@@ -251,6 +258,7 @@
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
+				C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */,
 				7C7E96ED2671048C008379D5 /* restViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
