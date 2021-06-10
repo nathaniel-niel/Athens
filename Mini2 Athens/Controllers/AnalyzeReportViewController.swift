@@ -11,7 +11,6 @@ class AnalyzeReportViewController: UIViewController {
 
     @IBOutlet weak var reportBox: UIView!
     @IBOutlet weak var retryButton: UIButton!
-    
     @IBOutlet weak var movementLog: UILabel!
     @IBOutlet weak var analyzeButton: UIButton!
     @IBOutlet weak var exerciseButton: UIButton!
