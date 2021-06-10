@@ -18,6 +18,8 @@
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8226708C08009C1438 /* HistoryViewController.swift */; };
 		2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8326708C08009C1438 /* HistoryViewController.xib */; };
+		2DED8D352671FCD700C45B9D /* CompletedProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DED8D332671FCD700C45B9D /* CompletedProgramViewController.swift */; };
+		2DED8D362671FCD700C45B9D /* CompletedProgramViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DED8D342671FCD700C45B9D /* CompletedProgramViewController.xib */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
 		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
 		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
@@ -45,6 +47,8 @@
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D6FFA8226708C08009C1438 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8326708C08009C1438 /* HistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		2DED8D332671FCD700C45B9D /* CompletedProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedProgramViewController.swift; sourceTree = "<group>"; };
+		2DED8D342671FCD700C45B9D /* CompletedProgramViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CompletedProgramViewController.xib; sourceTree = "<group>"; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
 		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
 		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		2D0BBD9D266E2FD000C90A28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2DED8D332671FCD700C45B9D /* CompletedProgramViewController.swift */,
 				2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */,
 				2D6FFA8226708C08009C1438 /* HistoryViewController.swift */,
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
@@ -146,6 +151,7 @@
 			children = (
 				2D6FFA8326708C08009C1438 /* HistoryViewController.xib */,
 				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
+				2DED8D342671FCD700C45B9D /* CompletedProgramViewController.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 			files = (
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				C286C3492671F3DC00416A35 /* exerciseProgram.storyboard in Resources */,
+				2DED8D362671FCD700C45B9D /* CompletedProgramViewController.xib in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
 				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
@@ -249,6 +256,7 @@
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
+				2DED8D352671FCD700C45B9D /* CompletedProgramViewController.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
 				7C7E96ED2671048C008379D5 /* restViewController.swift in Sources */,
