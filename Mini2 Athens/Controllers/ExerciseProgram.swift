@@ -26,3 +26,19 @@ enum ExerciseType: String, CaseIterable {
         }
     }
 }
+class Exercise {
+    let id: String = UUID().uuidString
+    var name: String?
+    var age: Int?
+    var description: String?
+    var type: ExerciseType?
+    var isFavorite: Bool
+    
+    init(name: String?, age: Int?, description: String? = nil, type: ExerciseType) {
+        self.name = name
+        self.description = description
+        self.age = age
+        self.type = type
+        self.isFavorite = false
+    }
+}
