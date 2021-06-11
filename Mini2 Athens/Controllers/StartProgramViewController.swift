@@ -31,16 +31,16 @@ class StartProgramViewController: UIViewController {
         playerLayer.videoGravity = .resizeAspectFill
         self.videoLayer.layer.addSublayer(playerLayer)
         player.play()
-//        loopVideo(videoPlayer: player)
+        loopVideo(videoPlayer: player)
     }
-//    
-//    func loopVideo(videoPlayer: AVPlayer){
-//        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil){ notification in
-//            
-//            videoPlayer.seek(to: CMTime.zero)
-//            self.playVideo()
-//        }
-//    }
+
+    func loopVideo(videoPlayer: AVPlayer){
+        NotificationCenter.default.addObserver(forName: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: nil, queue: nil){ notification in
+
+            videoPlayer.seek(to: CMTime.zero)
+            self.playVideo()
+        }
+    }
     /*
     // MARK: - Navigation
 
