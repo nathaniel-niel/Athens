@@ -1,20 +1,20 @@
 //
-//  CompletedProgramViewController.swift
+//  TestViewController.swift
 //  Mini2 Athens
 //
-//  Created by Nathaniel Andrian on 10/06/21.
+//  Created by Nathaniel Andrian on 11/06/21.
 //
 
 import UIKit
 
-class CompletedProgramViewController: UIViewController {
+class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
 
     /*
     // MARK: - Navigation
@@ -26,4 +26,9 @@ class CompletedProgramViewController: UIViewController {
     }
     */
 
+    @IBAction func didTapped(_ sender: UIButton) {
+        let vc = CompletedProgramViewController()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
 }
