@@ -1,5 +1,5 @@
 //
-//  CompletedProgramViewController.swift
+//  ProgramCompletedViewController.swift
 //  Mini2 Athens
 //
 //  Created by Nathaniel Andrian on 11/06/21.
@@ -7,14 +7,14 @@
 
 import UIKit
 
-class CompletedProgramViewController: UIViewController {
+class ProgramCompletedViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
+
 
     /*
     // MARK: - Navigation
