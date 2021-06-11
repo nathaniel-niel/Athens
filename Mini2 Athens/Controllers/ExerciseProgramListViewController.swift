@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 
 class ExerciseProgramListViewController: UIViewController {
+    
+    @IBOutlet weak var exeriseProgramListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
