@@ -27,7 +27,7 @@ class TestViewController: UIViewController {
     */
 
     @IBAction func didTapped(_ sender: UIButton) {
-        let vc = CompletedProgramViewController()
+        let vc = ProgramCompletedViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
