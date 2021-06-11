@@ -8,11 +8,27 @@
 import Foundation
 import UIKit
 
-class ExerciseProgramListViewController: UIViewController {
+class ExerciseProgramListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
     
-    @IBOutlet weak var exeriseProgramListTableView: UITableView!
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+    
+    @IBOutlet weak var exerciseProgramListTableView: UITableView!
+    
+    let exercises = [
+        Exercise(name: "Negative", age: 1, type: .exercise)
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        exerciseProgramListTableView.dataSource = self
+        exerciseProgramListTableView.delegate = self
+        
     }
 }
