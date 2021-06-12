@@ -13,6 +13,10 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     @IBOutlet weak var videoLayer: UIView!
     @IBOutlet weak var workoutLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var pauseResumeLabel: UILabel!
+    @IBOutlet weak var DoneButton: UIButton!
+    
     
     var playerLooper: AVPlayerLooper!
     var queuePlayer: AVQueuePlayer!
@@ -53,8 +57,11 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     }
     
     func timesUp() {
+        //Implement later
         print("timer ends!!")
     }
+    
+    
     /*
     // MARK: - Navigation
 
