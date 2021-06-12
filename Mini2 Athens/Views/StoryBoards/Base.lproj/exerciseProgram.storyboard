@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gzj-uX-anB">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fir-K3-hz8" userLabel="Exercise List Table View">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="800"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vXW-sp-2LD">
                                     <rect key="frame" x="0.0" y="169.66666828502309" width="390" height="44"/>
@@ -93,39 +92,49 @@
                     </view>
                     <navigationItem key="navigationItem" id="5JG-DI-oA0"/>
                     <connections>
-                        <outlet property="exeriseProgramListTableView" destination="Fir-K3-hz8" id="OC0-BD-XSA"/>
+                        <outlet property="exerciseProgramListTableView" destination="Fir-K3-hz8" id="40h-bX-rFM"/>
                         <outlet property="startButton" destination="vXW-sp-2LD" id="GaD-cy-dHq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1060" y="115.87677725118483"/>
+            <point key="canvasLocation" x="131" y="783"/>
         </scene>
-        <!--Exercise-->
-        <scene sceneID="rs5-vZ-D8X">
+        <!--View Controller-->
+        <scene sceneID="PQu-kM-4ja">
             <objects>
-                <navigationController title="Exercise" automaticallyAdjustsScrollViewInsets="NO" id="rRh-Ib-HnR" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="d5H-wb-LiJ">
-                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" name="Background color"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="nQa-Ua-XEj"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L6P-r8-wp6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="gzj-uX-anB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fia-GS-bTk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="james-barr-7U0yuZcS5yA-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-ZF-6kJ">
+                                <rect key="frame" x="0.0" y="-8" width="390" height="235"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6BD-SA-bx6">
+                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TOr-in-MDd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="TOr-in-MDd" firstAttribute="top" secondItem="2Ie-ZF-6kJ" secondAttribute="topMargin" id="C1b-oj-sRd"/>
+                            <constraint firstItem="2Ie-ZF-6kJ" firstAttribute="leading" secondItem="TOr-in-MDd" secondAttribute="leading" id="Luy-Ii-Knk"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ie-ZF-6kJ" secondAttribute="trailing" id="MYx-CQ-6Jm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4gv-e6-nlX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E8b-UL-649" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130.76923076923077" y="115.87677725118483"/>
+            <point key="canvasLocation" x="1803.0769230769231" y="115.87677725118483"/>
         </scene>
     </scenes>
     <resources>
         <image name="1" width="195" height="130"/>
-        <namedColor name="Background color">
-            <color red="0.11764705882352941" green="0.13725490196078433" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="james-barr-7U0yuZcS5yA-unsplash" width="390" height="235"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

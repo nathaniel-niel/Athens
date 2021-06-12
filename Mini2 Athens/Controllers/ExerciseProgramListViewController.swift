@@ -53,5 +53,6 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
     @IBAction func startProgram(_ sender: UIButton){
         //     tinggal masukin identifier ke page yang maurice kerjain
 //        performSegue(withIdentifier: "", sender: self)
+        performSegue(withIdentifier: "StartProgram", sender: self)
     }
 }
