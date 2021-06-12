@@ -36,8 +36,10 @@
 		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
 		B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */; };
 		B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */; };
-		C286C3472671F31000416A35 /* ExerciseProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286C3462671F31000416A35 /* ExerciseProgram.swift */; };
-		C286C3492671F3DC00416A35 /* exerciseProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */; };
+		C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */; };
+		C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */; };
+		C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */; };
+		C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,8 +74,10 @@
 		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		C286C3462671F31000416A35 /* ExerciseProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgram.swift; sourceTree = "<group>"; };
-		C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = exerciseProgram.storyboard; sourceTree = "<group>"; };
+		C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListTableViewCell.swift; sourceTree = "<group>"; };
+		C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListViewController.swift; sourceTree = "<group>"; };
+		C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgram.swift; sourceTree = "<group>"; };
+		C286C34F2671F9FC00416A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/exerciseProgram.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +135,11 @@
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
 				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
 				7C7E96EC2671048C008379D5 /* restViewController.swift */,
-				C286C3462671F31000416A35 /* ExerciseProgram.swift */,
 				6000BB10267215460083F617 /* HomeViewController.swift */,
 				601A4E7626730C9100967581 /* StartProgramViewController.swift */,
+				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
+				C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */,
+				C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -184,8 +190,8 @@
 				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
 				7C7E96E22670EEEB008379D5 /* Rest.storyboard */,
 				7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */,
-				C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */,
 				601A4E7826730CC900967581 /* StartProgram.storyboard */,
+				C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -249,8 +255,8 @@
 			files = (
 				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
-				C286C3492671F3DC00416A35 /* exerciseProgram.storyboard in Resources */,
 				2DED8D362671FCD700C45B9D /* CompletedProgramViewController.xib in Resources */,
+				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
 				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
@@ -276,8 +282,9 @@
 				6000BB11267215460083F617 /* HomeViewController.swift in Sources */,
 				6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */,
 				6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */,
+				C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */,
 				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
-				C286C3472671F31000416A35 /* ExerciseProgram.swift in Sources */,
+				C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
@@ -287,6 +294,7 @@
 				601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
+				C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */,
 				7C7E96ED2671048C008379D5 /* restViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,6 +308,14 @@
 				2D0BBD93266E2FAB00C90A28 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C286C34F2671F9FC00416A35 /* Base */,
+			);
+			name = exerciseProgram.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
