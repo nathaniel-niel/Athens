@@ -12,7 +12,7 @@
         <!--Rest View Controller-->
         <scene sceneID="zxM-C6-4UO">
             <objects>
-                <viewController id="TJb-iW-XBe" customClass="restViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Rest" id="TJb-iW-XBe" customClass="restViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2nU-I4-oyR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

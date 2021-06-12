@@ -8,17 +8,26 @@
 import UIKit
 import AVFoundation
 
-class StartProgramViewController: UIViewController {
-
+class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
+    
     @IBOutlet weak var videoLayer: UIView!
+    @IBOutlet weak var workoutLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
+    
     var playerLooper: AVPlayerLooper!
     var queuePlayer: AVQueuePlayer!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         playVideo()
+        let exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
+        
+        exerciseTimer.delegate = self
+        
+        exerciseTimer.runTimer()
     }
     
     func playVideo(){
@@ -27,6 +36,7 @@ class StartProgramViewController: UIViewController {
        
         let player = AVPlayer(url: URL(fileURLWithPath: path))
         let playerLayer = AVPlayerLayer(player: player)
+        player.isMuted = true
         playerLayer.frame = videoLayer.bounds
         playerLayer.videoGravity = .resizeAspectFill
         self.videoLayer.layer.addSublayer(playerLayer)
@@ -40,6 +50,10 @@ class StartProgramViewController: UIViewController {
             videoPlayer.seek(to: CMTime.zero)
             self.playVideo()
         }
+    }
+    
+    func timesUp() {
+        print("timer ends!!")
     }
     /*
     // MARK: - Navigation

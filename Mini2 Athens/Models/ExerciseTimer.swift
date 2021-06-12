@@ -8,17 +8,23 @@
 import Foundation
 import UIKit
 
+protocol ExerciseTimerDelegate {
+    func timesUp()
+}
+
 class ExerciseTimer {
     var duration: Int?
     var isTimerRunning: Bool?
     var timer: Timer?
     var timerLabel: UILabel?
     var seconds: Int?
+    var delegate: StartProgramViewController?
     
-    init(duration: Int?) {
+    init(duration: Int?, timerLabel: UILabel!) {
         self.duration = duration
         self.isTimerRunning = false
         self.timer = Timer()
+        self.timerLabel = timerLabel
     }
     
     func runTimer() {
@@ -48,6 +54,7 @@ class ExerciseTimer {
     
     func finishTimer(){
         isTimerRunning = false
+        self.delegate?.timesUp()
     }
     
     func pauseResumeTimer(){
@@ -58,4 +65,5 @@ class ExerciseTimer {
             timer?.invalidate()
         }
     }
+    
 }
