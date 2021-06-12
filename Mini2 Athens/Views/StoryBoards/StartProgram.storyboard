@@ -42,6 +42,9 @@
                                 <state key="normal" image="primary-btn">
                                     <color key="titleColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="pauseClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="feV-eA-ujo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3x Standard Push-Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc9-cK-bOo">
                                 <rect key="frame" x="92" y="483" width="206" height="27"/>
@@ -50,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pause" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhc-L8-3J6">
-                                <rect key="frame" x="171.66666666666666" y="649" width="48" height="21"/>
+                                <rect key="frame" x="30" y="649" width="331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -58,6 +61,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myu-GG-Zuo">
                                 <rect key="frame" x="30" y="703" width="331" height="59"/>
                                 <state key="normal" image="Secondary-btn"/>
+                                <connections>
+                                    <action selector="doneClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dLW-nT-gnC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Done" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8O-qT-djf">
                                 <rect key="frame" x="174.66666666666666" y="722" width="42" height="21"/>
@@ -90,7 +96,7 @@
                             <constraint firstItem="xhc-L8-3J6" firstAttribute="centerY" secondItem="SKf-Hr-OM9" secondAttribute="centerY" id="fKm-4c-ff3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SKf-Hr-OM9" secondAttribute="trailing" constant="29" id="gE5-Pe-fyG"/>
                             <constraint firstItem="Myu-GG-Zuo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="lf9-3D-Qoq"/>
-                            <constraint firstItem="xhc-L8-3J6" firstAttribute="width" secondItem="SKf-Hr-OM9" secondAttribute="width" multiplier="0.145015" id="lfa-Oq-hND"/>
+                            <constraint firstItem="xhc-L8-3J6" firstAttribute="width" secondItem="SKf-Hr-OM9" secondAttribute="width" id="lfa-Oq-hND"/>
                             <constraint firstItem="yLe-4s-ut3" firstAttribute="trailing" secondItem="4my-da-LaD" secondAttribute="trailing" id="mjk-dI-EJK"/>
                             <constraint firstItem="R8O-qT-djf" firstAttribute="centerX" secondItem="Myu-GG-Zuo" secondAttribute="centerX" id="snA-7N-9HG"/>
                             <constraint firstItem="yLe-4s-ut3" firstAttribute="leading" secondItem="4my-da-LaD" secondAttribute="leading" id="uf5-CC-fRO"/>
@@ -100,8 +106,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="DoneButton" destination="Myu-GG-Zuo" id="GYh-xQ-CiU"/>
-                        <outlet property="pauseButton" destination="SKf-Hr-OM9" id="PUe-lJ-YGb"/>
                         <outlet property="pauseResumeLabel" destination="xhc-L8-3J6" id="nqy-Ux-x0k"/>
                         <outlet property="timerLabel" destination="Xnd-wH-EIq" id="muf-Qv-dKy"/>
                         <outlet property="videoLayer" destination="XgX-qd-f2l" id="UWn-Ab-AoM"/>

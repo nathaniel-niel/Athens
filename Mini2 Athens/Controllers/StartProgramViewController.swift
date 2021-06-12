@@ -13,25 +13,23 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     @IBOutlet weak var videoLayer: UIView!
     @IBOutlet weak var workoutLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var pauseResumeLabel: UILabel!
-    @IBOutlet weak var DoneButton: UIButton!
-    
     
     var playerLooper: AVPlayerLooper!
     var queuePlayer: AVQueuePlayer!
     
+    var exerciseTimer: ExerciseTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         playVideo()
-        let exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
+        exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
         
-        exerciseTimer.delegate = self
+        exerciseTimer?.delegate = self
         
-        exerciseTimer.runTimer()
+        exerciseTimer?.runTimer()
     }
     
     func playVideo(){
@@ -60,6 +58,24 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         //Implement later
         print("timer ends!!")
     }
+    
+    @IBAction func pauseClicked(_ sender: UIButton) {
+        guard let timerIsRunning = exerciseTimer?.isTimerRunning else {return}
+        if timerIsRunning{
+            pauseResumeLabel.text = "Resume"
+        }else{
+            pauseResumeLabel.text = "Pause"
+        }
+        
+        exerciseTimer?.pauseResumeTimer()
+    }
+    
+    @IBAction func doneClicked(_ sender: UIButton) {
+        let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
+        let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     
     /*

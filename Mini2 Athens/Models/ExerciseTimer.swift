@@ -60,8 +60,10 @@ class ExerciseTimer {
     func pauseResumeTimer(){
         guard let isTimerRunning = isTimerRunning else { return }
         if !isTimerRunning{
+            self.isTimerRunning = true
             runTimer()
         }else{
+            self.isTimerRunning = false
             timer?.invalidate()
         }
     }
