@@ -27,6 +27,7 @@
 		6000BB11267215460083F617 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB10267215460083F617 /* HomeViewController.swift */; };
 		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
 		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
+		603B8A1A26750E840051C02F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603B8A1926750E840051C02F /* iCarousel.m */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
 		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
 		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
@@ -65,6 +66,9 @@
 		6000BB10267215460083F617 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		601A4E7626730C9100967581 /* StartProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProgramViewController.swift; sourceTree = "<group>"; };
 		601A4E7826730CC900967581 /* StartProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartProgram.storyboard; sourceTree = "<group>"; };
+		603B8A1726750E830051C02F /* Mini2 Athens-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mini2 Athens-Bridging-Header.h"; sourceTree = "<group>"; };
+		603B8A1826750E840051C02F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = ../../../../Downloads/iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		603B8A1926750E840051C02F /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = ../../../../Downloads/iCarousel/iCarousel.m; sourceTree = "<group>"; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
 		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
 		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 		2D0BBD9E266E2FF900C90A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				603B8A1626750E700051C02F /* Objective C */,
 				2D7574DB2671C9AF00CB970C /* XIB */,
 				2D7574DE2671CA5D00CB970C /* StoryBoards */,
 			);
@@ -196,6 +201,16 @@
 			path = StoryBoards;
 			sourceTree = "<group>";
 		};
+		603B8A1626750E700051C02F /* Objective C */ = {
+			isa = PBXGroup;
+			children = (
+				603B8A1826750E840051C02F /* iCarousel.h */,
+				603B8A1926750E840051C02F /* iCarousel.m */,
+				603B8A1726750E830051C02F /* Mini2 Athens-Bridging-Header.h */,
+			);
+			path = "Objective C";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +242,7 @@
 				TargetAttributes = {
 					2D0BBD80266E2FAA00C90A28 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -288,6 +304,7 @@
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
+				603B8A1A26750E840051C02F /* iCarousel.m in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2DED8D352671FCD700C45B9D /* CompletedProgramViewController.swift in Sources */,
 				6000BB0F267213B40083F617 /* WorkoutCollectionViewCell.swift in Sources */,
@@ -442,6 +459,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLF43H5K2J;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
@@ -451,6 +469,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mini2 Athens/Views/Objective C/Mini2 Athens-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WLF43H5K2J;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
@@ -470,6 +491,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mini2 Athens/Views/Objective C/Mini2 Athens-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
