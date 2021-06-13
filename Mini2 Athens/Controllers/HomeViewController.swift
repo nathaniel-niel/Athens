@@ -7,33 +7,24 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+class HomeViewController: UIViewController {
     
-    @IBOutlet weak var workoutCollectionView: UICollectionView!
+    @IBOutlet weak var iCarouselView: iCarousel!
     
-    let images: [UIImage?] = [UIImage(named: "Pushup-1"), UIImage(named: "Plank-1"), UIImage(named: "Squat-1")]
+    let images: [UIImage?] = [UIImage(named: "pushup"), UIImage(named: "plank"), UIImage(named: "squat")]
 
 //    let images = [UIImage(named: "Pushup-1")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        iCarouselView.delegate = self
+        iCarouselView.dataSource = self
+        iCarouselView.type = .rotary
+        iCarouselView.contentMode = .scaleAspectFit
+        iCarouselView.isPagingEnabled = true
         // Do any additional setup after loading the view.
-        workoutCollectionView.delegate = self
-        workoutCollectionView.dataSource = self
     }
     
-
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return images.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WorkoutCollectionViewCell", for: indexPath) as! WorkoutCollectionViewCell
-        
-        cell.workoutImage.image = images[indexPath.row]
-        return cell
-    }
     /*
     // MARK: - Navigation
 
@@ -44,4 +35,37 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     }
     */
 
+}
+
+extension HomeViewController: iCarouselDelegate, iCarouselDataSource{
+    func numberOfItems(in carousel: iCarousel) -> Int {
+        images.count
+    }
+    
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
+        var imageView: UIImageView!
+        if view == nil{
+            imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: iCarouselView.frame.width * 0.5, height: iCarouselView.frame.height))
+        }else{
+            imageView = view as? UIImageView
+        }
+        
+        imageView.image = images[index]
+        return imageView
+    }
+    
+    func carousel(_ carousel: iCarousel, didSelectItemAt index: Int) {
+        
+    }
+    
+    func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
+        if option == .fadeMin{
+            return 0
+        }else if(option == .fadeMinAlpha){
+            return 0.3
+        }else if(option == .fadeMax){
+            return 0.3
+        }
+        return value
+    }
 }

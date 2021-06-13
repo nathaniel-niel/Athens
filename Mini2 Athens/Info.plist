@@ -38,7 +38,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>exerciseProgram</string>
+					<string>HomeStoryboard</string>
 				</dict>
 			</array>
 		</dict>
@@ -46,9 +46,9 @@
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
-	<string>exerciseProgram</string>
+	<string>HomeStoryboard</string>
 	<key>UIMainStoryboardFile</key>
-	<string>exerciseProgram</string>
+	<string>HomeStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

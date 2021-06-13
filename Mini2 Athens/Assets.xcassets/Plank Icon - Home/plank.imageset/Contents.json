@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "Pushup-1.png",
+      "filename" : "Plank.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Pushup-2.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Pushup-3.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
