@@ -28,6 +28,8 @@
 		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
 		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
 		603B8A1A26750E840051C02F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603B8A1926750E840051C02F /* iCarousel.m */; };
+		609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609067822676453A004753A1 /* ExerciseTableViewCell.swift */; };
+		609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609067832676453A004753A1 /* ExerciseTableViewCell.xib */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
 		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
 		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
@@ -69,6 +71,8 @@
 		603B8A1726750E830051C02F /* Mini2 Athens-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mini2 Athens-Bridging-Header.h"; sourceTree = "<group>"; };
 		603B8A1826750E840051C02F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = ../../../../Downloads/iCarousel/iCarousel.h; sourceTree = "<group>"; };
 		603B8A1926750E840051C02F /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = ../../../../Downloads/iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		609067822676453A004753A1 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewCell.swift; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		609067832676453A004753A1 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExerciseTableViewCell.xib; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
 		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
 		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				2D6FFA8326708C08009C1438 /* HistoryViewController.xib */,
 				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
 				2DED8D342671FCD700C45B9D /* CompletedProgramViewController.xib */,
+				609067822676453A004753A1 /* ExerciseTableViewCell.swift */,
+				609067832676453A004753A1 /* ExerciseTableViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -280,6 +286,7 @@
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
 				2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */,
+				609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
 			);
@@ -305,6 +312,7 @@
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				603B8A1A26750E840051C02F /* iCarousel.m in Sources */,
+				609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2DED8D352671FCD700C45B9D /* CompletedProgramViewController.swift in Sources */,
 				6000BB0F267213B40083F617 /* WorkoutCollectionViewCell.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1l1-a1-pKC">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BSa-U7-LrA">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fir-K3-hz8" userLabel="Exercise List Table View">
-                                <rect key="frame" x="0.0" y="88" width="390" height="756"/>
+                                <rect key="frame" x="0.0" y="44" width="390" height="800"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vXW-sp-2LD">
                                     <rect key="frame" x="0.0" y="169.66666828502309" width="390" height="44"/>
@@ -98,12 +98,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986.15384615384608" y="401.65876777251185"/>
+            <point key="canvasLocation" x="38" y="1073"/>
         </scene>
-        <!--View Controller-->
+        <!--Exercise Program List View Controller-->
         <scene sceneID="PQu-kM-4ja">
             <objects>
-                <viewController id="gzj-uX-anB" sceneMemberID="viewController">
+                <viewController id="gzj-uX-anB" customClass="ExerciseProgramListViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fia-GS-bTk">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -126,23 +126,30 @@
                                         <color key="textColor" red="0.6237239242" green="0.62702339890000003" blue="0.65098446610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7KG-rE-iZe">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7KG-rE-iZe">
                                         <rect key="frame" x="40" y="126" width="310" height="414"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <color key="separatorColor" red="0.6237239242" green="0.62702339890000003" blue="0.65098446610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     </tableView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xva-Kf-FjK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xva-Kf-FjK">
                                         <rect key="frame" x="63" y="600" width="264" height="41"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="41" id="kTa-5V-tNb"/>
                                         </constraints>
                                         <state key="normal" image="Start Exercise"/>
+                                        <connections>
+                                            <action selector="startProgram:" destination="gzj-uX-anB" eventType="touchUpInside" id="GJS-jI-7ch"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Xva-Kf-FjK" secondAttribute="bottom" constant="42.670000000000002" id="8v6-NR-RcF"/>
+                                    <constraint firstItem="Xva-Kf-FjK" firstAttribute="leading" secondItem="6BD-SA-bx6" secondAttribute="leading" constant="63" id="FgP-E8-21W"/>
                                     <constraint firstItem="PZy-W6-yQJ" firstAttribute="top" secondItem="6BD-SA-bx6" secondAttribute="top" constant="28" id="O6S-zk-iQM"/>
                                     <constraint firstItem="7KG-rE-iZe" firstAttribute="trailing" secondItem="8lH-Y8-8dV" secondAttribute="trailing" id="Tby-6s-uxh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xva-Kf-FjK" secondAttribute="trailing" constant="63" id="UIV-Q9-NFH"/>
                                     <constraint firstItem="7KG-rE-iZe" firstAttribute="top" secondItem="8lH-Y8-8dV" secondAttribute="bottom" constant="20" id="e8k-3y-M2R"/>
                                     <constraint firstItem="8lH-Y8-8dV" firstAttribute="top" secondItem="PZy-W6-yQJ" secondAttribute="bottom" constant="16" id="ecz-Jk-Ot4"/>
                                     <constraint firstItem="Xva-Kf-FjK" firstAttribute="top" secondItem="7KG-rE-iZe" secondAttribute="bottom" constant="60" id="gr5-O6-Wfr"/>
@@ -168,28 +175,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4gv-e6-nlX"/>
+                    <connections>
+                        <outlet property="exerciseProgramListTableView" destination="7KG-rE-iZe" id="hzo-Zu-Xj6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8b-UL-649" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1770.7692307692307" y="401.65876777251185"/>
+            <point key="canvasLocation" x="1966.1538461538462" y="408.76777251184831"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="civ-SY-nse">
+        <scene sceneID="cLR-rR-U5k">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1l1-a1-pKC" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BSa-U7-LrA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dEW-2Y-QOl">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cM8-Vl-krw">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="Kx7-44-YdS"/>
+                        <segue destination="gzj-uX-anB" kind="relationship" relationship="rootViewController" id="Ga8-d5-tWe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="a3P-pm-y37" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emM-lf-J4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56.92307692307692" y="401.65876777251185"/>
+            <point key="canvasLocation" x="1036.9230769230769" y="408.76777251184831"/>
         </scene>
     </scenes>
     <resources>
