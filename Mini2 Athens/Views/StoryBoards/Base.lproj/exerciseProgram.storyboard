@@ -111,25 +111,67 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="james-barr-7U0yuZcS5yA-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="2Ie-ZF-6kJ">
                                 <rect key="frame" x="0.0" y="-8" width="390" height="235"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6BD-SA-bx6">
-                                <rect key="frame" x="75" y="358" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6BD-SA-bx6">
+                                <rect key="frame" x="0.0" y="160.33333333333331" width="390" height="683.66666666666674"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise  Push-Up" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZy-W6-yQJ">
+                                        <rect key="frame" x="40" y="28" width="310" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 minutes | No Equipment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8lH-Y8-8dV">
+                                        <rect key="frame" x="40" y="85" width="310" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.6237239242" green="0.62702339890000003" blue="0.65098446610000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7KG-rE-iZe">
+                                        <rect key="frame" x="40" y="126" width="310" height="414"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xva-Kf-FjK">
+                                        <rect key="frame" x="63" y="600" width="264" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="41" id="kTa-5V-tNb"/>
+                                        </constraints>
+                                        <state key="normal" image="Start Exercise"/>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xva-Kf-FjK" secondAttribute="bottom" constant="42.670000000000002" id="8v6-NR-RcF"/>
+                                    <constraint firstItem="PZy-W6-yQJ" firstAttribute="top" secondItem="6BD-SA-bx6" secondAttribute="top" constant="28" id="O6S-zk-iQM"/>
+                                    <constraint firstItem="7KG-rE-iZe" firstAttribute="trailing" secondItem="8lH-Y8-8dV" secondAttribute="trailing" id="Tby-6s-uxh"/>
+                                    <constraint firstItem="7KG-rE-iZe" firstAttribute="top" secondItem="8lH-Y8-8dV" secondAttribute="bottom" constant="20" id="e8k-3y-M2R"/>
+                                    <constraint firstItem="8lH-Y8-8dV" firstAttribute="top" secondItem="PZy-W6-yQJ" secondAttribute="bottom" constant="16" id="ecz-Jk-Ot4"/>
+                                    <constraint firstItem="Xva-Kf-FjK" firstAttribute="top" secondItem="7KG-rE-iZe" secondAttribute="bottom" constant="60" id="gr5-O6-Wfr"/>
+                                    <constraint firstItem="8lH-Y8-8dV" firstAttribute="leading" secondItem="PZy-W6-yQJ" secondAttribute="leading" id="iXO-lP-c7z"/>
+                                    <constraint firstAttribute="trailing" secondItem="PZy-W6-yQJ" secondAttribute="trailing" constant="40" id="mdd-HN-L5t"/>
+                                    <constraint firstItem="PZy-W6-yQJ" firstAttribute="leading" secondItem="6BD-SA-bx6" secondAttribute="leading" constant="40" id="mwY-Di-JRF"/>
+                                    <constraint firstItem="7KG-rE-iZe" firstAttribute="leading" secondItem="8lH-Y8-8dV" secondAttribute="leading" id="sBY-PJ-un1"/>
+                                    <constraint firstItem="8lH-Y8-8dV" firstAttribute="trailing" secondItem="PZy-W6-yQJ" secondAttribute="trailing" id="vPg-Nk-Z6C"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TOr-in-MDd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="6BD-SA-bx6" firstAttribute="height" secondItem="Fia-GS-bTk" secondAttribute="height" multiplier="0.81" id="19G-2F-xCX"/>
                             <constraint firstItem="TOr-in-MDd" firstAttribute="top" secondItem="2Ie-ZF-6kJ" secondAttribute="topMargin" id="C1b-oj-sRd"/>
-                            <constraint firstItem="2Ie-ZF-6kJ" firstAttribute="leading" secondItem="TOr-in-MDd" secondAttribute="leading" id="Luy-Ii-Knk"/>
+                            <constraint firstItem="6BD-SA-bx6" firstAttribute="leading" secondItem="Fia-GS-bTk" secondAttribute="leading" id="K86-hy-OZ6"/>
+                            <constraint firstItem="2Ie-ZF-6kJ" firstAttribute="leading" secondItem="Fia-GS-bTk" secondAttribute="leading" id="Luy-Ii-Knk"/>
                             <constraint firstAttribute="trailing" secondItem="2Ie-ZF-6kJ" secondAttribute="trailing" id="MYx-CQ-6Jm"/>
+                            <constraint firstAttribute="bottom" secondItem="6BD-SA-bx6" secondAttribute="bottom" id="Pih-pn-r6d"/>
+                            <constraint firstItem="2Ie-ZF-6kJ" firstAttribute="height" secondItem="Fia-GS-bTk" secondAttribute="height" multiplier="0.278436" id="bN4-Qf-EXP"/>
+                            <constraint firstItem="6BD-SA-bx6" firstAttribute="trailing" secondItem="Fia-GS-bTk" secondAttribute="trailing" id="ugq-du-PnA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4gv-e6-nlX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8b-UL-649" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2732.3076923076924" y="115.87677725118483"/>
+            <point key="canvasLocation" x="1770.7692307692307" y="401.65876777251185"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="civ-SY-nse">
@@ -152,6 +194,7 @@
     </scenes>
     <resources>
         <image name="1" width="195" height="130"/>
+        <image name="Start Exercise" width="520" height="82"/>
         <image name="james-barr-7U0yuZcS5yA-unsplash" width="390" height="235"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
