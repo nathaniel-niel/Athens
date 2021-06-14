@@ -9,17 +9,7 @@ import UIKit
 import AVFoundation
 
 
-enum bodyDirection{
-    case front
-    case left
-    case right
-}
 
-enum workoutType{
-    case pushup
-    case plank
-    case squad
-}
 
 
 class CameraView: UIView {
