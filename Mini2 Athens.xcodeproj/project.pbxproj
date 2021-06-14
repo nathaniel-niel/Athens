@@ -19,6 +19,7 @@
 		2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73257B26773922003B53C1 /* DataManipulation.swift */; };
+		2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D73257D26775D60003B53C1 /* MyHistory.storyboard */; };
 		2D963CDD26764F3B00838C51 /* MyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D963CDC26764F3B00838C51 /* MyHistoryViewController.swift */; };
 		2D963CE22676530F00838C51 /* MyHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D963CE02676530F00838C51 /* MyHistoryTableViewCell.swift */; };
 		2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */; };
@@ -55,6 +56,7 @@
 		2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgramCompletedViewController.xib; path = ../../Controllers/ProgramCompletedViewController.xib; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D73257B26773922003B53C1 /* DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulation.swift; sourceTree = "<group>"; };
+		2D73257D26775D60003B53C1 /* MyHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyHistory.storyboard; sourceTree = "<group>"; };
 		2D963CDC26764F3B00838C51 /* MyHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHistoryViewController.swift; sourceTree = "<group>"; };
 		2D963CE02676530F00838C51 /* MyHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyHistoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				7C7E96E22670EEEB008379D5 /* Rest.storyboard */,
 				7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */,
 				C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */,
+				2D73257D26775D60003B53C1 /* MyHistory.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 				2DCB6233267324890040A5E3 /* test.storyboard in Resources */,
+				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
 				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
 				2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */,
 			);
