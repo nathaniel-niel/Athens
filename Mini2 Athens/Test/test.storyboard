@@ -53,22 +53,12 @@
         <!--MyHistory-->
         <scene sceneID="6M3-yT-2Kj">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyHistory" id="xWO-Tw-dYQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="history" storyboardName="MyHistory" id="xWO-Tw-dYQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rGv-oQ-yAr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpV-1V-8Zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1493" y="23"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="PaF-IW-p51">
-            <objects>
-                <viewControllerPlaceholder id="e4F-YM-hCL" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="BQw-kP-7M4"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7wn-pT-WxJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1543" y="188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gjs-Or-2jb">
