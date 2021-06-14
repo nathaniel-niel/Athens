@@ -28,6 +28,13 @@
 		6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */; };
 		6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */; };
 		6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */; };
+		6000BB0F267213B40083F617 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */; };
+		6000BB11267215460083F617 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB10267215460083F617 /* HomeViewController.swift */; };
+		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
+		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
+		603B8A1A26750E840051C02F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 603B8A1926750E840051C02F /* iCarousel.m */; };
+		609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609067822676453A004753A1 /* ExerciseTableViewCell.swift */; };
+		609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609067832676453A004753A1 /* ExerciseTableViewCell.xib */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
 		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
 		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
@@ -37,8 +44,10 @@
 		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
 		B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */; };
 		B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */; };
-		C286C3472671F31000416A35 /* ExerciseProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286C3462671F31000416A35 /* ExerciseProgram.swift */; };
-		C286C3492671F3DC00416A35 /* exerciseProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */; };
+		C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */; };
+		C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */; };
+		C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */; };
+		C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +74,15 @@
 		6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedWorkout.swift; sourceTree = "<group>"; };
 		6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
+		6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
+		6000BB10267215460083F617 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		601A4E7626730C9100967581 /* StartProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProgramViewController.swift; sourceTree = "<group>"; };
+		601A4E7826730CC900967581 /* StartProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartProgram.storyboard; sourceTree = "<group>"; };
+		603B8A1726750E830051C02F /* Mini2 Athens-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mini2 Athens-Bridging-Header.h"; sourceTree = "<group>"; };
+		603B8A1826750E840051C02F /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = ../../../../Downloads/iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		603B8A1926750E840051C02F /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = ../../../../Downloads/iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		609067822676453A004753A1 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewCell.swift; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		609067832676453A004753A1 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExerciseTableViewCell.xib; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
 		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
 		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +92,10 @@
 		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = OnBoarding.storyboard; path = ../OnBoarding.storyboard; sourceTree = "<group>"; };
 		B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		C286C3462671F31000416A35 /* ExerciseProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgram.swift; sourceTree = "<group>"; };
-		C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = exerciseProgram.storyboard; sourceTree = "<group>"; };
+		C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListTableViewCell.swift; sourceTree = "<group>"; };
+		C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListViewController.swift; sourceTree = "<group>"; };
+		C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgram.swift; sourceTree = "<group>"; };
+		C286C34F2671F9FC00416A35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/exerciseProgram.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +144,9 @@
 		2D0BBD9D266E2FD000C90A28 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+
+				2DED8D332671FCD700C45B9D /* CompletedProgramViewController.swift */,
+				6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */,
 				2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */,
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
 				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
@@ -131,9 +154,14 @@
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
 				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
 				7C7E96EC2671048C008379D5 /* restViewController.swift */,
-				C286C3462671F31000416A35 /* ExerciseProgram.swift */,
 				2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */,
 				2D963CDC26764F3B00838C51 /* MyHistoryViewController.swift */,
+				6000BB10267215460083F617 /* HomeViewController.swift */,
+				601A4E7626730C9100967581 /* StartProgramViewController.swift */,
+				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
+				C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */,
+				C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */,
+
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -141,6 +169,7 @@
 		2D0BBD9E266E2FF900C90A28 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				603B8A1626750E700051C02F /* Objective C */,
 				2D7574DB2671C9AF00CB970C /* XIB */,
 				2D7574DE2671CA5D00CB970C /* StoryBoards */,
 			);
@@ -172,6 +201,9 @@
 				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
 				2D963CDF267652EE00838C51 /* Cell */,
 				2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */,
+				2DED8D342671FCD700C45B9D /* CompletedProgramViewController.xib */,
+				609067822676453A004753A1 /* ExerciseTableViewCell.swift */,
+				609067832676453A004753A1 /* ExerciseTableViewCell.xib */,
 			);
 			path = XIB;
 			sourceTree = "<group>";
@@ -185,8 +217,9 @@
 				6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */,
 				7C7E96E22670EEEB008379D5 /* Rest.storyboard */,
 				7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */,
-				C286C3482671F3DC00416A35 /* exerciseProgram.storyboard */,
 				2D73257D26775D60003B53C1 /* MyHistory.storyboard */,
+				601A4E7826730CC900967581 /* StartProgram.storyboard */,
+				C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -207,6 +240,16 @@
 				2DCB6232267324890040A5E3 /* test.storyboard */,
 			);
 			path = Test;
+            sourceTree = "<group>";
+        };
+		603B8A1626750E700051C02F /* Objective C */ = {
+			isa = PBXGroup;
+			children = (
+				603B8A1826750E840051C02F /* iCarousel.h */,
+				603B8A1926750E840051C02F /* iCarousel.m */,
+				603B8A1726750E830051C02F /* Mini2 Athens-Bridging-Header.h */,
+			);
+			path = "Objective C";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +283,7 @@
 				TargetAttributes = {
 					2D0BBD80266E2FAA00C90A28 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -269,12 +313,16 @@
 				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */,
-				C286C3492671F3DC00416A35 /* exerciseProgram.storyboard in Resources */,
+				2DED8D362671FCD700C45B9D /* CompletedProgramViewController.xib in Resources */,
+				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
 				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
+				601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
+				2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */,
+				609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 				2DCB6233267324890040A5E3 /* test.storyboard in Resources */,
 				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
@@ -296,16 +344,25 @@
 				2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */,
 				2D963CE22676530F00838C51 /* MyHistoryTableViewCell.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
+				6000BB11267215460083F617 /* HomeViewController.swift in Sources */,
 				6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */,
 				6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */,
-				C286C3472671F31000416A35 /* ExerciseProgram.swift in Sources */,
+				C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */,
+				2D6FFA8426708C08009C1438 /* HistoryViewController.swift in Sources */,
+				C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
+				603B8A1A26750E840051C02F /* iCarousel.m in Sources */,
+				609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
 				2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */,
+				2DED8D352671FCD700C45B9D /* CompletedProgramViewController.swift in Sources */,
+				6000BB0F267213B40083F617 /* WorkoutCollectionViewCell.swift in Sources */,
+				601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */,
+				C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */,
 				7C7E96ED2671048C008379D5 /* restViewController.swift in Sources */,
 				2D963CDD26764F3B00838C51 /* MyHistoryViewController.swift in Sources */,
 			);
@@ -320,6 +377,14 @@
 				2D0BBD93266E2FAB00C90A28 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C286C34F2671F9FC00416A35 /* Base */,
+			);
+			name = exerciseProgram.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,6 +511,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
@@ -456,6 +522,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mini2 Athens/Views/Objective C/Mini2 Athens-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -466,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
@@ -476,6 +545,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Athens.Mini2Athens;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Mini2 Athens/Views/Objective C/Mini2 Athens-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
