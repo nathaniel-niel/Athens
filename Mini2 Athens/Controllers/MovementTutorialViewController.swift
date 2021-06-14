@@ -67,6 +67,11 @@ class MovementTutorialViewController: UIViewController {
         
     }
     
-
+    @IBAction func didBackButtonTapped(_ sender: Any) {
+//        let vc = TestViewController()
+//        vc.modalPresentationStyle = .fullScreen
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
 }
