@@ -26,6 +26,8 @@
 	<string>$(PRODUCT_NAME) Please Access to Analyze</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To Save Photo or Video</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>UIApplicationSceneManifest</key>

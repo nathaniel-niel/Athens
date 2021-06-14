@@ -106,7 +106,6 @@
 			children = (
 				2D6FFA8326708C08009C1438 /* HistoryViewController.xib */,
 				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
-				2D0BBD8A266E2FAA00C90A28 /* Main.storyboard */,
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
 				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
@@ -191,7 +190,6 @@
 				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
-				2D0BBD8C266E2FAA00C90A28 /* Main.storyboard in Resources */,
 				2D6FFA8526708C08009C1438 /* HistoryViewController.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
@@ -355,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2R8L25XGM;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,6 +373,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D2R8L25XGM;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

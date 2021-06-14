@@ -139,10 +139,28 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VhC-fK-eQW">
+                                <rect key="frame" x="354" y="104" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KSS-WN-Wfj"/>
+                                    <constraint firstAttribute="height" constant="40" id="z6F-QW-C9m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="tintColor" red="0.97417467830000004" green="0.33481884000000001" blue="0.1003988311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <imageReference key="image" image="Angle Symbol" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="large" weight="semibold"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleDegreeHiddenStatus" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fAW-3a-ibv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
+                            <constraint firstItem="VhC-fK-eQW" firstAttribute="top" secondItem="6Rl-bd-6kL" secondAttribute="bottom" constant="7.5" id="52y-4v-S3P"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VhC-fK-eQW" secondAttribute="trailing" constant="20" id="NLF-Lo-ifA"/>
                             <constraint firstItem="6Rl-bd-6kL" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="OM9-at-Vny"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Arb-hG-xfG" secondAttribute="bottom" constant="20" id="QeV-az-zFC"/>
                             <constraint firstItem="Arb-hG-xfG" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="UKm-JF-0DC"/>
@@ -171,6 +189,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Angle Symbol" width="150" height="150"/>
         <image name="camera.rotate" catalog="system" width="128" height="94"/>
         <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
