@@ -18,6 +18,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     @IBOutlet weak var progressBarPlaceholder: UIView!
     
     @IBOutlet weak var progressBar: UIView!
+    @IBOutlet weak var progressLabel: UILabel!
     
     
     var playerLooper: AVPlayerLooper!
@@ -31,7 +32,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         workoutLabel.text = exercises[currentExerciseIndex].name
-        
+        progressLabel.text = "\(currentExerciseIndex+1)/\(exercises.count)"
         setProgressBar()
         setVideo()
         playVideo()
@@ -59,6 +60,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     
     func playVideo(){
         player.play()
+        videoLayer.bringSubviewToFront(progressLabel)
         loopVideo(videoPlayer: player)
     }
 
@@ -73,6 +75,9 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     func timesUp() {
         //Implement later
        currentExerciseIndex += 1
+        let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
+        let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func pauseClicked(_ sender: UIButton) {
@@ -87,9 +92,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     }
     
     @IBAction func doneClicked(_ sender: UIButton) {
-        let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
-        let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
-        navigationController?.pushViewController(vc, animated: true)
+        timesUp()
     }
     
     

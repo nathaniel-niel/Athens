@@ -18,6 +18,15 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgX-qd-f2l">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="422"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1/6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3o-AW-Gfs">
+                                        <rect key="frame" x="181" y="139" width="28" height="26"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4my-da-LaD" userLabel="Progress Bar Placeholder">
@@ -109,6 +118,7 @@
                         <outlet property="pauseResumeLabel" destination="xhc-L8-3J6" id="nqy-Ux-x0k"/>
                         <outlet property="progressBar" destination="yLe-4s-ut3" id="gX0-RJ-djk"/>
                         <outlet property="progressBarPlaceholder" destination="4my-da-LaD" id="c6L-21-9F7"/>
+                        <outlet property="progressLabel" destination="O3o-AW-Gfs" id="9L5-XB-jaP"/>
                         <outlet property="timerLabel" destination="Xnd-wH-EIq" id="muf-Qv-dKy"/>
                         <outlet property="videoLayer" destination="XgX-qd-f2l" id="UWn-Ab-AoM"/>
                         <outlet property="workoutLabel" destination="dc9-cK-bOo" id="dbZ-5j-W5v"/>

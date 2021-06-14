@@ -32,6 +32,7 @@
 		6000BB11267215460083F617 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB10267215460083F617 /* HomeViewController.swift */; };
 		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
 		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
+		604CEA3126779D04002384C6 /* MovementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */; };
 		609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609067822676453A004753A1 /* ExerciseTableViewCell.swift */; };
 		609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609067832676453A004753A1 /* ExerciseTableViewCell.xib */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
@@ -77,6 +78,7 @@
 		6000BB10267215460083F617 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		601A4E7626730C9100967581 /* StartProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProgramViewController.swift; sourceTree = "<group>"; };
 		601A4E7826730CC900967581 /* StartProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartProgram.storyboard; sourceTree = "<group>"; };
+		604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementCollectionViewCell.swift; sourceTree = "<group>"; };
 		609067822676453A004753A1 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewCell.swift; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		609067832676453A004753A1 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExerciseTableViewCell.xib; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
 				C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */,
 				C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */,
+				604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */,
 				C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
+				604CEA3126779D04002384C6 /* MovementCollectionViewCell.swift in Sources */,
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */,
