@@ -38,6 +38,9 @@
                     </constraints>
                     <color key="tintColor" name="AccentColor"/>
                     <state key="normal" image="chevron.left" catalog="system"/>
+                    <connections>
+                        <action selector="didBackButtonTapped:" destination="-1" eventType="touchUpInside" id="gwA-wx-H0a"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7R-hg-Ley">
                     <rect key="frame" x="0.0" y="109" width="390" height="777"/>

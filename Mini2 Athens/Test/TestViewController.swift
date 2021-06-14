@@ -26,8 +26,20 @@ class TestViewController: UIViewController {
     }
     */
 
+    @IBAction func tapButton(_ sender: Any) {
+//        let vc = storyboard?.instantiateViewController(identifier: "history") as! MyHistoryViewController
+//        self.navigationController?.pushViewController(vc, animated: true)
+       
+        
+        
+    }
+
+
+
+
+
     @IBAction func didTapped(_ sender: UIButton) {
-        let vc = ProgramCompletedViewController()
+        let vc = MovementTutorialViewController()
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true, completion: nil)
     }
