@@ -22,6 +22,8 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     
     var playerLooper: AVPlayerLooper!
     var queuePlayer: AVQueuePlayer!
+    var player: AVPlayer!
+    var playerLayer: AVPlayerLayer!
     
     var exerciseTimer: ExerciseTimer?
     
@@ -31,6 +33,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         workoutLabel.text = exercises[currentExerciseIndex].name
         
         setProgressBar()
+        setVideo()
         playVideo()
         exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
         exerciseTimer?.delegate = self
@@ -43,16 +46,18 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         progressBar.widthAnchor.constraint(equalTo: progressBarPlaceholder.widthAnchor, multiplier: CGFloat(exerciseProgress)).isActive = true
     }
     
-    func playVideo(){
+    func setVideo(){
         guard let path = Bundle.main.path(forResource: "testVideo1", ofType: "mp4") else {return}
         
-       
-        let player = AVPlayer(url: URL(fileURLWithPath: path))
-        let playerLayer = AVPlayerLayer(player: player)
+        player = AVPlayer(url: URL(fileURLWithPath: path))
+        playerLayer = AVPlayerLayer(player: player)
         player.isMuted = true
         playerLayer.frame = videoLayer.bounds
         playerLayer.videoGravity = .resizeAspectFill
         self.videoLayer.layer.addSublayer(playerLayer)
+    }
+    
+    func playVideo(){
         player.play()
         loopVideo(videoPlayer: player)
     }
