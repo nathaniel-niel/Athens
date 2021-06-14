@@ -46,7 +46,7 @@
                                     <action selector="pauseClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="feV-eA-ujo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3x Standard Push-Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc9-cK-bOo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3x Standard Push-Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dc9-cK-bOo">
                                 <rect key="frame" x="92" y="483" width="206" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -84,10 +84,12 @@
                             <constraint firstItem="dc9-cK-bOo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="92" id="9V8-yz-1B6"/>
                             <constraint firstItem="yLe-4s-ut3" firstAttribute="bottom" secondItem="4my-da-LaD" secondAttribute="bottom" id="9pT-T8-7G7"/>
                             <constraint firstItem="XgX-qd-f2l" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="DY5-fh-44B"/>
+                            <constraint firstItem="yLe-4s-ut3" firstAttribute="leading" secondItem="4my-da-LaD" secondAttribute="leading" id="GLV-uV-Pgi"/>
                             <constraint firstItem="dc9-cK-bOo" firstAttribute="top" secondItem="4my-da-LaD" secondAttribute="bottom" constant="30" id="JhE-LX-WmO"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Myu-GG-Zuo" secondAttribute="trailing" constant="29" id="LKG-We-v3A"/>
                             <constraint firstItem="XgX-qd-f2l" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="NQk-AP-xMM"/>
                             <constraint firstItem="Xnd-wH-EIq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="QDv-HG-k1I"/>
+                            <constraint firstItem="yLe-4s-ut3" firstAttribute="trailing" secondItem="4my-da-LaD" secondAttribute="trailing" priority="900" id="SeV-sP-lZZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dc9-cK-bOo" secondAttribute="trailing" constant="92" id="VO1-Il-ixZ"/>
                             <constraint firstItem="4my-da-LaD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="YKG-ke-VxL"/>
                             <constraint firstItem="yLe-4s-ut3" firstAttribute="top" secondItem="4my-da-LaD" secondAttribute="top" id="YSv-aQ-VFA"/>
@@ -97,9 +99,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SKf-Hr-OM9" secondAttribute="trailing" constant="29" id="gE5-Pe-fyG"/>
                             <constraint firstItem="Myu-GG-Zuo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="lf9-3D-Qoq"/>
                             <constraint firstItem="xhc-L8-3J6" firstAttribute="width" secondItem="SKf-Hr-OM9" secondAttribute="width" id="lfa-Oq-hND"/>
-                            <constraint firstItem="yLe-4s-ut3" firstAttribute="trailing" secondItem="4my-da-LaD" secondAttribute="trailing" id="mjk-dI-EJK"/>
                             <constraint firstItem="R8O-qT-djf" firstAttribute="centerX" secondItem="Myu-GG-Zuo" secondAttribute="centerX" id="snA-7N-9HG"/>
-                            <constraint firstItem="yLe-4s-ut3" firstAttribute="leading" secondItem="4my-da-LaD" secondAttribute="leading" id="uf5-CC-fRO"/>
                             <constraint firstAttribute="trailing" secondItem="XgX-qd-f2l" secondAttribute="trailing" id="yYo-zq-gXh"/>
                             <constraint firstItem="SKf-Hr-OM9" firstAttribute="top" secondItem="Xnd-wH-EIq" secondAttribute="bottom" constant="48" id="yrH-m0-aKh"/>
                             <constraint firstItem="SKf-Hr-OM9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="zrQ-kU-4bc"/>
@@ -107,6 +107,8 @@
                     </view>
                     <connections>
                         <outlet property="pauseResumeLabel" destination="xhc-L8-3J6" id="nqy-Ux-x0k"/>
+                        <outlet property="progressBar" destination="yLe-4s-ut3" id="gX0-RJ-djk"/>
+                        <outlet property="progressBarPlaceholder" destination="4my-da-LaD" id="c6L-21-9F7"/>
                         <outlet property="timerLabel" destination="Xnd-wH-EIq" id="muf-Qv-dKy"/>
                         <outlet property="videoLayer" destination="XgX-qd-f2l" id="UWn-Ab-AoM"/>
                         <outlet property="workoutLabel" destination="dc9-cK-bOo" id="dbZ-5j-W5v"/>

@@ -66,3 +66,14 @@ class Exercise {
         self.isFavorite = false
     }
 }
+
+var currentExerciseIndex = 0
+
+let exercises = [
+    Exercise(name: "Negative", age: 1, type: .exercise1),
+    Exercise(name: "TableTop", age: 1, type: .exercise2),
+    Exercise(name: "Incline", age: 1, type: .exercise3),
+    Exercise(name: "Wall", age: 1, type: .exercise4),
+    Exercise(name: "Knee", age: 1, type: .exercise5),
+    Exercise(name: "Half", age: 1, type: .exercise6),
+]

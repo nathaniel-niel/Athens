@@ -14,15 +14,6 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
     @IBOutlet weak var exerciseProgramListTableView: UITableView!
     
     
-    let exercises = [
-        Exercise(name: "Negative", age: 1, type: .exercise1),
-        Exercise(name: "TableTop", age: 1, type: .exercise2),
-        Exercise(name: "Incline", age: 1, type: .exercise3),
-        Exercise(name: "Wall", age: 1, type: .exercise4),
-        Exercise(name: "Knee", age: 1, type: .exercise5),
-        Exercise(name: "Half", age: 1, type: .exercise6),
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -62,8 +53,11 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
 //        performSegue(withIdentifier: "", sender: self)
         let targetStoryboard = UIStoryboard(name: "StartProgram", bundle: nil)
         
-        let vc = targetStoryboard.instantiateViewController(identifier: "StartProgram")
-        
+        let vc = targetStoryboard.instantiateViewController(identifier: "StartProgram") as! StartProgramViewController
+    
         navigationController?.pushViewController(vc, animated: true)
     }
 }
+
+
+

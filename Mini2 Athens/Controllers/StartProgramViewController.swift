@@ -15,6 +15,11 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var pauseResumeLabel: UILabel!
     
+    @IBOutlet weak var progressBarPlaceholder: UIView!
+    
+    @IBOutlet weak var progressBar: UIView!
+    
+    
     var playerLooper: AVPlayerLooper!
     var queuePlayer: AVQueuePlayer!
     
@@ -22,14 +27,20 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        workoutLabel.text = exercises[currentExerciseIndex].name
+        
+        setProgressBar()
         playVideo()
         exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
-        
         exerciseTimer?.delegate = self
-        
         exerciseTimer?.runTimer()
+    }
+    
+    func setProgressBar(){
+        let exerciseProgress = Double(currentExerciseIndex+1)/Double(exercises.count)
+        
+        progressBar.widthAnchor.constraint(equalTo: progressBarPlaceholder.widthAnchor, multiplier: CGFloat(exerciseProgress)).isActive = true
     }
     
     func playVideo(){
@@ -56,7 +67,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     
     func timesUp() {
         //Implement later
-        print("timer ends!!")
+       currentExerciseIndex += 1
     }
     
     @IBAction func pauseClicked(_ sender: UIButton) {
