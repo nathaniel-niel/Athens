@@ -23,6 +23,8 @@
 		2D963CDD26764F3B00838C51 /* MyHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D963CDC26764F3B00838C51 /* MyHistoryViewController.swift */; };
 		2D963CE22676530F00838C51 /* MyHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D963CE02676530F00838C51 /* MyHistoryTableViewCell.swift */; };
 		2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */; };
+		2D989D6A267798A7001443E7 /* MovementAnalyzeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */; };
+		2D989D6D2677A238001443E7 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D989D6C2677A238001443E7 /* Functionality.swift */; };
 		2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCB622F267324660040A5E3 /* TestViewController.swift */; };
 		2DCB6233267324890040A5E3 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCB6232267324890040A5E3 /* test.storyboard */; };
 		6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */; };
@@ -60,6 +62,8 @@
 		2D963CDC26764F3B00838C51 /* MyHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHistoryViewController.swift; sourceTree = "<group>"; };
 		2D963CE02676530F00838C51 /* MyHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzeDataModel.swift; sourceTree = "<group>"; };
+		2D989D6C2677A238001443E7 /* Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
 		2DCB622F267324660040A5E3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2DCB6232267324890040A5E3 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
@@ -108,6 +112,7 @@
 		2D0BBD83266E2FAA00C90A28 /* Mini2 Athens */ = {
 			isa = PBXGroup;
 			children = (
+				2D989D6B2677A206001443E7 /* Helper */,
 				2DCB6231267324710040A5E3 /* Test */,
 				2D0BBDA0266E301400C90A28 /* Models */,
 				2D0BBD9E266E2FF900C90A28 /* Views */,
@@ -153,7 +158,7 @@
 				6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */,
 				6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */,
 				2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */,
-				2D73257B26773922003B53C1 /* DataManipulation.swift */,
+				2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -198,6 +203,15 @@
 				2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		2D989D6B2677A206001443E7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2D73257B26773922003B53C1 /* DataManipulation.swift */,
+				2D989D6C2677A238001443E7 /* Functionality.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		2DCB6231267324710040A5E3 /* Test */ = {
@@ -300,6 +314,8 @@
 				6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */,
 				C286C3472671F31000416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
+				2D989D6A267798A7001443E7 /* MovementAnalyzeDataModel.swift in Sources */,
+				2D989D6D2677A238001443E7 /* Functionality.swift in Sources */,
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
