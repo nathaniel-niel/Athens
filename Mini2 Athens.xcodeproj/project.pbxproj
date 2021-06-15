@@ -25,6 +25,8 @@
 		6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */; };
 		6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */; };
 		6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */; };
+		76F2C97A26782ED300AA1613 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F2C97926782ED300AA1613 /* OnBoardingCollectionViewCell.swift */; };
+		76F2C9822678307400AA1613 /* OnBoardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F2C9812678307400AA1613 /* OnBoardingModel.swift */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
 		7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */; };
 		7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */; };
@@ -59,6 +61,8 @@
 		6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedWorkout.swift; sourceTree = "<group>"; };
 		6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
+		76F2C97926782ED300AA1613 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		76F2C9812678307400AA1613 /* OnBoardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingModel.swift; sourceTree = "<group>"; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
 		7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = analyzeReport.storyboard; sourceTree = "<group>"; };
 		7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeReportViewController.swift; sourceTree = "<group>"; };
@@ -122,12 +126,14 @@
 				2D6FFA8226708C08009C1438 /* HistoryViewController.swift */,
 				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
 				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
-				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
 				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
 				7C7E96EC2671048C008379D5 /* restViewController.swift */,
 				C286C3462671F31000416A35 /* ExerciseProgram.swift */,
 				2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */,
+				76F2C97926782ED300AA1613 /* OnBoardingCollectionViewCell.swift */,
+				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
+				76F2C9812678307400AA1613 /* OnBoardingModel.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -272,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76F2C97A26782ED300AA1613 /* OnBoardingCollectionViewCell.swift in Sources */,
 				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */,
@@ -285,6 +292,7 @@
 				7C7E96EB2670F3E7008379D5 /* AnalyzeReportViewController.swift in Sources */,
 				2D0BBD87266E2FAA00C90A28 /* SceneDelegate.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
+				76F2C9822678307400AA1613 /* OnBoardingModel.swift in Sources */,
 				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
 				7C7E96ED2671048C008379D5 /* restViewController.swift in Sources */,
@@ -429,6 +437,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -448,6 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
