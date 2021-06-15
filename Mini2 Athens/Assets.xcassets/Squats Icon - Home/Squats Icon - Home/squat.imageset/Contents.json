@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "onboard2.0.png",
+      "filename" : "Squats.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "onboard2.0@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "onboard2.0@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

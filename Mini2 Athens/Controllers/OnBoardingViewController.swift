@@ -14,7 +14,6 @@ class OnBoardingViewController: UIViewController {
     
     
     var slides: [OnBoardingModel] = []
-   
     
     var currentPage = 0 {
         didSet{
@@ -36,7 +35,7 @@ class OnBoardingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        collectionView.isHidden = true
+        //collectionView.isHidden = true
         
         setup()
         imageView.image = slides[pageControl.currentPage].images
@@ -65,8 +64,8 @@ class OnBoardingViewController: UIViewController {
     
     func setup(){
         nextButton.layer.cornerRadius = 8
-        collectionView.delegate = self
-        collectionView.dataSource = self
+        //collectionView.delegate = self
+        //collectionView.dataSource = self
         
         slides = [
             OnBoardingModel(images: UIImage(imageLiteralResourceName: "onboard1.0")),
@@ -84,14 +83,12 @@ class OnBoardingViewController: UIViewController {
             present(controller, animated: true, completion: nil)
             state.setIsNotNewUer()
 //            dismiss(animated: true, completion: nil)
-           
-            
             
         }
         else{
             currentPage += 1
             let indexPath = IndexPath(item: currentPage, section: 0)
-            collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+            //collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
             
         }
         print (currentPage)
