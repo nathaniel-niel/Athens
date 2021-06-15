@@ -58,6 +58,7 @@ class ExerciseTimer {
     }
     
     func finishTimer(){
+        timer?.invalidate()
         isTimerRunning = false
         if let delegate = delegate{
             delegate.timesUp()
