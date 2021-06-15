@@ -51,6 +51,7 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
     @IBAction func startProgram(_ sender: UIButton){
         //     tinggal masukin identifier ke page yang maurice kerjain
 //        performSegue(withIdentifier: "", sender: self)
+        currentExerciseIndex = 0
         let targetStoryboard = UIStoryboard(name: "StartProgram", bundle: nil)
         
         let vc = targetStoryboard.instantiateViewController(identifier: "StartProgram") as! StartProgramViewController

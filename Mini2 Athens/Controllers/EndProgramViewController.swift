@@ -15,7 +15,15 @@ class EndProgramViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func finishClicked(_ sender: UIButton) {
+        
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @IBAction func reanalyzeClicked(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -32,7 +32,6 @@ class restViewController: UIViewController, RestTimerDelegate {
     }
     
     func timesUp() {
-        currentExerciseIndex += 1
          let targetStoryboard = UIStoryboard(name: "StartProgram", bundle: nil)
          let vc = targetStoryboard.instantiateViewController(identifier: "StartProgram")
          navigationController?.pushViewController(vc, animated: true)
