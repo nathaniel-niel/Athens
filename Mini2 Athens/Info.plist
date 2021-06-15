@@ -8,6 +8,8 @@
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleGetInfoString</key>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -20,10 +22,17 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) Please Access to Analyze</string>
+<<<<<<< Updated upstream
+=======
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>To Save Photo or Video</string>
+>>>>>>> Stashed changes
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -38,7 +47,11 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
+<<<<<<< Updated upstream
 					<string>analyzeReport</string>
+=======
+					<string>Rest</string>
+>>>>>>> Stashed changes
 				</dict>
 			</array>
 		</dict>
@@ -48,7 +61,11 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
+<<<<<<< Updated upstream
 	<string>analyzeReport</string>
+=======
+	<string>Rest</string>
+>>>>>>> Stashed changes
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
