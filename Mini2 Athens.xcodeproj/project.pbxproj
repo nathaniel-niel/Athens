@@ -33,6 +33,7 @@
 		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
 		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
 		604CEA3126779D04002384C6 /* MovementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */; };
+		608605CC267875BD00BC1AE2 /* EndProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608605CB267875BD00BC1AE2 /* EndProgramViewController.swift */; };
 		609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609067822676453A004753A1 /* ExerciseTableViewCell.swift */; };
 		609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 609067832676453A004753A1 /* ExerciseTableViewCell.xib */; };
 		7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C7E96E22670EEEB008379D5 /* Rest.storyboard */; };
@@ -79,6 +80,7 @@
 		601A4E7626730C9100967581 /* StartProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProgramViewController.swift; sourceTree = "<group>"; };
 		601A4E7826730CC900967581 /* StartProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartProgram.storyboard; sourceTree = "<group>"; };
 		604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementCollectionViewCell.swift; sourceTree = "<group>"; };
+		608605CB267875BD00BC1AE2 /* EndProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndProgramViewController.swift; sourceTree = "<group>"; };
 		609067822676453A004753A1 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewCell.swift; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		609067832676453A004753A1 /* ExerciseTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExerciseTableViewCell.xib; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		7C7E96E22670EEEB008379D5 /* Rest.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rest.storyboard; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */,
 				C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */,
 				604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */,
+				608605CB267875BD00BC1AE2 /* EndProgramViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
+				608605CC267875BD00BC1AE2 /* EndProgramViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */,
 				2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */,

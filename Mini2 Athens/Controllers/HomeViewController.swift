@@ -32,6 +32,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //buat lanjut ke movement tutorial
+    }
     
     /*
     // MARK: - Navigation
