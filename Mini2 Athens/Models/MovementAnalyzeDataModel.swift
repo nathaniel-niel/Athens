@@ -8,9 +8,10 @@
 import Foundation
 
 struct AnalyzeMovementData {
-    var dataIndex: Int = 0
-    var recordDate: String = ""
-    var movementIconName: String = ""
-    var movementName: String = ""
-    var movementAccuracy: String = ""
+    var recordDate: Date
+    var contentIconName: String
+    var movementName: String
+    var movementAccuracy: String
+    var movementLog: [String]
+    var videoPath: String
 }
