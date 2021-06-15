@@ -11,9 +11,9 @@ class Functionality{
     
     let data = DataManipulation()
     
-    //function to get current date
-    func getCurrentDateTime() -> String{
-        let currentDate =  Date()
+    //function to convert date to string
+    func convertDateToString(currentDate: Date) -> String{
+//        let currentDate =  Date()
         let format = DateFormatter()
         format.dateStyle = .medium
         format.timeStyle = .none
