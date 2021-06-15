@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Functionality{
     
@@ -30,6 +31,10 @@ class Functionality{
         else{
             return false
         }
+    }
+    
+    func back(vc: UIViewController){
+        vc.navigationController?.popViewController(animated: true)
     }
 
 }

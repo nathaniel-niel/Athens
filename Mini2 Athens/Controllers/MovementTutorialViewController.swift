@@ -21,6 +21,7 @@ class MovementTutorialViewController: UIViewController {
     //MARK:: AVKit variables
     var playerviewController = AVPlayerViewController()
     var playerView = AVPlayer() //video representation
+    let functionality = Functionality()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupComponent()
@@ -71,6 +72,7 @@ class MovementTutorialViewController: UIViewController {
 //        let vc = TestViewController()
 //        vc.modalPresentationStyle = .fullScreen
 //        self.navigationController?.pushViewController(vc, animated: true)
+        functionality.back(vc: self)
     }
     
     

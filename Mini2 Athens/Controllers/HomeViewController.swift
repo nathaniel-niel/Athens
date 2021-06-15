@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(true, animated: false)
         movementCollectionView.dataSource = self
         movementCollectionView.delegate = self
         movementCollectionView.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: false)
@@ -34,6 +35,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //buat lanjut ke movement tutorial
+        let vc = MovementTutorialViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     /*
