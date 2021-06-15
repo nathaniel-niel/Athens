@@ -46,9 +46,9 @@ extension MyHistoryViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = table.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MyHistoryTableViewCell
-        cell.iconMovement.image = UIImage(named: data.model[indexPath.item].contentIconName)
+        cell.iconMovement.image = UIImage(named: data.model[indexPath.item].movementIconName)
         cell.movementName.text = data.model[indexPath.item].movementName
-        cell.dateLabel.text = functionality.convertDateToString(currentDate: data.model[indexPath.item].recordDate) 
+        cell.dateLabel.text = data.model[indexPath.item].recordDate
         cell.correctMovementPercentage.text = data.model[indexPath.item].movementAccuracy
         return cell
     }
