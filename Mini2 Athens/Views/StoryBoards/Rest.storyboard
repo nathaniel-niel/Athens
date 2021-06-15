@@ -56,14 +56,6 @@
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75U-lC-DbG">
-                                        <rect key="frame" x="46" y="676" width="331" height="59"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="done-btn"/>
-                                        <connections>
-                                            <action selector="doneRestClicked:" destination="TJb-iW-XBe" eventType="touchUpInside" id="Wsw-ZP-udo"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMV-Bd-iSC">
                                         <rect key="frame" x="46" y="750" width="331" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -86,6 +78,14 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75U-lC-DbG">
+                                        <rect key="frame" x="46" y="676" width="331" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="done-btn"/>
+                                        <connections>
+                                            <action selector="doneRestClicked:" destination="TJb-iW-XBe" eventType="touchUpInside" id="Wsw-ZP-udo"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.1217220202" green="0.1371256709" blue="0.1450994313" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
