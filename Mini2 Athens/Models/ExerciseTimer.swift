@@ -12,6 +12,10 @@ protocol ExerciseTimerDelegate {
     func timesUp()
 }
 
+protocol RestTimerDelegate {
+    func timesUp()
+}
+
 class ExerciseTimer {
     var duration: Int?
     var isTimerRunning: Bool?
@@ -19,6 +23,7 @@ class ExerciseTimer {
     var timerLabel: UILabel?
     var seconds: Int?
     var delegate: StartProgramViewController?
+    var restDelegate: restViewController?
     
     init(duration: Int?, timerLabel: UILabel!) {
         self.duration = duration
@@ -54,7 +59,15 @@ class ExerciseTimer {
     
     func finishTimer(){
         isTimerRunning = false
-        self.delegate?.timesUp()
+        if let delegate = delegate{
+            delegate.timesUp()
+            return
+        }
+        
+        if let delegate = restDelegate{
+            delegate.timesUp()
+            return
+        }
     }
     
     func pauseResumeTimer(){

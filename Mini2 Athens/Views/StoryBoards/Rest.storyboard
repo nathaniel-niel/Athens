@@ -63,17 +63,30 @@
                                         <rect key="frame" x="46" y="676" width="331" height="59"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="done-btn"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iVw-Pw-O0K">
-                                        <rect key="frame" x="46" y="744" width="331" height="59"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="pause-btn"/>
+                                        <connections>
+                                            <action selector="doneRestClicked:" destination="TJb-iW-XBe" eventType="touchUpInside" id="Wsw-ZP-udo"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hcv-13-pfu">
-                                        <rect key="frame" x="174" y="348" width="74" height="32"/>
+                                        <rect key="frame" x="174" y="349" width="74" height="32"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMV-Bd-iSC">
+                                        <rect key="frame" x="46" y="750" width="331" height="59"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="Secondary-btn"/>
+                                        <connections>
+                                            <action selector="pauseClicked:" destination="TJb-iW-XBe" eventType="touchUpInside" id="lgo-FB-jVx"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pause" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vDn-LH-TzH">
+                                        <rect key="frame" x="185" y="765" width="53" height="23"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                        <color key="textColor" red="1" green="0.33725490200000002" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -83,6 +96,12 @@
                         <viewLayoutGuide key="safeArea" id="Grc-HR-A1e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="nextExerciseLabel" destination="fsn-uI-7Wn" id="MYx-tg-guj"/>
+                        <outlet property="pauseResumeLabel" destination="vDn-LH-TzH" id="KK0-DN-pow"/>
+                        <outlet property="progressLabel" destination="1n3-wT-qSz" id="bf3-X3-Oty"/>
+                        <outlet property="timerLabel" destination="hcv-13-pfu" id="0SM-Fh-GNC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L51-EU-VFb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,8 +110,8 @@
     </scenes>
     <resources>
         <image name="Rest-1" width="183" height="183"/>
+        <image name="Secondary-btn" width="331" height="59"/>
         <image name="done-btn" width="331" height="59"/>
-        <image name="pause-btn" width="331" height="59"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

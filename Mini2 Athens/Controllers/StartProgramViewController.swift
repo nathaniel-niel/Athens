@@ -72,12 +72,18 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         }
     }
     
-    func timesUp() {
-        //Implement later
-       currentExerciseIndex += 1
-        let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
-        let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
-        navigationController?.pushViewController(vc, animated: true)
+//    func timesUp() {
+//       currentExerciseIndex += 1
+//        let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
+//        let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
+//        navigationController?.pushViewController(vc, animated: true)
+//    }
+    
+    func timesUp(){
+        currentExerciseIndex += 1
+         let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
+         let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
+         navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func pauseClicked(_ sender: UIButton) {
@@ -92,7 +98,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     }
     
     @IBAction func doneClicked(_ sender: UIButton) {
-        timesUp()
+        exerciseTimer?.finishTimer()
     }
     
     
@@ -108,3 +114,5 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     */
 
 }
+
+
