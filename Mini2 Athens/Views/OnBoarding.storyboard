@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,9 +20,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-f3-jJC">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qde-Ti-gHz">
-                                <rect key="frame" x="47" y="742" width="297" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qde-Ti-gHz">
+                                <rect key="frame" x="47" y="767" width="296" height="30"/>
                                 <state key="normal" title="Next">
                                     <color key="titleColor" name="AccentColor"/>
                                 </state>
@@ -30,9 +29,8 @@
                                     <action selector="tappedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VKH-nm-fPu"/>
                                 </connections>
                             </button>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-Yz-WeB">
-                                <rect key="frame" x="134" y="723" width="123" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-Yz-WeB">
+                                <rect key="frame" x="144" y="724.66666666666663" width="102.33333333333331" height="26.333333333333371"/>
                                 <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
                                 <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
@@ -43,7 +41,12 @@
                             <constraint firstItem="hh7-f3-jJC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3Oe-Qs-mgd"/>
                             <constraint firstAttribute="bottom" secondItem="hh7-f3-jJC" secondAttribute="bottom" id="7dV-Jl-43M"/>
                             <constraint firstItem="hh7-f3-jJC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="9Gk-a3-uJD"/>
+                            <constraint firstItem="nEl-Yz-WeB" firstAttribute="centerX" secondItem="hh7-f3-jJC" secondAttribute="centerX" id="B5x-4t-0B7"/>
                             <constraint firstItem="hh7-f3-jJC" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="BAz-I0-gGL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nEl-Yz-WeB" secondAttribute="bottom" constant="59" id="Irg-aE-LVm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qde-Ti-gHz" secondAttribute="trailing" constant="47" id="SWN-R8-4pb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Qde-Ti-gHz" secondAttribute="bottom" constant="13" id="Z5G-em-tgr"/>
+                            <constraint firstItem="Qde-Ti-gHz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="47" id="nja-RH-FYW"/>
                         </constraints>
                     </view>
                     <connections>
