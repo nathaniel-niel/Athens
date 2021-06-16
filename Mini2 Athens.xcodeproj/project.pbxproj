@@ -17,6 +17,8 @@
 		2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */; };
 		2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */; };
 		2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */; };
+		2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4E973226799D6C0021C4A1 /* Report.storyboard */; };
+		2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E973426799D880021C4A1 /* ReportViewController.swift */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73257B26773922003B53C1 /* DataManipulation.swift */; };
 		2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D73257D26775D60003B53C1 /* MyHistory.storyboard */; };
@@ -68,6 +70,8 @@
 		2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MovementTutorialViewController.xib; path = ../MovementTutorialViewController.xib; sourceTree = "<group>"; };
 		2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCompletedViewController.swift; sourceTree = "<group>"; };
 		2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgramCompletedViewController.xib; path = ../../Controllers/ProgramCompletedViewController.xib; sourceTree = "<group>"; };
+		2D4E973226799D6C0021C4A1 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+		2D4E973426799D880021C4A1 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D73257B26773922003B53C1 /* DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulation.swift; sourceTree = "<group>"; };
 		2D73257D26775D60003B53C1 /* MyHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyHistory.storyboard; sourceTree = "<group>"; };
@@ -172,6 +176,7 @@
 				76F2C97926782ED300AA1613 /* OnBoardingCollectionViewCell.swift */,
 				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
 				76F2C9812678307400AA1613 /* OnBoardingModel.swift */,
+				2D4E973426799D880021C4A1 /* ReportViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				2D73257D26775D60003B53C1 /* MyHistory.storyboard */,
 				601A4E7826730CC900967581 /* StartProgram.storyboard */,
 				C286C3502671F9FC00416A35 /* exerciseProgram.storyboard */,
+				2D4E973226799D6C0021C4A1 /* Report.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -321,6 +327,7 @@
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */,
 				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
+				2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
 				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
@@ -344,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F2C97A26782ED300AA1613 /* OnBoardingCollectionViewCell.swift in Sources */,
+				2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */,
 				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				608605CC267875BD00BC1AE2 /* EndProgramViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
