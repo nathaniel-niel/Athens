@@ -4,102 +4,9 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Exercise Program List View Controller-->
-        <scene sceneID="s0d-6b-0kx">
-            <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ExerciseProgramListViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fir-K3-hz8" userLabel="Exercise List Table View">
-                                <rect key="frame" x="0.0" y="44" width="390" height="800"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vXW-sp-2LD">
-                                    <rect key="frame" x="0.0" y="169.66666828502309" width="390" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" red="0.98454827069999995" green="0.33447787169999998" blue="0.104937382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="tintColor" red="0.98454827069999995" green="0.33447787169999998" blue="0.104937382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <state key="normal" title="Start">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="startProgram:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uLF-ha-Tul"/>
-                                    </connections>
-                                </button>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="exerciseListIdentifier" rowHeight="121" id="9JI-aT-Ue0" customClass="ExerciseProgramListTableViewCell" customModule="Mini2_Athens" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="121"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9JI-aT-Ue0" id="tXk-Hb-wvr">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="121"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KCe-21-sKv" userLabel="EView">
-                                                    <rect key="frame" x="26" y="7" width="344" height="103"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="zyE-5x-1GJ">
-                                                            <rect key="frame" x="5" y="3" width="104" height="95"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        </imageView>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="ND2-7Q-8uP">
-                                                            <rect key="frame" x="112" y="8" width="64" height="67"/>
-                                                            <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FpS-8g-8Lb">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="64" height="30"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag2-0k-3OU">
-                                                                    <rect key="frame" x="0.0" y="44" width="64" height="23"/>
-                                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                                                    <nil key="textColor"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                    <color key="backgroundColor" red="0.98454827069999995" green="0.33447787169999998" blue="0.104937382" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </view>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="eView" destination="KCe-21-sKv" id="jhO-va-BSs"/>
-                                            <outlet property="exerciseProgramImageView" destination="zyE-5x-1GJ" id="jnz-j0-gdw"/>
-                                            <outlet property="nameLabel" destination="FpS-8g-8Lb" id="ogH-gg-xXJ"/>
-                                            <outlet property="typeLabel" destination="ag2-0k-3OU" id="HZw-ta-Rpv"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Fir-K3-hz8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3GS-dC-shS"/>
-                            <constraint firstAttribute="bottom" secondItem="Fir-K3-hz8" secondAttribute="bottom" id="63V-0N-20R"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fir-K3-hz8" secondAttribute="trailing" id="eUB-UV-U2x"/>
-                            <constraint firstItem="Fir-K3-hz8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hkZ-ho-f8g"/>
-                            <constraint firstItem="Fir-K3-hz8" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="kkv-Q2-LcJ"/>
-                            <constraint firstItem="Fir-K3-hz8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="klK-wg-Lht"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="5JG-DI-oA0"/>
-                    <connections>
-                        <outlet property="exerciseProgramListTableView" destination="Fir-K3-hz8" id="40h-bX-rFM"/>
-                        <outlet property="startButton" destination="vXW-sp-2LD" id="GaD-cy-dHq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="38" y="1073"/>
-        </scene>
         <!--Exercise Program List View Controller-->
         <scene sceneID="PQu-kM-4ja">
             <objects>
@@ -204,11 +111,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1" width="195" height="130"/>
         <image name="Start Exercise" width="520" height="82"/>
         <image name="james-barr-7U0yuZcS5yA-unsplash" width="390" height="235"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

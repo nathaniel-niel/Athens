@@ -21,12 +21,13 @@ class EndProgramViewController: UIViewController {
         if !setFinished(){
             messageLabel.text = "You completed Set \(currentSet), complete \(pushUpSet-currentSet) more set"
             
-            primaryButtonLabel.text = "Finish Exercise"
-            secondaryButtonLabel.text = "Re-analyze movement"
-        }else{
-            messageLabel.text = "You completed the program."
             primaryButtonLabel.text = "Continue next set"
             secondaryButtonLabel.text = "Done exercise"
+        }else{
+            messageLabel.text = "You completed the program."
+            
+            primaryButtonLabel.text = "Finish Exercise"
+            secondaryButtonLabel.text = "Re-analyze movement"
         }
         // Do any additional setup after loading the view.
     }

@@ -189,16 +189,14 @@
                                     <action selector="secondaryClicked:" destination="bHk-MZ-Pvl" eventType="touchUpInside" id="mBK-Gk-lbB"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finish Exercise " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXv-kQ-qqB">
-                                <rect key="frame" x="134" y="688" width="127" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finish Exercise " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXv-kQ-qqB">
+                                <rect key="frame" x="30" y="688" width="331" height="22"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Re-analyze Movement" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-X8-fmk">
-                                <rect key="frame" x="110" y="756" width="177" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Re-analyze Movement" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTe-X8-fmk">
+                                <rect key="frame" x="30" y="756" width="331" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
@@ -210,14 +208,20 @@
                             <constraint firstItem="GxX-OH-RCa" firstAttribute="leading" secondItem="lch-Dp-U7h" secondAttribute="leading" constant="30" id="0wp-gJ-en0"/>
                             <constraint firstItem="lch-Dp-U7h" firstAttribute="bottom" secondItem="5ge-uJ-FJ7" secondAttribute="bottom" constant="14" id="65Q-aM-Jh2"/>
                             <constraint firstItem="1Zl-0f-CCU" firstAttribute="leading" secondItem="lch-Dp-U7h" secondAttribute="leading" constant="46" id="6gn-Zh-nFt"/>
+                            <constraint firstItem="GXv-kQ-qqB" firstAttribute="leading" secondItem="GxX-OH-RCa" secondAttribute="leading" id="B93-nd-SDW"/>
+                            <constraint firstItem="GXv-kQ-qqB" firstAttribute="trailing" secondItem="GxX-OH-RCa" secondAttribute="trailing" id="Cyq-Pj-MHY"/>
                             <constraint firstItem="5ge-uJ-FJ7" firstAttribute="leading" secondItem="lch-Dp-U7h" secondAttribute="leading" constant="30" id="D4Q-hc-W1U"/>
                             <constraint firstItem="UHg-Pg-Ozr" firstAttribute="top" secondItem="ZcO-dh-Aue" secondAttribute="top" id="LBM-8f-XGu"/>
+                            <constraint firstItem="GxX-OH-RCa" firstAttribute="top" secondItem="GXv-kQ-qqB" secondAttribute="bottom" constant="-40" id="LCd-Gi-odi"/>
                             <constraint firstItem="lch-Dp-U7h" firstAttribute="trailing" secondItem="5ge-uJ-FJ7" secondAttribute="trailing" constant="29" id="LY7-PD-qUA"/>
                             <constraint firstItem="GxX-OH-RCa" firstAttribute="top" secondItem="1Zl-0f-CCU" secondAttribute="bottom" constant="40" id="No7-h2-DoQ"/>
                             <constraint firstItem="UHg-Pg-Ozr" firstAttribute="trailing" secondItem="ZcO-dh-Aue" secondAttribute="trailing" id="OaR-RV-VdB"/>
                             <constraint firstItem="5ge-uJ-FJ7" firstAttribute="top" secondItem="GxX-OH-RCa" secondAttribute="bottom" constant="8" symbolic="YES" id="R6z-W1-FEL"/>
                             <constraint firstItem="lch-Dp-U7h" firstAttribute="trailing" secondItem="GxX-OH-RCa" secondAttribute="trailing" constant="29" id="eMn-tY-ZGJ"/>
                             <constraint firstItem="1Zl-0f-CCU" firstAttribute="top" secondItem="lch-Dp-U7h" secondAttribute="top" constant="84" id="g1B-wU-qKP"/>
+                            <constraint firstItem="eTe-X8-fmk" firstAttribute="top" secondItem="5ge-uJ-FJ7" secondAttribute="bottom" constant="-40" id="njT-5Q-TmQ"/>
+                            <constraint firstItem="eTe-X8-fmk" firstAttribute="trailing" secondItem="5ge-uJ-FJ7" secondAttribute="trailing" id="ny2-nc-7Qq"/>
+                            <constraint firstItem="eTe-X8-fmk" firstAttribute="leading" secondItem="5ge-uJ-FJ7" secondAttribute="leading" id="t3L-I2-Pu3"/>
                             <constraint firstAttribute="bottom" secondItem="UHg-Pg-Ozr" secondAttribute="bottom" id="vBr-np-1ZO"/>
                             <constraint firstItem="UHg-Pg-Ozr" firstAttribute="leading" secondItem="ZcO-dh-Aue" secondAttribute="leading" id="w9Q-KM-VXo"/>
                             <constraint firstItem="lch-Dp-U7h" firstAttribute="trailing" secondItem="1Zl-0f-CCU" secondAttribute="trailing" constant="46" id="xZM-RR-c9z"/>
