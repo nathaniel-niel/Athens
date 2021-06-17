@@ -53,4 +53,20 @@ extension MyHistoryViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let vc = DetailViewController()
+        
+        vc.movementName = data.model[indexPath.item].movementName
+        vc.recordDate = functionality.convertDateToString(currentDate: data.model[indexPath.item].recordDate)
+        vc.accuracy = data.model[indexPath.item].movementAccuracy
+        vc.movementLog = data.model[indexPath.item].movementLog
+        vc.videoName = data.model[indexPath.item].videoPath
+        
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
 }

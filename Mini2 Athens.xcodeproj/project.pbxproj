@@ -12,11 +12,12 @@
 		2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */; };
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
-		2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBDA1266E306400C90A28 /* MainViewController.swift */; };
 		2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */; };
 		2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */; };
 		2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */; };
 		2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */; };
+		2D4C1E25267AE4AE00299E73 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */; };
+		2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */; };
 		2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4E973226799D6C0021C4A1 /* Report.storyboard */; };
 		2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E973426799D880021C4A1 /* ReportViewController.swift */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
@@ -65,11 +66,12 @@
 		2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D0BBDA1266E306400C90A28 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTutorialViewController.swift; sourceTree = "<group>"; };
 		2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MovementTutorialViewController.xib; path = ../MovementTutorialViewController.xib; sourceTree = "<group>"; };
 		2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCompletedViewController.swift; sourceTree = "<group>"; };
 		2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgramCompletedViewController.xib; path = ../../Controllers/ProgramCompletedViewController.xib; sourceTree = "<group>"; };
+		2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2D4E973226799D6C0021C4A1 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2D4E973426799D880021C4A1 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
@@ -159,7 +161,6 @@
 			children = (
 				6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */,
 				2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */,
-				2D0BBDA1266E306400C90A28 /* MainViewController.swift */,
 				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
 				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
@@ -177,6 +178,7 @@
 				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
 				76F2C9812678307400AA1613 /* OnBoardingModel.swift */,
 				2D4E973426799D880021C4A1 /* ReportViewController.swift */,
+				2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -212,6 +214,7 @@
 		2D7574DB2671C9AF00CB970C /* XIB */ = {
 			isa = PBXGroup;
 			children = (
+				2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */,
 				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
 				2D963CDF267652EE00838C51 /* Cell */,
 				2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */,
@@ -336,6 +339,7 @@
 				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
 				609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
+				2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */,
 				2DCB6233267324890040A5E3 /* test.storyboard in Resources */,
 				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
 				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
@@ -357,6 +361,7 @@
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */,
 				2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */,
+				2D4C1E25267AE4AE00299E73 /* DetailViewController.swift in Sources */,
 				2D963CE22676530F00838C51 /* MyHistoryTableViewCell.swift in Sources */,
 				2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */,
 				6000BB11267215460083F617 /* HomeViewController.swift in Sources */,
@@ -373,7 +378,6 @@
 				609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */,
 				B8389026266E69AB00A293A6 /* CameraView.swift in Sources */,
 				76F2C9822678307400AA1613 /* OnBoardingModel.swift in Sources */,
-				2D0BBDA2266E306400C90A28 /* MainViewController.swift in Sources */,
 				B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */,
 				2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */,
 				6000BB0F267213B40083F617 /* WorkoutCollectionViewCell.swift in Sources */,
