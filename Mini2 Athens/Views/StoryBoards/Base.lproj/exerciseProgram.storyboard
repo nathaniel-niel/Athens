@@ -176,6 +176,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="4gv-e6-nlX"/>
                     <connections>
+                        <outlet property="descriptionLabel" destination="8lH-Y8-8dV" id="3Bq-jP-qYp"/>
                         <outlet property="exerciseProgramListTableView" destination="7KG-rE-iZe" id="hzo-Zu-Xj6"/>
                     </connections>
                 </viewController>

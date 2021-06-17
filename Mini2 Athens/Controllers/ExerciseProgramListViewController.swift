@@ -12,11 +12,12 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
     
     
     @IBOutlet weak var exerciseProgramListTableView: UITableView!
+    @IBOutlet weak var descriptionLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        descriptionLabel.text = pushUpDescription
         exerciseProgramListTableView.dataSource = self
         exerciseProgramListTableView.delegate = self
         let nib = UINib(nibName: "\(ExerciseTableViewCell.self)", bundle: nil)

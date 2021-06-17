@@ -9,9 +9,12 @@ import UIKit
 
 class EndProgramViewController: UIViewController {
 
+    @IBOutlet weak var box: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        box.layer.cornerRadius = 15
+        box.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     

@@ -68,6 +68,7 @@ class Exercise {
 }
 
 var currentExerciseIndex = 0
+let currentSet = 1
 
 let exercises = [
     Exercise(name: "Negative", age: 1, type: .exercise1),
@@ -77,3 +78,6 @@ let exercises = [
     Exercise(name: "Knee", age: 1, type: .exercise5),
     Exercise(name: "Half", age: 1, type: .exercise6),
 ]
+
+let pushUpDescription = "10 minutes | No equipment | 3 Sets"
+let pushUpSet = 3
