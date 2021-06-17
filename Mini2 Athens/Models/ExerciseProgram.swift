@@ -68,7 +68,7 @@ class Exercise {
 }
 
 var currentExerciseIndex = 0
-let currentSet = 1
+var currentSet = 1
 
 let exercises = [
     Exercise(name: "Negative", age: 1, type: .pushUps),
@@ -80,4 +80,8 @@ let exercises = [
 ]
 
 let pushUpDescription = "10 minutes | No equipment | 3 Sets"
-let pushUpSet = 3
+var pushUpSet = 3
+
+func setFinished() -> Bool {
+    return currentSet == pushUpSet
+}

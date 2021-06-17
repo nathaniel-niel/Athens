@@ -176,7 +176,7 @@
                                 <rect key="frame" x="30" y="670" width="331" height="59"/>
                                 <state key="normal" image="primary-btn"/>
                                 <connections>
-                                    <action selector="finishClicked:" destination="bHk-MZ-Pvl" eventType="touchUpInside" id="fI9-jZ-fF2"/>
+                                    <action selector="primaryClicked:" destination="bHk-MZ-Pvl" eventType="touchUpInside" id="AdO-Px-et3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ge-uJ-FJ7">
@@ -186,7 +186,7 @@
                                 </constraints>
                                 <state key="normal" image="Secondary-btn"/>
                                 <connections>
-                                    <action selector="reanalyzeClicked:" destination="bHk-MZ-Pvl" eventType="touchUpInside" id="wqZ-Ey-2cq"/>
+                                    <action selector="secondaryClicked:" destination="bHk-MZ-Pvl" eventType="touchUpInside" id="mBK-Gk-lbB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Finish Exercise " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXv-kQ-qqB">
@@ -225,6 +225,9 @@
                     </view>
                     <connections>
                         <outlet property="box" destination="1Zl-0f-CCU" id="7z4-3k-jme"/>
+                        <outlet property="messageLabel" destination="CHU-kw-21Q" id="N5z-tm-v25"/>
+                        <outlet property="primaryButtonLabel" destination="GXv-kQ-qqB" id="B0b-YQ-DdM"/>
+                        <outlet property="secondaryButtonLabel" destination="eTe-X8-fmk" id="omD-p2-LGS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qtd-Ik-mAu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

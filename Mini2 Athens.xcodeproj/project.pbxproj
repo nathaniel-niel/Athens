@@ -171,7 +171,6 @@
 				2D963CDC26764F3B00838C51 /* MyHistoryViewController.swift */,
 				6000BB10267215460083F617 /* HomeViewController.swift */,
 				601A4E7626730C9100967581 /* StartProgramViewController.swift */,
-				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
 				C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */,
 				C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */,
 				604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */,
@@ -197,6 +196,7 @@
 		2D0BBDA0266E301400C90A28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
 				6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */,
 				6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */,
 				2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */,
