@@ -37,6 +37,7 @@
 		6000BB11267215460083F617 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB10267215460083F617 /* HomeViewController.swift */; };
 		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
 		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
+		604370B8267B01C3009992E1 /* Squat Sequence.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 604370B7267B01C3009992E1 /* Squat Sequence.mp4 */; };
 		604CEA3126779D04002384C6 /* MovementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */; };
 		608605CC267875BD00BC1AE2 /* EndProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608605CB267875BD00BC1AE2 /* EndProgramViewController.swift */; };
 		609067842676453A004753A1 /* ExerciseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609067822676453A004753A1 /* ExerciseTableViewCell.swift */; };
@@ -91,6 +92,7 @@
 		6000BB10267215460083F617 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		601A4E7626730C9100967581 /* StartProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProgramViewController.swift; sourceTree = "<group>"; };
 		601A4E7826730CC900967581 /* StartProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartProgram.storyboard; sourceTree = "<group>"; };
+		604370B7267B01C3009992E1 /* Squat Sequence.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Squat Sequence.mp4"; path = "../../../Dropbox (DeveloperAcademy-ID)/Athens - Mini Challenge 2/Design/GIF/squat-sequence copy/Squat Sequence.mp4"; sourceTree = "<group>"; };
 		604CEA3026779D04002384C6 /* MovementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementCollectionViewCell.swift; sourceTree = "<group>"; };
 		608605CB267875BD00BC1AE2 /* EndProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndProgramViewController.swift; sourceTree = "<group>"; };
 		609067822676453A004753A1 /* ExerciseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewCell.swift; path = "Mini2 Athens/Views/XIB/ExerciseTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
@@ -206,6 +208,7 @@
 		2D6FFA7F2670899F009C1438 /* video-asset */ = {
 			isa = PBXGroup;
 			children = (
+				604370B7267B01C3009992E1 /* Squat Sequence.mp4 */,
 				2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */,
 			);
 			path = "video-asset";
@@ -344,6 +347,7 @@
 				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
 				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
 				2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */,
+				604370B8267B01C3009992E1 /* Squat Sequence.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

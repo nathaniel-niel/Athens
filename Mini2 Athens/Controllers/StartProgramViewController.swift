@@ -21,8 +21,6 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     @IBOutlet weak var progressLabel: UILabel!
     
     
-    var playerLooper: AVPlayerLooper!
-    var queuePlayer: AVQueuePlayer!
     var player: AVPlayer!
     var playerLayer: AVPlayerLayer!
     
@@ -71,13 +69,6 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
             self.playVideo()
         }
     }
-    
-//    func timesUp() {
-//       currentExerciseIndex += 1
-//        let targetStoryboard = UIStoryboard(name: "Rest", bundle: nil)
-//        let vc = targetStoryboard.instantiateViewController(identifier: "Rest")
-//        navigationController?.pushViewController(vc, animated: true)
-//    }
     
     func timesUp(){
         currentExerciseIndex += 1
