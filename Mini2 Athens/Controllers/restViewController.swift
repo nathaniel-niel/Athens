@@ -33,7 +33,7 @@ class restViewController: UIViewController, RestTimerDelegate {
         super.viewDidLoad()
         progressLabel.text = "\(currentExerciseIndex+1)/\(exercises.count)"
         
-        exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
+        exerciseTimer = ExerciseTimer(duration: 30, timerLabel: timerLabel)
         
         exerciseTimer?.restDelegate = self
         exerciseTimer?.runTimer()
