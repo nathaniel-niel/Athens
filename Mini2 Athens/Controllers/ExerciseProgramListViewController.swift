@@ -60,6 +60,7 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
         
         let vc = targetStoryboard.instantiateViewController(identifier: "StartProgram") as! StartProgramViewController
     
+        MusicHelper.sharedHelper.playBackgroundMusic()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

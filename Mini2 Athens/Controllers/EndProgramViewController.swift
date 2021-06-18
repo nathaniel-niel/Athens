@@ -43,14 +43,17 @@ class EndProgramViewController: UIViewController {
             navigationController?.pushViewController(vc, animated: true)
             return
         }
-        
+        MusicHelper.sharedHelper.stopBackgroundMusic()
         navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func secondaryClicked(_ sender: Any) {
+        MusicHelper.sharedHelper.stopBackgroundMusic()
+        //if done exercise
         if !setFinished(){
             navigationController?.popToRootViewController(animated: true)
         }
+        //if reanalyze exercise
     }
     
     /*
