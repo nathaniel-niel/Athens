@@ -36,5 +36,9 @@ class AnalyzeReportViewController: UIViewController {
         movementBox.layer.shadowOffset = .zero
         movementBox.layer.shadowOpacity = 0.3
     }
-  
+    @IBAction func retryAnalyze(_ sender: Any) {
+        print("pressed")
+        performSegue(withIdentifier: "retryAnalyze", sender: self)
+    }
+    
 }

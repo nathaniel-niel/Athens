@@ -92,6 +92,8 @@ class ReportViewController: UIViewController {
     }
     
     @IBAction func didRetryAnalyzeMovementTapped(_ sender: Any) {
+        performSegue(withIdentifier: "retryAnalyze", sender: self)
+        
     }
     
     @IBAction func didAnalyzeAnotherMovementTapped(_ sender: Any) {

@@ -138,6 +138,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAK-6A-d50">
                                         <rect key="frame" x="0.0" y="74" width="331" height="59"/>
                                         <state key="normal" image="retry-btn 2"/>
+                                        <connections>
+                                            <action selector="retryAnalyze:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ij8-Ye-WZU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-En-nCR">
                                         <rect key="frame" x="0.0" y="148" width="331" height="59"/>
@@ -204,11 +207,22 @@
                         <outlet property="movementLog" destination="Lx8-Gh-OrW" id="D3P-IA-mtt"/>
                         <outlet property="reportBox" destination="2Ee-QQ-bbC" id="Clp-jf-ohe"/>
                         <outlet property="retryButton" destination="vAK-6A-d50" id="Ieg-Cu-BnF"/>
+                        <segue destination="b77-ep-Mva" kind="show" identifier="retryAnalyze" id="XvQ-DL-dLt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="105.79710144927537" y="88.392857142857139"/>
+        </scene>
+        <!--movementAnalyzer-->
+        <scene sceneID="HEO-sh-3Cv">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="movementAnalyzer" storyboardName="movementAnalyzer" referencedIdentifier="movementAnalyzer" id="b77-ep-Mva" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nl8-82-Gfk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="91w-mw-Xzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="754" y="284"/>
         </scene>
     </scenes>
     <resources>

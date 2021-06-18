@@ -248,11 +248,22 @@
                         <outlet property="recordDateLabel" destination="JwI-TL-ujM" id="Lvv-AM-06e"/>
                         <outlet property="retryAnalyzeButton" destination="7fY-wZ-m1O" id="VYW-rL-3EC"/>
                         <outlet property="suggestedExerciseButton" destination="DgL-Qq-E0J" id="NPk-79-A4r"/>
+                        <segue destination="lrA-sf-W7X" kind="show" identifier="retryAnalyze" id="UPd-Wk-tkn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-587.69230769230762" y="-46.208530805687204"/>
+        </scene>
+        <!--movementAnalyzer-->
+        <scene sceneID="Zh5-h6-Ct0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="movementAnalyzer" id="lrA-sf-W7X" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="SlN-Zw-KYI"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNL-Wy-9HL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="80" y="-8"/>
         </scene>
     </scenes>
     <resources>
