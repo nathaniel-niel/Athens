@@ -40,7 +40,9 @@ struct bodyPoint{
 }
 class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate, RPPreviewViewControllerDelegate,AVSpeechSynthesizerDelegate {
     @IBOutlet weak var recordButton: UIButton!
-
+    @IBOutlet weak var angleButton: UIButton!
+    @IBOutlet weak var cameraFlipButton: UIButton!
+    
     private var cameraView: CameraView { view as! CameraView }
     private let videoDataOutputQueue = DispatchQueue(label: "CameraFeedDataOutput", qos: .userInteractive)
     private let humanBodyPose = VNDetectHumanBodyPoseRequest()
@@ -66,6 +68,10 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     var isDown: Bool = false
     var isMoving: Bool = false
     var isMistake: Bool = false
+    var isWorkoutStarted = false
+    var selectedMovement: workoutType = .pushup
+    var videoPath: String = ""
+    var report: AnalyzeMovementData = AnalyzeMovementData()
     
     var rightWrist: CGPoint = CGPoint()
     var rightElbow: CGPoint = CGPoint()
@@ -107,6 +113,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     var currentVideoDevice: AVCaptureDevice!
     override func viewDidLoad() {
         super.viewDidLoad()
+        askScreenRecordPermission()
         rightBodyLabel = [rightAnkleLabel,rightKneeLabel,rightHipLabel,rightShoulderLabel,rightElbowLabel,rightWirstLabel]
         leftBodyLabel = [LeftAnkleLabel,leftKneeLabel,leftHipLabel,leftShoulderLabel,leftElbowLabel,leftWristLabel]
         hideAllLabel()
@@ -299,7 +306,10 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         switch currentWorkout {
         case .up:
             isUp = true
-            
+            if !isWorkoutStarted{
+                isWorkoutStarted = true
+                recordScreen()
+            }
             if isMoving{
                 if moveLog.count > 2 {
                     if(moveLog.last! == "Moving" && moveLog[moveLog.count-2] == "Down Position Right!"){
@@ -494,7 +504,26 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             return
         }
     }
+    func generateReport(){
+        report.recordDate = Date()
+        report.movementLog = movementLog
+        report.videoPath = videoPath
+        report.movementAccuracy = "\((correctPushUpCounter/totalPushUpCounter)*100)"
+        switch selectedMovement {
+        case .plank:
+            report.contentIconName = "plank"
+            report.movementName = "plank"
+        case .pushup:
+            report.contentIconName = "pushup"
+            report.movementName = "pushup"
+        case .squad:
+            report.contentIconName = "squad"
+            report.movementName = "squad"
+        }
 
+        let manipulator = DataManipulation()
+        manipulator.createNewData(recordDate: report.recordDate, contentIconName: report.contentIconName, movementName: report.movementName, movementAccuracy: report.movementAccuracy, movementLog: report.movementLog, videoPath: report.videoPath)
+    }
     
     func drawHumanBodyPose(direction: bodyDirection){
         lastPeopleSeen = Date()
@@ -516,6 +545,12 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         if Date().timeIntervalSince(lastPeopleSeen) > 1 {
             cameraView.showPoints([], rightPoints: [], color: .clear, direction: .front)
             hideAllLabel()
+            if(isWorkoutStarted){
+                isWorkoutStarted = false
+                recordScreen()
+                generateReport()
+                performSegue(withIdentifier: "goToAnalyzeReport", sender: self)
+            }
         }
 //        movementLogLabel.text = String("Correct Pushup: \(correctPushUpCounter)\nAll Pushup: \(totalPushUpCounter)")
 //        for log in movementLog{
@@ -577,7 +612,11 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
            
         }
     }
+    func askScreenRecordPermission(){
+        //screenRecorder.startRecording(handler: nil)
+    }
     func recordScreen(){
+
         if screenRecorder.isRecording {
             let savePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             let filePath = savePath[0].appendingPathComponent("\(Date()).mp4")
@@ -586,9 +625,16 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
                     return
                 }
                 UISaveVideoAtPathToSavedPhotosAlbum(filePath.path, nil, nil, nil)
+                self.videoPath = filePath.path
             }
+            recordButton.isHidden = false
+            cameraFlipButton.isHidden = false
+            angleButton.isHidden = false
             recordButton.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
         }else{
+            recordButton.isHidden = true
+            cameraFlipButton.isHidden = true
+            angleButton.isHidden = true
             self.recordButton.setImage(UIImage(systemName: "stop.circle"), for: .normal)
             screenRecorder.startRecording { (error) in
                 if let error = error{
@@ -725,6 +771,13 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     }
     func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
         dismiss(animated: true, completion: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToAnalyzeReport"){
+            let targetVC = segue.destination as! ReportViewController
+            targetVC.dataToDisplay = report
+        }
     }
     @IBAction func switchCamera(_ sender: Any){
         if(currentVideoDevice.position == .back){

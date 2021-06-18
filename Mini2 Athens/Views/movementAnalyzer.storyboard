@@ -169,6 +169,8 @@
                     </view>
                     <connections>
                         <outlet property="LeftAnkleLabel" destination="o0v-BO-iui" id="uf5-cw-ECp"/>
+                        <outlet property="angleButton" destination="VhC-fK-eQW" id="Hyy-nX-Q0z"/>
+                        <outlet property="cameraFlipButton" destination="6Rl-bd-6kL" id="G6H-Dr-jNh"/>
                         <outlet property="leftElbowLabel" destination="3l3-me-SeT" id="aUP-T6-hma"/>
                         <outlet property="leftHipLabel" destination="sEQ-IJ-o3b" id="Kzf-z4-uJV"/>
                         <outlet property="leftKneeLabel" destination="1kP-bq-hJu" id="cYL-uX-Vyg"/>
@@ -181,11 +183,22 @@
                         <outlet property="rightKneeLabel" destination="lpg-br-vYG" id="acQ-Bc-kS9"/>
                         <outlet property="rightShoulderLabel" destination="dL5-Nh-z1v" id="42F-Yz-AXk"/>
                         <outlet property="rightWirstLabel" destination="20w-ng-Q0p" id="YDT-ak-vRm"/>
+                        <segue destination="v9g-u2-p8z" kind="show" identifier="goToAnalyzeReport" id="2L8-6j-7Kf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+        </scene>
+        <!--Report-->
+        <scene sceneID="M8s-TO-TJc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Report" id="v9g-u2-p8z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LmG-1a-eL4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRa-ri-E0I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="99"/>
         </scene>
     </scenes>
     <resources>

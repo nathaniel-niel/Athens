@@ -15,9 +15,10 @@ class AnalyzeReportViewController: UIViewController {
     @IBOutlet weak var analyzeButton: UIButton!
     @IBOutlet weak var exerciseButton: UIButton!
     @IBOutlet weak var movementBox: UIView!
+    var dataToDisplay: AnalyzeData!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
