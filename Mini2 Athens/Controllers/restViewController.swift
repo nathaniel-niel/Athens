@@ -33,11 +33,15 @@ class restViewController: UIViewController, RestTimerDelegate {
         super.viewDidLoad()
         progressLabel.text = "\(currentExerciseIndex+1)/\(exercises.count)"
         
-        exerciseTimer = ExerciseTimer(duration: 30, timerLabel: timerLabel)
+        if newSetStarted(){
+            exerciseTimer = ExerciseTimer(duration: 60, timerLabel: timerLabel)
+        }else{
+            exerciseTimer = ExerciseTimer(duration: 30, timerLabel: timerLabel)
+        }
         
         exerciseTimer?.restDelegate = self
         exerciseTimer?.runTimer()
-        nextExerciseLabel.text = exercises[currentExerciseIndex].name
+        nextExerciseLabel.text = exercises[currentExerciseIndex].getLabel()
     }
     
     func timesUp() {

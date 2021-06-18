@@ -37,7 +37,8 @@ class EndProgramViewController: UIViewController {
         if !setFinished(){
             currentSet += 1
             currentExerciseIndex = 0
-            guard let vc = storyboard?.instantiateViewController(identifier: "StartProgram") else { return }
+            let sb = UIStoryboard(name: "Rest", bundle: nil)
+            let vc = sb.instantiateViewController(identifier: "Rest")
             
             navigationController?.pushViewController(vc, animated: true)
             return

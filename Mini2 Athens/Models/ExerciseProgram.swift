@@ -97,12 +97,19 @@ class Exercise {
     let id: String = UUID().uuidString
     var name: String?
     var description: String?
-    var type: ExerciseType?
+    var type: ExerciseType
     
-    init(name: String?, description: String? = nil, type: ExerciseType) {
-        self.name = name
-        self.description = description
+//    init(name: String?, description: String? = nil, type: ExerciseType) {
+//        self.name = name
+//        self.description = description
+//        self.type = type
+//    }
+    init(type: ExerciseType) {
         self.type = type
+    }
+    
+    func getLabel() -> String{
+        return "\(type.rawValue) \(type.getVolume())x"
     }
 }
 
@@ -110,12 +117,19 @@ var currentExerciseIndex = 0
 var currentSet = 1
 
 let exercises = [
-    Exercise(name: "Negative", type: .pushUps),
-    Exercise(name: "TableTop", type: .tableTop),
-    Exercise(name: "Incline", type: .incline),
-    Exercise(name: "Wall", type: .wall),
-    Exercise(name: "Knee", type: .knee),
-    Exercise(name: "Half", type: .half),
+//    Exercise(name: "Negative", type: .pushUps),
+//    Exercise(name: "TableTop", type: .tableTop),
+//    Exercise(name: "Incline", type: .incline),
+//    Exercise(name: "Wall", type: .wall),
+//    Exercise(name: "Knee", type: .knee),
+//    Exercise(name: "Half", type: .half),
+    Exercise(type: .half),
+    Exercise(type: .pushUps),
+    Exercise(type: .wall),
+    Exercise(type: .incline),
+    Exercise(type: .knee),
+    Exercise(type: .kneeWithKnuckles),
+    Exercise(type: .tableTop)
 ]
 
 let pushUpDescription = "10 minutes | No equipment | 3 Sets"
@@ -123,4 +137,8 @@ var pushUpSet = 3
 
 func setFinished() -> Bool {
     return currentSet == pushUpSet
+}
+
+func newSetStarted() -> Bool{
+    return currentExerciseIndex == 0
 }

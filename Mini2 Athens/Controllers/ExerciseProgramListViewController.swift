@@ -42,9 +42,11 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell") as! ExerciseTableViewCell
         
-        cell.exerciseIcon.image = exercises[indexPath.row].type?.getImage()
-        cell.exerciseName.text = exercises[indexPath.row].name
-        cell.exerciseDescription.text = exercises[indexPath.row].type?.rawValue
+        cell.exerciseIcon.image = exercises[indexPath.row].type.getImage()
+        
+        cell.exerciseName.text = exercises[indexPath.row].getLabel()
+        
+        cell.exerciseDescription.text = "\(exercises[indexPath.row].type.getDuration()) seconds"
         
         return cell
     }

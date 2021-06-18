@@ -29,7 +29,7 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        workoutLabel.text = exercises[currentExerciseIndex].name
+        workoutLabel.text = exercises[currentExerciseIndex].getLabel()
         progressLabel.text = "\(currentExerciseIndex+1)/\(exercises.count)"
         setProgressBar()
         setVideo()
