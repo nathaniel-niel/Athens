@@ -39,6 +39,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Move to movement Tutorial"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAi-pD-Z4s">
+                                <rect key="frame" x="184" y="329" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="skt-Ri-KqM" kind="showDetail" id="qOf-WS-eWE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="Background color"/>
@@ -50,10 +58,18 @@
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="75"/>
         </scene>
-        <!--MyHistory-->
+        <!--movementAnalyzer-->
+        <scene sceneID="x7Y-yq-kpZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="movementAnalyzer" id="skt-Ri-KqM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yf9-4H-i5G" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="-107"/>
+        </scene>
+        <!--HomeStoryboard-->
         <scene sceneID="6M3-yT-2Kj">
             <objects>
-                <viewControllerPlaceholder storyboardName="MyHistory" id="xWO-Tw-dYQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="HomeStoryboard" id="xWO-Tw-dYQ" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="rGv-oQ-yAr"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DpV-1V-8Zn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
