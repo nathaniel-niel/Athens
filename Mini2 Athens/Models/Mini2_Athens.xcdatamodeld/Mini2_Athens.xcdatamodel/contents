@@ -4,7 +4,7 @@
         <attribute name="accuracy" optional="YES" attributeType="String"/>
         <attribute name="analyzeDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="movementImageName" optional="YES" attributeType="String"/>
-        <attribute name="movementLog" optional="YES" attributeType="Transformable" valueTransformerName="" customClassName="[String]"/>
+        <attribute name="movementLog" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="[String]"/>
         <attribute name="movementName" optional="YES" attributeType="String"/>
         <attribute name="videoPath" optional="YES" attributeType="String"/>
     </entity>
