@@ -66,7 +66,7 @@ class DataManipulation{
         do {
             let result = try manageContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject]{
-                model.append(AnalyzeMovementData(recordDate: data.value(forKey: "analyzeDate") as! Date, contentIconName: data.value(forKey: "movementImageName") as! String, movementName: data.value(forKey: "movementName") as! String, movementAccuracy: data.value(forKey: "accuracy") as! String, movementLog: data.value(forKey: "movementLog") as! [String], videoPath: data.value(forKey: "videoPath") as! String))
+                model.append(AnalyzeMovementData(recordDates: data.value(forKey: "analyzeDate") as! Date, contentIconNames: data.value(forKey: "movementImageName") as! String, movementNames: data.value(forKey: "movementName") as! String, movementAccuracys: data.value(forKey: "accuracy") as! String, movementLogs: data.value(forKey: "movementLog") as! [String], videoPaths: data.value(forKey: "videoPath") as! String))
             }
         } catch  let error as NSError{
             print ("Error: \(error.localizedDescription)")

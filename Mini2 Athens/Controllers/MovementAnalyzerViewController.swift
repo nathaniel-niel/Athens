@@ -22,13 +22,27 @@ enum workoutType{
     case squad
 }
 
-enum pushUpPosition{
+enum workoutPosition{
     case up
     case down
+    case moving
+    case wrongPosition
 }
-class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate, RPPreviewViewControllerDelegate {
-    @IBOutlet weak var recordButton: UIButton!
 
+struct bodyPoint{
+    var point: CGPoint!
+    var pointColor: UIColor!
+    
+    init(poin: CGPoint, color: UIColor) {
+        point = poin
+        pointColor = color
+    }
+}
+class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate, RPPreviewViewControllerDelegate,AVSpeechSynthesizerDelegate {
+    @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var angleButton: UIButton!
+    @IBOutlet weak var cameraFlipButton: UIButton!
+    
     private var cameraView: CameraView { view as! CameraView }
     private let videoDataOutputQueue = DispatchQueue(label: "CameraFeedDataOutput", qos: .userInteractive)
     private let humanBodyPose = VNDetectHumanBodyPoseRequest()
@@ -39,7 +53,25 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     var cameraPreviewLayer : AVCaptureVideoPreviewLayer?
     let videoRecorder = AVCaptureMovieFileOutput()
     var isDegreeLabelHidden: Bool = false
-    
+    var lastPeopleSeen: Date = Date()
+    let synthesizer = AVSpeechSynthesizer()
+    var currentWorkoutPosition: workoutPosition!
+    var currentWorkoutAvidanceCounter: Int = 0
+    var fixedWorkoutPosition: workoutPosition! = .up
+    var movementMistake: String = ""
+    var correctPushUpCounter: Int = 0
+    var totalPushUpCounter: Int = 0
+    var movementLog: [String] = []
+    var moveLog: [String] = []
+    var lastMultiplePersonWarningSpoken = Date.init(timeIntervalSince1970: 1)
+    var isUp: Bool = false
+    var isDown: Bool = false
+    var isMoving: Bool = false
+    var isMistake: Bool = false
+    var isWorkoutStarted = false
+    var selectedMovement: workoutType = .pushup
+    var videoPath: String = ""
+    var report: AnalyzeMovementData = AnalyzeMovementData()
     
     var rightWrist: CGPoint = CGPoint()
     var rightElbow: CGPoint = CGPoint()
@@ -54,7 +86,6 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     var leftKnee: CGPoint = CGPoint()
     var leftAnkle: CGPoint = CGPoint()
     
-    
     @IBOutlet weak var rightWirstLabel: UILabel!
     @IBOutlet weak var rightElbowLabel: UILabel!
     @IBOutlet weak var rightShoulderLabel: UILabel!
@@ -67,6 +98,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     @IBOutlet weak var leftHipLabel: UILabel!
     @IBOutlet weak var leftKneeLabel: UILabel!
     @IBOutlet weak var LeftAnkleLabel: UILabel!
+    //@IBOutlet weak var movementLogLabel: UILabel!
     
     var rightBodyLabel: [UILabel] = []
     var leftBodyLabel: [UILabel] = []
@@ -77,12 +109,15 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     var leftPoint: [CGPoint] = []
     var rightPoint: [CGPoint] = []
     
+    
     var currentVideoDevice: AVCaptureDevice!
     override func viewDidLoad() {
         super.viewDidLoad()
+        askScreenRecordPermission()
         rightBodyLabel = [rightAnkleLabel,rightKneeLabel,rightHipLabel,rightShoulderLabel,rightElbowLabel,rightWirstLabel]
         leftBodyLabel = [LeftAnkleLabel,leftKneeLabel,leftHipLabel,leftShoulderLabel,leftElbowLabel,leftWristLabel]
         hideAllLabel()
+        synthesizer.delegate = self
         currentVideoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
         overlayLayer.frame = view.layer.bounds
         view.layer.addSublayer(overlayLayer)
@@ -106,6 +141,17 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         cameraFeedSession?.stopRunning()
         super.viewWillDisappear(animated)
     }
+    
+    func ngomong(text: String){
+        DispatchQueue.main.async {
+            let utterance = AVSpeechUtterance(string: text)
+            utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
+            utterance.rate = 0.5
+            utterance.volume = 1
+            self.synthesizer.speak(utterance)
+        }
+    }
+    
     func hideAllLabel(){
         for label in rightBodyLabel{
             label.isHidden = true
@@ -238,59 +284,215 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             }
         }
     }
+
+    func collectAvidance(currentWorkout: workoutPosition){
+        if (currentWorkout == currentWorkoutPosition){
+            currentWorkoutAvidanceCounter += 1
+            if currentWorkoutAvidanceCounter >= 3{
+                currentWorkoutAvidanceCounter = 0
+                if(fixedWorkoutPosition != currentWorkout){
+                    fixedWorkoutPosition = currentWorkout
+                    currentWorkoutProcessor(currentWorkout: currentWorkout)
+                }
+            }
+        }else{
+            fixedWorkoutPosition = nil
+            currentWorkoutPosition = currentWorkout
+            currentWorkoutAvidanceCounter = 0
+        }
+    }
+    
+    func currentWorkoutProcessor(currentWorkout: workoutPosition){
+        switch currentWorkout {
+        case .up:
+            isUp = true
+            if !isWorkoutStarted{
+                isWorkoutStarted = true
+                recordScreen()
+            }
+            if isMoving{
+                if moveLog.count > 2 {
+                    if(moveLog.last! == "Moving" && moveLog[moveLog.count-2] == "Down Position Right!"){
+                        correctPushUpCounter += 1
+                    }
+                }
+                moveLog.append("Up Position Right!")
+                totalPushUpCounter += 1
+                isUp = true
+                isMoving = false
+            }
+        case .down:
+            
+            isDown = true
+            if isMoving{
+                moveLog.append("Down Position Right!")
+                isDown = true
+                isMoving = false
+            }
+        case .moving:
+            isMoving = true
+            if isUp || isDown{
+                moveLog.append("Moving")
+                isMoving = true
+                isUp = false
+                isDown = false
+            }
+        case .wrongPosition:
+            isMistake = true
+            if(moveLog.count > 0){
+                if(moveLog.last! != "Mistake"){
+                    moveLog.append("Mistake")
+                }
+            }
+            
+        }
+    }
+    var isLogDoubled: Bool = false
     func checkWorkoutPosition(workout: workoutType, direction: bodyDirection){
         switch workout {
         case .pushup:
             switch direction {
             case .right:
                 let points = rightDegreeValue
-                if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 70 || points[3] > 50) && (points[4] < 10 || points[4] > 170)){
-                    print("up Position right")
-                }else if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 20 || points[3] > 150) && (points[4] < 100 || points[4] > 60)){
-                    print("down Position Right")
+                if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 70 || points[3] > 40) && (points[4] < 15 || points[4] > 165)){
+                    collectAvidance(currentWorkout: .up)
+                }else if ((points[1] < 30 || points[1] > 150) && (points[2] < 30 || points[2] > 150) && (points[3] < 70 || points[3] > 40) && (points[4] < 15 || points[4] > 165)){
+                    collectAvidance(currentWorkout: .up)
+                }else if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 20 || points[3] > 150) &&  (points[4] < 100 || points[4] > 50)){
+                    collectAvidance(currentWorkout: .down)
+                }else if ((points[1] < 30 || points[1] > 150) && (points[2] < 30 || points[2] > 150) && (points[3] < 20 || points[3] > 150) &&  (points[4] < 100 || points[4] > 50)){
+                    collectAvidance(currentWorkout: .down)
                 }else if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165)){
-                    print("Lagi Gerak")
+                    collectAvidance(currentWorkout: .moving)
                 }else{
                     
-                    if (points[1] > 90 && points[1] < 165){
-                        print("lutut terlalu tertekuk")
-                    }
-                    if (points[1] < 90 && points[1] > 15) {
-                        print("lutut terlalu tertekuk")
+                    if (points[1] > 90 && points[1] < 150) || (points[1] < 90 && points[1] > 15)  {
+                        if fixedWorkoutPosition == .wrongPosition{
+                            collectAvidance(currentWorkout: .wrongPosition)
+                            if isMoving || isUp || isDown{
+                                isUp = false
+                                isDown = false
+                                isMistake = false
+                                for log in movementLog {
+                                    if log == "Straighten your knees!"{
+                                        isLogDoubled = true
+                                    }
+                                }
+                                if !isLogDoubled{
+                                    movementLog.append("Straighten your knees!")
+                                    isLogDoubled = false
+                                }
+                                
+                            }
+                        }
                     }
                     if (points[2] < 90 && points[2] > 15){
-                        print("Bokong terlalu turun")
+                        collectAvidance(currentWorkout: .wrongPosition)
+                        if fixedWorkoutPosition == .wrongPosition{
+                            if isMoving || isUp || isDown{
+                                isUp = false
+                                isDown = false
+                                isMistake = false
+                                for log in movementLog {
+                                    if log == "Lower your hip!"{
+                                        isLogDoubled = true
+                                    }
+                                }
+                                if !isLogDoubled{
+                                    movementLog.append("Lower your hip!")
+                                    isLogDoubled = false
+                                }
+                            }
+                        }
                     }
                     if (points[2] > 90 && points[2] < 165){
-                        print("Bokong terlalu naik")
+                        collectAvidance(currentWorkout: .wrongPosition)
+                        if fixedWorkoutPosition == .wrongPosition{
+                            if isMoving || isUp || isDown{
+                                isUp = false
+                                isDown = false
+                                isMistake = false
+                                for log in movementLog {
+                                    if log == "Raise your hip!"{
+                                        isLogDoubled = true
+                                    }
+                                }
+                                if !isLogDoubled{
+                                    movementLog.append("Raise your hip!")
+                                    isLogDoubled = false
+                                }
+                                
+                            }
+                        }
                     }
-//                    if (points[4] > 45){
-//                        print("Sikut Terlalu bengkok")
-//                    }
-//                    if (points[4] < 135){
-//                        print("Sikut Terlalu bengkok")
-//                    }
                 }
             case .left:
                 let points = leftDegreeValue
-                if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 70 || points[3] > 50) && (points[4] < 10 || points[4] > 170)){
-                    print("up Position right")
-                }else if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 20 || points[3] > 150) && (points[4] < 100 || points[4] > 60)){
-                    print("down Position Right")
+                if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 70 || points[3] > 40) && (points[4] < 15 || points[4] > 165)){
+                    collectAvidance(currentWorkout: .up)
+                }else if ((points[1] < 30 || points[1] > 150) && (points[2] < 30 || points[2] > 150) && (points[3] < 70 || points[3] > 40) && (points[4] < 15 || points[4] > 165)){
+                    collectAvidance(currentWorkout: .up)
+                }else if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165) && (points[3] < 20 || points[3] > 150) &&  (points[4] < 100 || points[4] > 50)){
+                    collectAvidance(currentWorkout: .down)
                 }else if ((points[1] < 15 || points[1] > 165) && (points[2] < 15 || points[2] > 165)){
-                    print("Lagi Gerak")
+                    collectAvidance(currentWorkout: .moving)
                 }else{
-                    if (points[1] > 90 && points[1] < 165){
-                        print("lutut terlalu tertekuk")
-                    }
-                    if (points[1] < 90 && points[1] > 15) {
-                        print("lutut terlalu tertekuk")
+                    collectAvidance(currentWorkout: .wrongPosition)
+                    if (points[1] > 90 && points[1] < 150) || (points[1] < 90 && points[1] > 15)  {
+                        if fixedWorkoutPosition == .wrongPosition{
+                            if isMoving || isUp || isDown{
+                                isUp = false
+                                isDown = false
+                                isMistake = false
+                                for log in movementLog {
+                                    if log == "Straighten your knees!"{
+                                        isLogDoubled = true
+                                    }
+                                }
+                                if !isLogDoubled{
+                                    movementLog.append("Straighten your knees!")
+                                    isLogDoubled = false
+                                }
+                                
+                            }
+                        }
                     }
                     if (points[2] < 90 && points[2] > 15){
-                        print("Bokong terlalu turun")
+                        if fixedWorkoutPosition == .wrongPosition{
+                            if isMoving || isUp || isDown{
+                                isUp = false
+                                isDown = false
+                                isMistake = false
+                                for log in movementLog {
+                                    if log == "Lower your hip!"{
+                                        isLogDoubled = true
+                                    }
+                                }
+                                if !isLogDoubled{
+                                    movementLog.append("Lower your hip!")
+                                    isLogDoubled = false
+                                }
+                            }
+                        }
                     }
                     if (points[2] > 90 && points[2] < 165){
-                        print("Bokong terlalu naik")
+                        if fixedWorkoutPosition == .wrongPosition{
+                            if isMoving || isUp || isDown{
+                                isUp = false
+                                isDown = false
+                                isMistake = false
+                                for log in movementLog {
+                                    if log == "Raise your hip!"{
+                                        isLogDoubled = true
+                                    }
+                                }
+                                if !isLogDoubled{
+                                    movementLog.append("Raise your hip!")
+                                    isLogDoubled = false
+                                }
+                                
+                            }
+                        }
                     }
                 }
             case .front:
@@ -302,9 +504,32 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             return
         }
     }
+    func generateReport(){
+        report.recordDate = Date()
+        report.movementLog = movementLog
+        report.videoPath = videoPath
+        report.movementAccuracy = "\((correctPushUpCounter/totalPushUpCounter)*100)"
+        switch selectedMovement {
+        case .plank:
+            report.contentIconName = "plank"
+            report.movementName = "plank"
+        case .pushup:
+            report.contentIconName = "pushup"
+            report.movementName = "pushup"
+        case .squad:
+            report.contentIconName = "squad"
+            report.movementName = "squad"
+        }
+
+        let manipulator = DataManipulation()
+        manipulator.createNewData(recordDate: report.recordDate, contentIconName: report.contentIconName, movementName: report.movementName, movementAccuracy: report.movementAccuracy, movementLog: report.movementLog, videoPath: report.videoPath)
+    }
+    
     func drawHumanBodyPose(direction: bodyDirection){
+        lastPeopleSeen = Date()
         leftPoint = [leftAnkle,leftKnee,leftHip,leftShoulder,leftElbow,leftWrist]
         rightPoint = [rightAnkle,rightKnee,rightHip,rightShoulder,rightElbow,rightWrist]
+    
         
         cameraView.showPoints(leftPoint, rightPoints: rightPoint, color: .blue, direction: direction)
         if(!isDegreeLabelHidden){
@@ -316,7 +541,22 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             hideAllLabel()
         }
     }
-    
+    func removeHumanFrame(){
+        if Date().timeIntervalSince(lastPeopleSeen) > 1 {
+            cameraView.showPoints([], rightPoints: [], color: .clear, direction: .front)
+            hideAllLabel()
+            if(isWorkoutStarted){
+                isWorkoutStarted = false
+                recordScreen()
+                generateReport()
+                performSegue(withIdentifier: "goToAnalyzeReport", sender: self)
+            }
+        }
+//        movementLogLabel.text = String("Correct Pushup: \(correctPushUpCounter)\nAll Pushup: \(totalPushUpCounter)")
+//        for log in movementLog{
+//            movementLogLabel.text?.append("\n\(log)")
+//        }
+    }
     func setupCamera(){
         // Select current camera, make an input.
         guard let videoDevice = currentVideoDevice else {
@@ -372,25 +612,37 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
            
         }
     }
+    func askScreenRecordPermission(){
+        //screenRecorder.startRecording(handler: nil)
+    }
     func recordScreen(){
+
         if screenRecorder.isRecording {
-            screenRecorder.stopRecording { previewVC, error in
-                if error != nil{
+            let savePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            let filePath = savePath[0].appendingPathComponent("\(Date()).mp4")
+            screenRecorder.stopRecording(withOutput: filePath) { error in
+                if((error) != nil){
                     return
                 }
+                UISaveVideoAtPathToSavedPhotosAlbum(filePath.path, nil, nil, nil)
+                self.videoPath = filePath.path
             }
+            recordButton.isHidden = false
+            cameraFlipButton.isHidden = false
+            angleButton.isHidden = false
             recordButton.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
         }else{
-            screenRecorder.startRecording { error in
-                if error != nil{
-                    return
+            recordButton.isHidden = true
+            cameraFlipButton.isHidden = true
+            angleButton.isHidden = true
+            self.recordButton.setImage(UIImage(systemName: "stop.circle"), for: .normal)
+            screenRecorder.startRecording { (error) in
+                if let error = error{
+                    print(error)
                 }
-                self.recordButton.setImage(UIImage(systemName: "stop.circle"), for: .normal)
             }
-           
         }
     }
-    
     func setDegreeLabel(rightPoints: [CGPoint], leftPoints:[CGPoint], direction: bodyDirection){
         hideLabel(direction: direction)
         switch direction {
@@ -418,14 +670,29 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         
     }
     public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        
 
+        DispatchQueue.main.async {
+            self.removeHumanFrame()
+        }
+        
+        
         let handler = VNImageRequestHandler(cmSampleBuffer: sampleBuffer, orientation: .up, options: [:])
         
         do {
             try handler.perform([humanBodyPose])
             guard let observation = humanBodyPose.results?.first else{
                 return
+            }
+            
+            if humanBodyPose.results!.count > 1{
+                if(synthesizer.isSpeaking){
+                    return
+                }
+                if (Date().timeIntervalSince(lastMultiplePersonWarningSpoken) > 9){
+                    ngomong(text: "Make Sure You Are Alone, No Other People In The Frame")
+                    lastMultiplePersonWarningSpoken = Date()
+                }
+                
             }
             
             let rightWristPoint = try observation.recognizedPoint(.rightWrist)
@@ -457,7 +724,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
                     self.drawHumanBodyPose(direction: .right)
                 }
                 
-            }else if faceLeftConfidentValue-faceRightConfidentValue > 0.5{ 
+            }else if faceLeftConfidentValue-faceRightConfidentValue > 0.5{
                 if  leftWristPoint.confidence > confidenceValue && leftElbowPoint.confidence > confidenceValue && leftShoulderPoint.confidence > confidenceValue &&  leftAnklePoint.confidence > confidenceValue && leftKneePoint.confidence > confidenceValue && leftHipPoint.confidence > confidenceValue{
                     leftElbow = CGPoint(x: leftElbowPoint.location.x, y: 1 - leftElbowPoint.location.y )
                     leftWrist = CGPoint(x: leftWristPoint.location.x, y: 1 - leftWristPoint.location.y )
@@ -505,6 +772,13 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
         dismiss(animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goToAnalyzeReport"){
+            let targetVC = segue.destination as! ReportViewController
+            targetVC.dataToDisplay = report
+        }
+    }
     @IBAction func switchCamera(_ sender: Any){
         if(currentVideoDevice.position == .back){
             currentVideoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front)
@@ -521,6 +795,8 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     @IBAction func toggleDegreeHiddenStatus(){
         isDegreeLabelHidden = !isDegreeLabelHidden
         print(isDegreeLabelHidden)
+        print(moveLog)
+        print(correctPushUpCounter,":",totalPushUpCounter)
     }
     
     @IBAction func startRecord(_ sender: Any){

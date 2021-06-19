@@ -4,7 +4,7 @@
 //
 //  Created by Nathaniel Andrian on 08/06/21.
 //
-//soruce for AVKit: https://www.youtube.com/watch?v=mVE84Q_JoxY
+
 
 import UIKit
 import AVKit
@@ -21,6 +21,7 @@ class MovementTutorialViewController: UIViewController {
     //MARK:: AVKit variables
     var playerviewController = AVPlayerViewController()
     var playerView = AVPlayer() //video representation
+    let functionality = Functionality()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupComponent()
@@ -35,19 +36,7 @@ class MovementTutorialViewController: UIViewController {
         playVideoButton.layer.cornerRadius = 15
     }
 
-//    private func playVideo(videoUrl: String){
-//
-//        let url: URL = URL(string: videoUrl)!
-//        playerView = AVPlayer(url: url)
-//        playerviewController.player = playerView
-//
-//
-//        //present player vc
-//        self.present(playerviewController, animated: true, completion: nil)
-//        self.playerviewController.player?.play()
-//
-//
-//    }
+
     
     func playVideo(videoName: String){
         let path = Bundle.main.path(forResource: videoName, ofType: "mp4")
@@ -71,6 +60,7 @@ class MovementTutorialViewController: UIViewController {
 //        let vc = TestViewController()
 //        vc.modalPresentationStyle = .fullScreen
 //        self.navigationController?.pushViewController(vc, animated: true)
+        functionality.back(vc: self)
     }
     
     

@@ -96,8 +96,10 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         guard let timerIsRunning = exerciseTimer?.isTimerRunning else {return}
         if timerIsRunning{
             pauseResumeLabel.text = "Resume"
+            player.pause()
         }else{
             pauseResumeLabel.text = "Pause"
+            playVideo()
         }
         
         exerciseTimer?.pauseResumeTimer()

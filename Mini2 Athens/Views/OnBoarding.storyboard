@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,29 +14,61 @@
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="OnBoardingViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-jV-8Be">
-                                <rect key="frame" x="146" y="834" width="122" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-f3-jJC">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qde-Ti-gHz">
+                                <rect key="frame" x="47" y="767" width="296" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedNextButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VKH-nm-fPu"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="nEl-Yz-WeB">
+                                <rect key="frame" x="144" y="724.66666666666663" width="102.33333333333331" height="26.333333333333371"/>
+                                <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
+                                <color key="currentPageIndicatorTintColor" name="AccentColor"/>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="Background color"/>
+                        <constraints>
+                            <constraint firstItem="hh7-f3-jJC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3Oe-Qs-mgd"/>
+                            <constraint firstAttribute="bottom" secondItem="hh7-f3-jJC" secondAttribute="bottom" id="7dV-Jl-43M"/>
+                            <constraint firstItem="hh7-f3-jJC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="9Gk-a3-uJD"/>
+                            <constraint firstItem="nEl-Yz-WeB" firstAttribute="centerX" secondItem="hh7-f3-jJC" secondAttribute="centerX" id="B5x-4t-0B7"/>
+                            <constraint firstItem="hh7-f3-jJC" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="BAz-I0-gGL"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nEl-Yz-WeB" secondAttribute="bottom" constant="59" id="Irg-aE-LVm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Qde-Ti-gHz" secondAttribute="trailing" constant="47" id="SWN-R8-4pb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Qde-Ti-gHz" secondAttribute="bottom" constant="13" id="Z5G-em-tgr"/>
+                            <constraint firstItem="Qde-Ti-gHz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="47" id="nja-RH-FYW"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="onBoardingPageControl" destination="2Ke-jV-8Be" id="3FE-MR-Nqo"/>
+                        <outlet property="imageView" destination="hh7-f3-jJC" id="3U7-r8-cxR"/>
+                        <outlet property="nextButton" destination="Qde-Ti-gHz" id="8u2-2O-hiX"/>
+                        <outlet property="pageControl" destination="nEl-Yz-WeB" id="476-qJ-rOp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="117"/>
+            <point key="canvasLocation" x="130.76923076923077" y="115.87677725118483"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.33725490196078434" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Background color">
+            <color red="0.11764705882352941" green="0.13725490196078433" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
