@@ -16,7 +16,7 @@ class Functionality{
     func convertDateToString(currentDate: Date) -> String{
 //        let currentDate =  Date()
         let format = DateFormatter()
-        format.dateStyle = .medium
+        format.dateStyle = .short
         format.timeStyle = .none
         let currentDateTime = format.string(from: currentDate)
         return currentDateTime

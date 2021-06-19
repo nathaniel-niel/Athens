@@ -20,6 +20,7 @@
 		2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */; };
 		2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4E973226799D6C0021C4A1 /* Report.storyboard */; };
 		2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E973426799D880021C4A1 /* ReportViewController.swift */; };
+		2D65C81A267DA7ED007E7BF8 /* MovTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73257B26773922003B53C1 /* DataManipulation.swift */; };
 		2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D73257D26775D60003B53C1 /* MyHistory.storyboard */; };
@@ -74,6 +75,7 @@
 		2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2D4E973226799D6C0021C4A1 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2D4E973426799D880021C4A1 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovTutorViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D73257B26773922003B53C1 /* DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulation.swift; sourceTree = "<group>"; };
 		2D73257D26775D60003B53C1 /* MyHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyHistory.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				76F2C9812678307400AA1613 /* OnBoardingModel.swift */,
 				2D4E973426799D880021C4A1 /* ReportViewController.swift */,
 				2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */,
+				2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				608605CC267875BD00BC1AE2 /* EndProgramViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
 				2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */,
+				2D65C81A267DA7ED007E7BF8 /* MovTutorViewController.swift in Sources */,
 				2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */,
 				2D4C1E25267AE4AE00299E73 /* DetailViewController.swift in Sources */,
 				2D963CE22676530F00838C51 /* MyHistoryTableViewCell.swift in Sources */,
@@ -533,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2R8L25XGM;
+				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -556,7 +560,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = D2R8L25XGM;
+				DEVELOPMENT_TEAM = 577NLUCH43;
 				INFOPLIST_FILE = "Mini2 Athens/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (

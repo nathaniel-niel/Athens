@@ -121,6 +121,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         currentVideoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
         overlayLayer.frame = view.layer.bounds
         view.layer.addSublayer(overlayLayer)
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {

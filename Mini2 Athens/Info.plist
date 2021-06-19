@@ -44,7 +44,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>movementAnalyzer</string>
+					<string>HomeStoryboard</string>
 				</dict>
 			</array>
 		</dict>
@@ -54,7 +54,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>OnBoarding</string>
 	<key>UIMainStoryboardFile</key>
-	<string>movementAnalyzer</string>
+	<string>HomeStoryboard</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

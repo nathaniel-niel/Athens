@@ -39,6 +39,9 @@ class ReportViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
     
     private func setup(){
         cardData.layer.cornerRadius = 20
@@ -110,15 +113,21 @@ class ReportViewController: UIViewController {
     }
     
     @IBAction func didSuggestedExerciseProgramTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "goToExerciseProgram", sender: self)
+        self.modalPresentationStyle = .fullScreen
     }
     
     @IBAction func didRetryAnalyzeMovementTapped(_ sender: Any) {
         performSegue(withIdentifier: "retryAnalyze", sender: self)
+        self.modalPresentationStyle = .fullScreen
+        
         
     }
     
     @IBAction func didAnalyzeAnotherMovementTapped(_ sender: Any) {
-        
+        performSegue(withIdentifier: "goToHome", sender: self)
+        self.modalPresentationStyle = .fullScreen
     }
     
     

@@ -145,6 +145,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-En-nCR">
                                         <rect key="frame" x="0.0" y="148" width="331" height="59"/>
                                         <state key="normal" image="analyzeAnotherMovement-btn"/>
+                                        <connections>
+                                            <segue destination="chr-kN-Ogs" kind="show" id="JBj-Tt-9oF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -223,6 +226,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91w-mw-Xzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="754" y="284"/>
+        </scene>
+        <!--HomeStoryboard-->
+        <scene sceneID="6Hz-Ss-M3j">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HomeStoryboard" id="chr-kN-Ogs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="bBU-YP-53C"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ct-ae-v1E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="705" y="387"/>
         </scene>
     </scenes>
     <resources>

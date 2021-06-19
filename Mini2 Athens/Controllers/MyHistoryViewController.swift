@@ -22,6 +22,15 @@ class MyHistoryViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        data.retrieveData()
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     private func setup(){
         navigationItem.title = "Analyze History"
         table.delegate = self

@@ -35,8 +35,13 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //buat lanjut ke movement tutorial
-        let vc = MovementTutorialViewController()
+        let vc = storyboard?.instantiateViewController(withIdentifier: "movTutor") as! MovTutorViewController
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func didSeeMoretapped(_ sender: Any) {
+        performSegue(withIdentifier: "goToHistory", sender: self)
     }
     
     /*
