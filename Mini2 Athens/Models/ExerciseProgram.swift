@@ -39,19 +39,19 @@ enum ExerciseType: String, CaseIterable {
     func getImage() -> UIImage {
         switch self {
         case .pushUps:
-            return #imageLiteral(resourceName: "1")
+            return #imageLiteral(resourceName: "negative 1")
         case .tableTop:
-            return #imageLiteral(resourceName: "2")
+            return #imageLiteral(resourceName: "tabletop push-up 1")
         case .incline:
-            return #imageLiteral(resourceName: "3")
+            return #imageLiteral(resourceName: "incline push-up 4")
         case .wall:
-            return #imageLiteral(resourceName: "4")
+            return #imageLiteral(resourceName: "wall push-up 1")
         case .knee:
-            return #imageLiteral(resourceName: "5")
+            return #imageLiteral(resourceName: "knee push-up 1")
         case .half:
-            return #imageLiteral(resourceName: "6")
+            return #imageLiteral(resourceName: "push-up 3")
         case .kneeWithKnuckles:
-            return #imageLiteral(resourceName: "4")
+            return #imageLiteral(resourceName: "knuckle knee push-up 1")
         }
     }
     
