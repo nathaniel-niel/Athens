@@ -97,14 +97,7 @@ class ReportViewController: UIViewController {
         
         vidPath = data.videoPath
         
-       
-//        movementNameLabel.text = manipulator.model.first!.movementName
-//        movementAccuracyLabel.text = manipulator.model.first!.movementAccuracy
-//        recordDateLabel.text = functionality.convertDateToString(currentDate: manipulator.model.first!.recordDate)
-//        for log in manipulator.model.first!.movementLog{
-//            movementLogLabel.text?.append("\(log)\n")
-//        }
-//        vidPath = manipulator.model.first!.videoPath
+
     }
     
     func playVideo(videoName: String){

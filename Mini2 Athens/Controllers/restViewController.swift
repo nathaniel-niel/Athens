@@ -28,6 +28,8 @@ class restViewController: UIViewController, RestTimerDelegate {
         exerciseBox.layer.shadowRadius = 8
         exerciseBox.layer.shadowOffset = .zero
         exerciseBox.layer.shadowOpacity = 0.3
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,6 +46,8 @@ class restViewController: UIViewController, RestTimerDelegate {
         nextExerciseLabel.text = exercises[currentExerciseIndex].getLabel()
     }
     
+
+    
     func timesUp() {
          let targetStoryboard = UIStoryboard(name: "StartProgram", bundle: nil)
          let vc = targetStoryboard.instantiateViewController(identifier: "StartProgram")
@@ -55,6 +59,7 @@ class restViewController: UIViewController, RestTimerDelegate {
         guard let timerIsRunning = exerciseTimer?.isTimerRunning else {return}
         if timerIsRunning{
             pauseResumeLabel.text = "Resume"
+            
         }else{
             pauseResumeLabel.text = "Pause"
         }

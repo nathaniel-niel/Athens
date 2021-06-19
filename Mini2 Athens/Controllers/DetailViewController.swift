@@ -22,22 +22,28 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var movementLogLabel: UILabel!
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var playRecordedVideoButton: UIButton!
     
     var movementName: String = ""
     var accuracy: String = ""
     var recordDate: String = ""
     var movementLog: [String] = []
-    var videoName: String = ""
+    var videoPath: String = ""
     
     var playerviewController = AVPlayerViewController()
     var playerView = AVPlayer() //video representation
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.title = "Analyze Report"
         setup()
         setAttributeValue()
+        titleLabel.isHidden = true
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
     }
 
 
@@ -66,6 +72,8 @@ class DetailViewController: UIViewController {
         playRecordedVideoButton.layer.cornerRadius = 13
         
         self.navigationItem.title = "Analyze Report"
+        movementLogLabel.text = ""
+        
     }
     
     
@@ -80,17 +88,11 @@ class DetailViewController: UIViewController {
             movementLogLabel.text?.append("\(log)\n")
             
         }
-        
-        
-       
-        
-        
-        
     }
     
     func playVideo(videoName: String){
-        let path = Bundle.main.path(forResource: videoName, ofType: "mp4")
-        let url = URL(fileURLWithPath: path!)
+//        let path = Bundle.main.path(forResource: videoName, ofType: "mp4")
+        let url = URL(fileURLWithPath: videoName)
         playerView = AVPlayer(url: url)
         playerviewController.player = playerView
         self.present(playerviewController, animated: true, completion: nil)
@@ -98,7 +100,8 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func didPlayRecordedVideoTapped(_ sender: Any) {
-        playVideo(videoName: videoName)
+        playVideo(videoName: videoPath)
+        print(videoPath)
     }
     
 }

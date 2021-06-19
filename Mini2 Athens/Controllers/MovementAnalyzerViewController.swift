@@ -506,14 +506,17 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     }
     func generateReport(){
         recordScreen()
+        var accuracy: Float = 0
         report.recordDate = Date()
         report.movementLog = movementLog
         report.videoPath = videoPath
         if totalPushUpCounter == 0 {
-            report.movementAccuracy = "0"
+            report.movementAccuracy = "0%"
         }
         else{
-            report.movementAccuracy = "\((Float(correctPushUpCounter)/Float(totalPushUpCounter))*100)"
+            accuracy = Float(correctPushUpCounter)/Float(totalPushUpCounter)*100
+            
+            report.movementAccuracy = String(format: "%.0f%%", accuracy)
         }
         
         switch selectedMovement {
@@ -554,9 +557,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             hideAllLabel()
             if(isWorkoutStarted){
                 isWorkoutStarted = false
-//                DispatchQueue.main.async {
-//                    self.recordScreen()
-//                }
+
                 generateReport()
                 performSegue(withIdentifier: "goToAnalyzeReport", sender: self)
             }

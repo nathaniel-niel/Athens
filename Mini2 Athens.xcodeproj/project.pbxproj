@@ -14,6 +14,7 @@
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
 		2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */; };
 		2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */; };
+		2D223F77267E5B1B00CA9326 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D223F76267E5B1B00CA9326 /* music.mp3 */; };
 		2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */; };
 		2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */; };
 		2D4C1E25267AE4AE00299E73 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */; };
@@ -70,6 +71,7 @@
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTutorialViewController.swift; sourceTree = "<group>"; };
 		2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MovementTutorialViewController.xib; path = ../MovementTutorialViewController.xib; sourceTree = "<group>"; };
+		2D223F76267E5B1B00CA9326 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCompletedViewController.swift; sourceTree = "<group>"; };
 		2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgramCompletedViewController.xib; path = ../../Controllers/ProgramCompletedViewController.xib; sourceTree = "<group>"; };
 		2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 		2D0BBD83266E2FAA00C90A28 /* Mini2 Athens */ = {
 			isa = PBXGroup;
 			children = (
+				2D223F75267E5B0B00CA9326 /* backsound */,
 				2D989D6B2677A206001443E7 /* Helper */,
 				2DCB6231267324710040A5E3 /* Test */,
 				2D0BBDA0266E301400C90A28 /* Models */,
@@ -206,6 +209,14 @@
 				2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2D223F75267E5B0B00CA9326 /* backsound */ = {
+			isa = PBXGroup;
+			children = (
+				2D223F76267E5B1B00CA9326 /* music.mp3 */,
+			);
+			path = backsound;
 			sourceTree = "<group>";
 		};
 		2D6FFA7F2670899F009C1438 /* video-asset */ = {
@@ -335,6 +346,7 @@
 				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */,
+				2D223F77267E5B1B00CA9326 /* music.mp3 in Resources */,
 				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
 				2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,

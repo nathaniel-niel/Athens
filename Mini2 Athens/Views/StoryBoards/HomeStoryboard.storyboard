@@ -36,9 +36,9 @@
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A4H-J9-URZ">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="A4H-J9-URZ">
                                 <rect key="frame" x="0.0" y="261" width="390" height="211"/>
-                                <color key="backgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="Background color"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="30" id="Vtz-QY-Bkc">
                                     <size key="itemSize" width="170" height="201"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -77,10 +77,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-jW-6sy">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="3" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h0I-jW-6sy">
                                 <rect key="frame" x="32" y="501" width="326" height="318"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <color key="sectionIndexBackgroundColor" red="0.1176470588" green="0.13725490200000001" blue="0.1450980392" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="Background color"/>
+                                <color key="sectionIndexBackgroundColor" name="Background color"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epG-4T-Ny9">
                                 <rect key="frame" x="285" y="472" width="73" height="29"/>
@@ -94,7 +94,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.11764705882352941" green="0.13725490196078433" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="Background color"/>
                         <constraints>
                             <constraint firstItem="GWT-9t-Fng" firstAttribute="leading" secondItem="xjS-Cj-B6c" secondAttribute="leading" id="1fr-vB-O0k"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="h0I-jW-6sy" secondAttribute="trailing" constant="32" id="2HQ-Bi-lA3"/>
@@ -151,6 +151,9 @@
                                 </constraints>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" image="chevron.left" catalog="system"/>
+                                <connections>
+                                    <action selector="didbackButtonTapped:" destination="j9Y-q6-ck8" eventType="touchUpInside" id="mdj-VN-XzE"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Zd-Sp-Htj">
                                 <rect key="frame" x="0.0" y="109" width="390" height="777"/>
@@ -289,7 +292,7 @@
         <!--Navigation Controller-->
         <scene sceneID="hbR-tw-qhT">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vrr-C2-dfG" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="vrr-C2-dfG" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="backward.fill" catalog="system" id="pVN-SX-XjP">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
