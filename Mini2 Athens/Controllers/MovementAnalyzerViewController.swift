@@ -137,6 +137,13 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
             cameraFeedSession?.startRunning()
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController!.navigationBar.shadowImage = UIImage()
+    }
     override func viewWillDisappear(_ animated: Bool) {
         cameraFeedSession?.stopRunning()
         super.viewWillDisappear(animated)
