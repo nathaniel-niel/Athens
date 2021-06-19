@@ -12,7 +12,7 @@
         <!--Movement Analyzer View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MovementAnalyzerViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="movementAnalyzer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MovementAnalyzerViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="CameraView" customModule="Mini2_Athens" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,7 +148,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" red="0.97417467830000004" green="0.33481884000000001" blue="0.1003988311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal">
-                                    <imageReference key="image" image="Angle Symbol" symbolScale="large"/>
+                                    <imageReference key="image" image="Bitmap" symbolScale="large"/>
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="24" scale="large" weight="semibold"/>
                                 </state>
                                 <connections>
@@ -177,6 +177,8 @@
                     </view>
                     <connections>
                         <outlet property="LeftAnkleLabel" destination="o0v-BO-iui" id="uf5-cw-ECp"/>
+                        <outlet property="angleButton" destination="VhC-fK-eQW" id="Hyy-nX-Q0z"/>
+                        <outlet property="cameraFlipButton" destination="6Rl-bd-6kL" id="G6H-Dr-jNh"/>
                         <outlet property="leftElbowLabel" destination="3l3-me-SeT" id="aUP-T6-hma"/>
                         <outlet property="leftHipLabel" destination="sEQ-IJ-o3b" id="Kzf-z4-uJV"/>
                         <outlet property="leftKneeLabel" destination="1kP-bq-hJu" id="cYL-uX-Vyg"/>
@@ -190,15 +192,26 @@
                         <outlet property="rightKneeLabel" destination="lpg-br-vYG" id="acQ-Bc-kS9"/>
                         <outlet property="rightShoulderLabel" destination="dL5-Nh-z1v" id="42F-Yz-AXk"/>
                         <outlet property="rightWirstLabel" destination="20w-ng-Q0p" id="YDT-ak-vRm"/>
+                        <segue destination="v9g-u2-p8z" kind="show" identifier="goToAnalyzeReport" id="2L8-6j-7Kf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
         </scene>
+        <!--Report-->
+        <scene sceneID="M8s-TO-TJc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Report" id="v9g-u2-p8z" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="LmG-1a-eL4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KRa-ri-E0I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="990" y="99"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Angle Symbol" width="150" height="150"/>
+        <image name="Bitmap" width="34" height="34"/>
         <image name="camera.rotate" catalog="system" width="128" height="94"/>
         <image name="largecircle.fill.circle" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">

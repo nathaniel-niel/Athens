@@ -71,16 +71,18 @@ class DetailViewController: UIViewController {
     
     func setAttributeValue (){
         
-        var logText = ""
+    
         movementNameLabel.text = movementName
         accuracyLabel.text = accuracy
         dateLabel.text = recordDate
         
         for log in movementLog{
-            logText = logText + log + "\n"
+            movementLogLabel.text?.append("\(log)\n")
+            
         }
-        movementLogLabel.text = logText
         
+        
+       
         
         
         

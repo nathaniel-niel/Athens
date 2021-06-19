@@ -28,12 +28,19 @@ class ReportViewController: UIViewController {
     
     var playerviewController = AVPlayerViewController()
     var playerView = AVPlayer() //video representation
+    var dataToDisplay: AnalyzeMovementData!
+    let functionality = Functionality()
+    let manipulator = DataManipulation()
+    var vidPath: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
 
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     private func setup(){
@@ -70,12 +77,29 @@ class ReportViewController: UIViewController {
         analyzeAnotherMovementButton.layer.borderWidth = 1
         analyzeAnotherMovementButton.layer.borderColor = #colorLiteral(red: 1, green: 0.337254902, blue: 0.1019607843, alpha: 1)
         
+        guard let data = dataToDisplay else {return}
+        //manipulator.retrieveData()
         
+        movementNameLabel.text = data.movementName
+        movementAccuracyLabel.text = data.movementAccuracy
+        recordDateLabel.text = functionality.convertDateToString(currentDate: data.recordDate)
+        for log in data.movementLog{
+            movementLogLabel.text?.append("\(log)\n")
+        }
+        vidPath = data.videoPath
+        
+//        movementNameLabel.text = manipulator.model.first!.movementName
+//        movementAccuracyLabel.text = manipulator.model.first!.movementAccuracy
+//        recordDateLabel.text = functionality.convertDateToString(currentDate: manipulator.model.first!.recordDate)
+//        for log in manipulator.model.first!.movementLog{
+//            movementLogLabel.text?.append("\(log)\n")
+//        }
+//        vidPath = manipulator.model.first!.videoPath
     }
     
     func playVideo(videoName: String){
         let path = Bundle.main.path(forResource: videoName, ofType: "mp4")
-        let url = URL(fileURLWithPath: path!)
+        let url = URL(fileURLWithPath: videoName)
         playerView = AVPlayer(url: url)
         playerviewController.player = playerView
         self.present(playerviewController, animated: true, completion: nil)
@@ -85,17 +109,25 @@ class ReportViewController: UIViewController {
 
   
     @IBAction func didPlayRecordedVideoTapped(_ sender: Any) {
-        playVideo(videoName: "testVideo1")
+        playVideo(videoName: vidPath)
     }
     
     @IBAction func didSuggestedExerciseProgramTapped(_ sender: Any) {
+        
+        performSegue(withIdentifier: "goToExerciseProgram", sender: self)
+        self.modalPresentationStyle = .fullScreen
     }
     
     @IBAction func didRetryAnalyzeMovementTapped(_ sender: Any) {
+        performSegue(withIdentifier: "retryAnalyze", sender: self)
+        self.modalPresentationStyle = .fullScreen
+        
+        
     }
     
     @IBAction func didAnalyzeAnotherMovementTapped(_ sender: Any) {
-        
+        performSegue(withIdentifier: "goToHome", sender: self)
+        self.modalPresentationStyle = .fullScreen
     }
     
     

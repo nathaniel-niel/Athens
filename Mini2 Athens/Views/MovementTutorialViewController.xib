@@ -160,19 +160,6 @@
             </constraints>
             <point key="canvasLocation" x="130.76923076923077" y="132.93838862559241"/>
         </view>
-        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullets" id="Eww-S3-Gt2">
-            <rect key="frame" x="0.0" y="0.0" width="9" height="10"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <point key="canvasLocation" x="145" y="486"/>
-        </imageView>
-        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Placing yourself in a horizontal position balancing on both the hands and toes while facing down." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CqG-z9-HOV">
-            <rect key="frame" x="0.0" y="0.0" width="271" height="54"/>
-            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-            <nil key="highlightedColor"/>
-            <point key="canvasLocation" x="744" y="243"/>
-        </label>
     </objects>
     <resources>
         <image name="bullets" width="9" height="10"/>
