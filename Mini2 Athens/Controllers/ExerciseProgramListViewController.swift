@@ -24,6 +24,12 @@ class ExerciseProgramListViewController: UIViewController, UITableViewDataSource
         
         exerciseProgramListTableView.register(nib, forCellReuseIdentifier: "ExerciseCell")
     }
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController!.navigationBar.shadowImage = UIImage()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return exercises.count

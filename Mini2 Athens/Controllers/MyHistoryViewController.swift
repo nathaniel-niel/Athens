@@ -70,7 +70,7 @@ extension MyHistoryViewController: UITableViewDelegate, UITableViewDataSource{
         vc.recordDate = functionality.convertDateToString(currentDate: data.model[indexPath.item].recordDate)
         vc.accuracy = data.model[indexPath.item].movementAccuracy
         vc.movementLog = data.model[indexPath.item].movementLog
-        vc.videoName = data.model[indexPath.item].videoPath
+        vc.videoPath = data.model[indexPath.item].videoPath
         
         
         self.navigationController?.pushViewController(vc, animated: true)

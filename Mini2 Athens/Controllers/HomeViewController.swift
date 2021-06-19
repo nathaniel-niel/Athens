@@ -21,7 +21,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(true, animated: false)
         history.retrieveData()
         setDataSourceAndDelegate()
         analyzeHistoryTableView.register(UINib(nibName: "\(MyHistoryTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "cell")
@@ -30,6 +29,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         showDataIsEmpty()
         movementCollectionView.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: false)
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func setDataSourceAndDelegate(){
@@ -59,12 +62,17 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //buat lanjut ke movement tutorial
-        let vc = MovementTutorialViewController()
+        let vc = storyboard?.instantiateViewController(withIdentifier: "movTutor") as! MovTutorViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        3
+        if history.model.count < 3 {
+            return history.model.count
+        }
+        else{
+            return 3
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -84,12 +92,14 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         vc.recordDate = functionality.convertDateToString(currentDate: history.model[indexPath.item].recordDate)
         vc.accuracy = history.model[indexPath.item].movementAccuracy
         vc.movementLog = history.model[indexPath.item].movementLog
-        vc.videoName = history.model[indexPath.item].videoPath
+        vc.videoPath = history.model[indexPath.item].videoPath
         
         self.navigationController?.pushViewController(vc, animated: true)
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
+    
+
     
     @IBAction func showClicked(_ sender: UIButton) {
         

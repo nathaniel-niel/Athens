@@ -12,7 +12,7 @@
         <!--Movement Analyzer View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="movementAnalyzer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MovementAnalyzerViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="movementAnalyzer" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MovementAnalyzerViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="CameraView" customModule="Mini2_Athens" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,14 +155,6 @@
                                     <action selector="toggleDegreeHiddenStatus" destination="Y6W-OH-hqX" eventType="touchUpInside" id="fAW-3a-ibv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-bU-Zw3">
-                                <rect key="frame" x="23" y="114" width="371" height="170"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97417467830000004" green="0.33481884000000001" blue="0.1003988311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
@@ -184,7 +176,6 @@
                         <outlet property="leftKneeLabel" destination="1kP-bq-hJu" id="cYL-uX-Vyg"/>
                         <outlet property="leftShoulderLabel" destination="7ok-nq-W35" id="Imt-e6-uCs"/>
                         <outlet property="leftWristLabel" destination="60b-As-6PV" id="UQP-Az-IYP"/>
-                        <outlet property="movementLogLabel" destination="eZ9-bU-Zw3" id="Wlh-Nq-K3o"/>
                         <outlet property="recordButton" destination="Arb-hG-xfG" id="Hzv-ob-4mO"/>
                         <outlet property="rightAnkleLabel" destination="0Rb-w8-n5R" id="mKi-78-6S2"/>
                         <outlet property="rightElbowLabel" destination="klL-tc-XIW" id="J0I-vY-GSq"/>

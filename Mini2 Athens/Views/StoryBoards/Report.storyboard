@@ -251,7 +251,7 @@
                         <outlet property="suggestedExerciseButton" destination="DgL-Qq-E0J" id="NPk-79-A4r"/>
                         <segue destination="lrA-sf-W7X" kind="show" identifier="retryAnalyze" id="UPd-Wk-tkn"/>
                         <segue destination="yAj-K1-nk3" kind="show" identifier="goToExerciseProgram" id="CCg-cg-nnO"/>
-                        <segue destination="6f0-LN-gZL" kind="show" id="Rkv-5N-1a6"/>
+                        <segue destination="6f0-LN-gZL" kind="show" identifier="goToHome" id="Rkv-5N-1a6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

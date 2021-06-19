@@ -28,7 +28,7 @@ class ReportViewController: UIViewController {
     
     var playerviewController = AVPlayerViewController()
     var playerView = AVPlayer() //video representation
-    var dataToDisplay: AnalyzeMovementData!
+    var dataToDisplay = AnalyzeMovementData()
     let functionality = Functionality()
     let manipulator = DataManipulation()
     var vidPath: String = ""
@@ -77,28 +77,31 @@ class ReportViewController: UIViewController {
         analyzeAnotherMovementButton.layer.borderWidth = 1
         analyzeAnotherMovementButton.layer.borderColor = #colorLiteral(red: 1, green: 0.337254902, blue: 0.1019607843, alpha: 1)
         
-        guard let data = dataToDisplay else {return}
+        movementLogLabel.text = ""
+        
+       let data = dataToDisplay 
         //manipulator.retrieveData()
         
         movementNameLabel.text = data.movementName
         movementAccuracyLabel.text = data.movementAccuracy
         recordDateLabel.text = functionality.convertDateToString(currentDate: data.recordDate)
-        for log in data.movementLog{
-            movementLogLabel.text?.append("\(log)\n")
+        
+        if data.movementAccuracy == "100"{
+            movementLogLabel.text = "Your movement is perfect!"
         }
+        else{
+            for log in data.movementLog{
+                movementLogLabel.text?.append("\(log)\n")
+            }
+        }
+        
         vidPath = data.videoPath
         
-//        movementNameLabel.text = manipulator.model.first!.movementName
-//        movementAccuracyLabel.text = manipulator.model.first!.movementAccuracy
-//        recordDateLabel.text = functionality.convertDateToString(currentDate: manipulator.model.first!.recordDate)
-//        for log in manipulator.model.first!.movementLog{
-//            movementLogLabel.text?.append("\(log)\n")
-//        }
-//        vidPath = manipulator.model.first!.videoPath
+
     }
     
     func playVideo(videoName: String){
-        let path = Bundle.main.path(forResource: videoName, ofType: "mp4")
+//        let path = Bundle.main.path(forResource: videoName, ofType: "mp4")
         let url = URL(fileURLWithPath: videoName)
         playerView = AVPlayer(url: url)
         playerviewController.player = playerView

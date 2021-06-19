@@ -36,7 +36,12 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         playVideo()
         exerciseTimer = ExerciseTimer(duration: 10, timerLabel: timerLabel)
         exerciseTimer?.delegate = self
+        
         exerciseTimer?.runTimer()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func setProgressBar(){

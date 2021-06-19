@@ -40,18 +40,6 @@ struct bodyPoint{
 }
 class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate, RPPreviewViewControllerDelegate,AVSpeechSynthesizerDelegate {
     @IBOutlet weak var recordButton: UIButton!
-
-struct bodyPoint{
-    var point: CGPoint!
-    var pointColor: UIColor!
-    
-    init(poin: CGPoint, color: UIColor) {
-        point = poin
-        pointColor = color
-    }
-}
-class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureFileOutputRecordingDelegate, RPPreviewViewControllerDelegate,AVSpeechSynthesizerDelegate {
-    @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var angleButton: UIButton!
     @IBOutlet weak var cameraFlipButton: UIButton!
     
@@ -133,7 +121,6 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         currentVideoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back)
         overlayLayer.frame = view.layer.bounds
         view.layer.addSublayer(overlayLayer)
-        navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -518,10 +505,20 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         }
     }
     func generateReport(){
+        recordScreen()
+        var accuracy: Float = 0
         report.recordDate = Date()
         report.movementLog = movementLog
         report.videoPath = videoPath
-        report.movementAccuracy = "\((correctPushUpCounter/totalPushUpCounter)*100)"
+        if totalPushUpCounter == 0 {
+            report.movementAccuracy = "0%"
+        }
+        else{
+            accuracy = Float(correctPushUpCounter)/Float(totalPushUpCounter)*100
+            
+            report.movementAccuracy = String(format: "%.0f%%", accuracy)
+        }
+        
         switch selectedMovement {
         case .plank:
             report.contentIconName = "plank"
@@ -558,10 +555,9 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         if Date().timeIntervalSince(lastPeopleSeen) > 1 {
             cameraView.showPoints([], rightPoints: [], color: .clear, direction: .front)
             hideAllLabel()
-
             if(isWorkoutStarted){
                 isWorkoutStarted = false
-                recordScreen()
+
                 generateReport()
                 performSegue(withIdentifier: "goToAnalyzeReport", sender: self)
             }
@@ -608,6 +604,9 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
     }
     
     func recordVideo(){
+        PHPhotoLibrary.requestAuthorization { status in
+            guard status == .authorized else { return }
+        }
         if videoRecorder.isRecording {
             videoRecorder.stopRecording()
             recordButton.setImage(UIImage(systemName: "largecircle.fill.circle"), for: .normal)
@@ -634,12 +633,13 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         if screenRecorder.isRecording {
             let savePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
             let filePath = savePath[0].appendingPathComponent("\(Date()).mp4")
+            self.videoPath = filePath.path
             screenRecorder.stopRecording(withOutput: filePath) { error in
                 if((error) != nil){
                     return
                 }
                 UISaveVideoAtPathToSavedPhotosAlbum(filePath.path, nil, nil, nil)
-                self.videoPath = filePath.path
+                
             }
             recordButton.isHidden = false
             cameraFlipButton.isHidden = false
@@ -683,7 +683,7 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         }
         
     }
-    func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
+    public func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
 
         DispatchQueue.main.async {
             self.removeHumanFrame()
@@ -820,4 +820,4 @@ class MovementAnalyzerViewController: UIViewController, AVCaptureVideoDataOutput
         recordScreen()
     }
 }
-}
+
