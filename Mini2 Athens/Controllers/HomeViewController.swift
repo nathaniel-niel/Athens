@@ -59,7 +59,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     private func showDataIsEmpty(){
         let status = functionality.dataIsEmpty()
         if status{
-            //showMoreButton.isHidden = true
+            showMoreButton.isHidden = true
             noDataLabel.text = "No record data"
             noDataLabel.textAlignment = .center
             noDataLabel.textColor = .white
@@ -68,6 +68,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         }
         else{
             noDataLabel.isHidden = true
+            showMoreButton.isHidden = false
         }
     }
     
