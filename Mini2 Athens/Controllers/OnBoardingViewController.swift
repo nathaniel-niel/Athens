@@ -5,9 +5,8 @@ import UIKit
 class OnBoardingViewController: UIViewController {
 
     
-    // MARK: - Outlet
+    // MARK: - Outlets
     
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var imageView: UIImageView!
@@ -29,14 +28,13 @@ class OnBoardingViewController: UIViewController {
         }
     }
     
-    let state = OnBoardingState()
+    let state = UserState()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //collectionView.isHidden = true
-        
+      
         setup()
         imageView.image = slides[pageControl.currentPage].images
         
@@ -61,11 +59,8 @@ class OnBoardingViewController: UIViewController {
     }
     
     
-    
     func setup(){
         nextButton.layer.cornerRadius = 8
-        //collectionView.delegate = self
-        //collectionView.dataSource = self
         
         slides = [
             OnBoardingModel(images: UIImage(imageLiteralResourceName: "onboard1.0")),
@@ -77,24 +72,15 @@ class OnBoardingViewController: UIViewController {
 
     @IBAction func tappedNextButton(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
-            let controller = (storyboard?.instantiateViewController(identifier: "main"))! as UIViewController
-            controller.modalPresentationStyle = .fullScreen
-//            controller.modalTransitionStyle = .crossDissolve
-            present(controller, animated: true, completion: nil)
-            state.setIsNotNewUer()
-//            dismiss(animated: true, completion: nil)
-            
+     
+            state.setIsNotNewUser()
+            dismiss(animated: true, completion: nil)
         }
         else{
             currentPage += 1
-            let indexPath = IndexPath(item: currentPage, section: 0)
-            //collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-            
+            _ = IndexPath(item: currentPage, section: 0)
         }
-        print (currentPage)
     }
-        
-    
 
 }
 

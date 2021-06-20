@@ -12,28 +12,42 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     @IBOutlet weak var movementCollectionView: UICollectionView!
     @IBOutlet weak var analyzeHistoryTableView: UITableView!
+    @IBOutlet weak var showMoreButton: UIButton!
+    @IBOutlet weak var noDataLabel: UILabel!
     
     
     let images: [UIImage?] = [UIImage(named: "plank"), UIImage(named: "pushup"), UIImage(named: "squat")]
-    
     let history = DataManipulation()
     let functionality = Functionality()
     
+    let state = UserState()
+    
+    override func viewDidLayoutSubviews() {
+        if state.isNewUser(){
+            let vc = storyboard?.instantiateViewController(identifier: "onboarding") as! OnBoardingViewController
+            vc.modalPresentationStyle = .fullScreen
+            present(vc, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        history.retrieveData()
         setDataSourceAndDelegate()
-        analyzeHistoryTableView.register(UINib(nibName: "\(MyHistoryTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "cell")
-        
-        analyzeHistoryTableView.separatorStyle = .none
+        history.retrieveData()
         showDataIsEmpty()
+        analyzeHistoryTableView.register(UINib(nibName: "\(MyHistoryTableViewCell.self)", bundle: nil), forCellReuseIdentifier: "cell")
+
+        analyzeHistoryTableView.separatorStyle = .none
+        
         movementCollectionView.scrollToItem(at: IndexPath(row: 1, section: 0), at: .centeredHorizontally, animated: false)
-        // Do any additional setup after loading the view.
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: false)
+        history.retrieveData()
     }
+    
     
     func setDataSourceAndDelegate(){
         analyzeHistoryTableView.dataSource = self
@@ -45,7 +59,16 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     private func showDataIsEmpty(){
         let status = functionality.dataIsEmpty()
         if status{
-            print("Data Kosong")
+            showMoreButton.isHidden = true
+            noDataLabel.text = "No record data"
+            noDataLabel.textAlignment = .center
+            noDataLabel.textColor = .white
+            noDataLabel.frame = CGRect(x: view.center.x/2, y: 600, width: 200, height: 21)
+            
+        }
+        else{
+            noDataLabel.isHidden = true
+            showMoreButton.isHidden = false
         }
     }
     
@@ -108,16 +131,6 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         navigationController?.pushViewController(vc, animated: true)
     }
     
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 

@@ -9,9 +9,6 @@ import UIKit
 import AVFoundation
 
 
-
-
-
 class CameraView: UIView {
 
     private var overlayLayer = CAShapeLayer()

@@ -10,6 +10,7 @@ import UIKit
 class MyHistoryViewController: UIViewController {
     
     @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var noDataLabel: UILabel!
     
     let data = DataManipulation()
     let functionality = Functionality()
@@ -17,7 +18,6 @@ class MyHistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        
         showDataIsEmpty()
         
     }
@@ -25,6 +25,10 @@ class MyHistoryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         data.retrieveData()
         navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController!.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController!.navigationBar.shadowImage = UIImage()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -42,7 +46,13 @@ class MyHistoryViewController: UIViewController {
     private func showDataIsEmpty(){
         let status = functionality.dataIsEmpty()
         if status {
-            print("data kosong")
+            noDataLabel.text = "No record data"
+            noDataLabel.textAlignment = .center
+            noDataLabel.textColor = .white
+            noDataLabel.frame = CGRect(x: view.center.x/2, y: view.center.y, width: 200, height: 21)
+        }
+        else{
+            noDataLabel.isHidden = true
         }
     }
 }

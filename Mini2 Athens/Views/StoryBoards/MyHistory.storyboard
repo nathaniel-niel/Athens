@@ -21,6 +21,13 @@
                                 <color key="backgroundColor" name="Background color"/>
                                 <color key="sectionIndexBackgroundColor" name="Background color"/>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xf8-F4-3wJ">
+                                <rect key="frame" x="34" y="15" width="44" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="Background color"/>
@@ -32,6 +39,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="noDataLabel" destination="Xf8-F4-3wJ" id="bOe-bw-wAn"/>
                         <outlet property="table" destination="kXj-dD-uiH" id="ct8-09-LeB"/>
                     </connections>
                 </viewController>

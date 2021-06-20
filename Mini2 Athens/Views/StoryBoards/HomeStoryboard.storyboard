@@ -92,6 +92,13 @@
                                     <action selector="showClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ep9-00-9AI"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ri6-1n-bOt">
+                                <rect key="frame" x="262" y="185" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="Background color"/>
@@ -122,6 +129,8 @@
                     <connections>
                         <outlet property="analyzeHistoryTableView" destination="h0I-jW-6sy" id="Nb4-ep-EeV"/>
                         <outlet property="movementCollectionView" destination="A4H-J9-URZ" id="b2Z-9u-TqN"/>
+                        <outlet property="noDataLabel" destination="ri6-1n-bOt" id="g5e-uc-4D9"/>
+                        <outlet property="showMoreButton" destination="epG-4T-Ny9" id="a3R-m3-wdJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -201,6 +210,9 @@
                                         <state key="normal" image="play-button">
                                             <color key="titleColor" name="Background color"/>
                                         </state>
+                                        <connections>
+                                            <action selector="didPlayButtonTapped:" destination="j9Y-q6-ck8" eventType="touchUpInside" id="OeP-3E-5bu"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullets" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-Gz-ZwA">
                                         <rect key="frame" x="40" y="442.66666666666663" width="9" height="10"/>
@@ -289,6 +301,56 @@
             </objects>
             <point key="canvasLocation" x="2552" y="217"/>
         </scene>
+        <!--On Boarding View Controller-->
+        <scene sceneID="bfj-V7-B5R">
+            <objects>
+                <viewController storyboardIdentifier="onboarding" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3ku-It-cAV" customClass="OnBoardingViewController" customModule="Mini2_Athens" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JSt-ui-GQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QWq-ML-6Od">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKp-KV-IQU">
+                                <rect key="frame" x="47" y="767" width="296" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedNextButton:" destination="3ku-It-cAV" eventType="touchUpInside" id="nQj-O2-bPW"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="uFu-OX-rkt">
+                                <rect key="frame" x="144" y="724.66666666666663" width="102.33333333333331" height="26.333333333333371"/>
+                                <color key="pageIndicatorTintColor" systemColor="systemGrayColor"/>
+                                <color key="currentPageIndicatorTintColor" name="AccentColor"/>
+                            </pageControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XLT-Kf-P2z"/>
+                        <color key="backgroundColor" name="Background color"/>
+                        <constraints>
+                            <constraint firstItem="uKp-KV-IQU" firstAttribute="leading" secondItem="XLT-Kf-P2z" secondAttribute="leading" constant="47" id="GbP-f7-1Sn"/>
+                            <constraint firstAttribute="bottom" secondItem="QWq-ML-6Od" secondAttribute="bottom" id="L8g-eE-TUw"/>
+                            <constraint firstItem="QWq-ML-6Od" firstAttribute="trailing" secondItem="XLT-Kf-P2z" secondAttribute="trailing" id="RwE-xT-FWq"/>
+                            <constraint firstItem="QWq-ML-6Od" firstAttribute="leading" secondItem="XLT-Kf-P2z" secondAttribute="leading" id="YDE-kB-2zL"/>
+                            <constraint firstItem="XLT-Kf-P2z" firstAttribute="bottom" secondItem="uFu-OX-rkt" secondAttribute="bottom" constant="59" id="fQS-CU-Lfa"/>
+                            <constraint firstItem="uFu-OX-rkt" firstAttribute="centerX" secondItem="QWq-ML-6Od" secondAttribute="centerX" id="fTn-16-Izd"/>
+                            <constraint firstItem="XLT-Kf-P2z" firstAttribute="bottom" secondItem="uKp-KV-IQU" secondAttribute="bottom" constant="13" id="rpr-6z-R1F"/>
+                            <constraint firstItem="QWq-ML-6Od" firstAttribute="top" secondItem="JSt-ui-GQ5" secondAttribute="top" id="tSu-ee-B2r"/>
+                            <constraint firstItem="XLT-Kf-P2z" firstAttribute="trailing" secondItem="uKp-KV-IQU" secondAttribute="trailing" constant="47" id="ycX-h5-PKY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="QWq-ML-6Od" id="vJ6-2t-OFK"/>
+                        <outlet property="nextButton" destination="uKp-KV-IQU" id="Lpp-0n-yyS"/>
+                        <outlet property="pageControl" destination="uFu-OX-rkt" id="23R-pZ-UMW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eXw-Np-1TI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-823" y="129"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="hbR-tw-qhT">
             <objects>
@@ -297,6 +359,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="backward.fill" catalog="system" id="pVN-SX-XjP">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -323,6 +388,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

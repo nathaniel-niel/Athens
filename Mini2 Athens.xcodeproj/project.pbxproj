@@ -12,8 +12,6 @@
 		2D0BBD8F266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */; };
 		2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */; };
 		2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */; };
-		2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */; };
-		2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */; };
 		2D223F77267E5B1B00CA9326 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2D223F76267E5B1B00CA9326 /* music.mp3 */; };
 		2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */; };
 		2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */; };
@@ -21,6 +19,14 @@
 		2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */; };
 		2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4E973226799D6C0021C4A1 /* Report.storyboard */; };
 		2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E973426799D880021C4A1 /* ReportViewController.swift */; };
+		2D60509F267EDB2600088EDB /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D60509E267EDB2600088EDB /* UserState.swift */; };
+		2D6050A9267EF9E900088EDB /* Incline Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A2267EF9E900088EDB /* Incline Push-Up.mp4 */; };
+		2D6050AA267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A3267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 */; };
+		2D6050AB267EF9E900088EDB /* Table Top Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A4267EF9E900088EDB /* Table Top Push-Up.mp4 */; };
+		2D6050AC267EF9E900088EDB /* Negative Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A5267EF9E900088EDB /* Negative Push-Up.mp4 */; };
+		2D6050AD267EF9E900088EDB /* Half Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A6267EF9E900088EDB /* Half Push-Up.mp4 */; };
+		2D6050AE267EF9E900088EDB /* Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A7267EF9E900088EDB /* Knee Push-Up.mp4 */; };
+		2D6050AF267EF9E900088EDB /* Wall Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A8267EF9E900088EDB /* Wall Push-Up.mp4 */; };
 		2D65C81A267DA7ED007E7BF8 /* MovTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73257B26773922003B53C1 /* DataManipulation.swift */; };
@@ -30,8 +36,6 @@
 		2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */; };
 		2D989D6A267798A7001443E7 /* MovementAnalyzeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */; };
 		2D989D6D2677A238001443E7 /* Functionality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D989D6C2677A238001443E7 /* Functionality.swift */; };
-		2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DCB622F267324660040A5E3 /* TestViewController.swift */; };
-		2DCB6233267324890040A5E3 /* test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DCB6232267324890040A5E3 /* test.storyboard */; };
 		6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */; };
 		6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */; };
 		6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */; };
@@ -53,7 +57,6 @@
 		B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */; };
 		B8389024266E674100A293A6 /* MovementAnalyzerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */; };
 		B8389026266E69AB00A293A6 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8389025266E69AB00A293A6 /* CameraView.swift */; };
-		B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */; };
 		B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */; };
 		C23AA79B267209F10069A409 /* ExerciseProgramListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */; };
 		C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */; };
@@ -69,8 +72,6 @@
 		2D0BBD90266E2FAB00C90A28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0BBD93266E2FAB00C90A28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0BBD95266E2FAB00C90A28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTutorialViewController.swift; sourceTree = "<group>"; };
-		2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MovementTutorialViewController.xib; path = ../MovementTutorialViewController.xib; sourceTree = "<group>"; };
 		2D223F76267E5B1B00CA9326 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		2D30DEE2267348880089F8FA /* ProgramCompletedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCompletedViewController.swift; sourceTree = "<group>"; };
 		2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ProgramCompletedViewController.xib; path = ../../Controllers/ProgramCompletedViewController.xib; sourceTree = "<group>"; };
@@ -78,6 +79,14 @@
 		2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		2D4E973226799D6C0021C4A1 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2D4E973426799D880021C4A1 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		2D60509E267EDB2600088EDB /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
+		2D6050A2267EF9E900088EDB /* Incline Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Incline Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050A3267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knuckle Knee Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050A4267EF9E900088EDB /* Table Top Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Table Top Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050A5267EF9E900088EDB /* Negative Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Negative Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050A6267EF9E900088EDB /* Half Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Half Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050A7267EF9E900088EDB /* Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knee Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050A8267EF9E900088EDB /* Wall Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wall Push-Up.mp4"; sourceTree = "<group>"; };
 		2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovTutorViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D73257B26773922003B53C1 /* DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulation.swift; sourceTree = "<group>"; };
@@ -87,8 +96,6 @@
 		2D963CE12676530F00838C51 /* MyHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyHistoryTableViewCell.xib; sourceTree = "<group>"; };
 		2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzeDataModel.swift; sourceTree = "<group>"; };
 		2D989D6C2677A238001443E7 /* Functionality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functionality.swift; sourceTree = "<group>"; };
-		2DCB622F267324660040A5E3 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		2DCB6232267324890040A5E3 /* test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = test.storyboard; sourceTree = "<group>"; };
 		6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestedWorkout.swift; sourceTree = "<group>"; };
 		6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
@@ -110,7 +117,6 @@
 		B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = movementAnalyzer.storyboard; path = ../movementAnalyzer.storyboard; sourceTree = "<group>"; };
 		B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementAnalyzerViewController.swift; sourceTree = "<group>"; };
 		B8389025266E69AB00A293A6 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
-		B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = OnBoarding.storyboard; path = ../OnBoarding.storyboard; sourceTree = "<group>"; };
 		B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		C23AA79A267209F10069A409 /* ExerciseProgramListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListTableViewCell.swift; sourceTree = "<group>"; };
 		C23AA79C26720AA60069A409 /* ExerciseProgramListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseProgramListViewController.swift; sourceTree = "<group>"; };
@@ -150,7 +156,6 @@
 			children = (
 				2D223F75267E5B0B00CA9326 /* backsound */,
 				2D989D6B2677A206001443E7 /* Helper */,
-				2DCB6231267324710040A5E3 /* Test */,
 				2D0BBDA0266E301400C90A28 /* Models */,
 				2D0BBD9E266E2FF900C90A28 /* Views */,
 				2D0BBD9D266E2FD000C90A28 /* Controllers */,
@@ -167,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */,
-				2D16B23C266FAE0E00FD4450 /* MovementTutorialViewController.swift */,
 				B8389023266E674100A293A6 /* MovementAnalyzerViewController.swift */,
 				B8389025266E69AB00A293A6 /* CameraView.swift */,
 				7C7E96EA2670F3E7008379D5 /* AnalyzeReportViewController.swift */,
@@ -182,7 +186,6 @@
 				608605CB267875BD00BC1AE2 /* EndProgramViewController.swift */,
 				76F2C97926782ED300AA1613 /* OnBoardingCollectionViewCell.swift */,
 				B89FEBA5266FB1E000640FEE /* OnBoardingViewController.swift */,
-				76F2C9812678307400AA1613 /* OnBoardingModel.swift */,
 				2D4E973426799D880021C4A1 /* ReportViewController.swift */,
 				2D4C1E23267AE4AE00299E73 /* DetailViewController.swift */,
 				2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */,
@@ -202,11 +205,13 @@
 		2D0BBDA0266E301400C90A28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				76F2C9812678307400AA1613 /* OnBoardingModel.swift */,
 				C286C34C2671F5FE00416A35 /* ExerciseProgram.swift */,
 				6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */,
 				6000BB0A2671FD8C0083F617 /* SuggestedWorkout.swift */,
 				2D0BBD8D266E2FAA00C90A28 /* Mini2_Athens.xcdatamodeld */,
 				2D989D69267798A7001443E7 /* MovementAnalyzeDataModel.swift */,
+				2D60509E267EDB2600088EDB /* UserState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,9 +224,24 @@
 			path = backsound;
 			sourceTree = "<group>";
 		};
+		2D6050A1267EF98700088EDB /* videoLatihan */ = {
+			isa = PBXGroup;
+			children = (
+				2D6050A6267EF9E900088EDB /* Half Push-Up.mp4 */,
+				2D6050A2267EF9E900088EDB /* Incline Push-Up.mp4 */,
+				2D6050A7267EF9E900088EDB /* Knee Push-Up.mp4 */,
+				2D6050A3267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 */,
+				2D6050A5267EF9E900088EDB /* Negative Push-Up.mp4 */,
+				2D6050A4267EF9E900088EDB /* Table Top Push-Up.mp4 */,
+				2D6050A8267EF9E900088EDB /* Wall Push-Up.mp4 */,
+			);
+			path = videoLatihan;
+			sourceTree = "<group>";
+		};
 		2D6FFA7F2670899F009C1438 /* video-asset */ = {
 			isa = PBXGroup;
 			children = (
+				2D6050A1267EF98700088EDB /* videoLatihan */,
 				2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */,
 			);
 			path = "video-asset";
@@ -231,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				2D4C1E24267AE4AE00299E73 /* DetailViewController.xib */,
-				2D16B23D266FAE0E00FD4450 /* MovementTutorialViewController.xib */,
 				2D963CDF267652EE00838C51 /* Cell */,
 				2D30DEE3267348880089F8FA /* ProgramCompletedViewController.xib */,
 				609067822676453A004753A1 /* ExerciseTableViewCell.swift */,
@@ -245,7 +264,6 @@
 			children = (
 				2D0BBD92266E2FAB00C90A28 /* LaunchScreen.storyboard */,
 				B8389021266E65D700A293A6 /* movementAnalyzer.storyboard */,
-				B89FEBA3266FAF7700640FEE /* OnBoarding.storyboard */,
 				6000BB082671FD7B0083F617 /* HomeStoryboard.storyboard */,
 				7C7E96E22670EEEB008379D5 /* Rest.storyboard */,
 				7C7E96E42670EF53008379D5 /* analyzeReport.storyboard */,
@@ -274,15 +292,6 @@
 				60355C39267C924900710B51 /* MusicHelper.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		2DCB6231267324710040A5E3 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				2DCB622F267324660040A5E3 /* TestViewController.swift */,
-				2DCB6232267324890040A5E3 /* test.storyboard */,
-			);
-			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -343,24 +352,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D6050AB267EF9E900088EDB /* Table Top Push-Up.mp4 in Resources */,
 				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
+				2D6050AA267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */,
 				2D223F77267E5B1B00CA9326 /* music.mp3 in Resources */,
+				2D6050AF267EF9E900088EDB /* Wall Push-Up.mp4 in Resources */,
 				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
 				2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
-				2D16B23F266FAE0E00FD4450 /* MovementTutorialViewController.xib in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
+				2D6050AD267EF9E900088EDB /* Half Push-Up.mp4 in Resources */,
 				601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
 				609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
+				2D6050A9267EF9E900088EDB /* Incline Push-Up.mp4 in Resources */,
+				2D6050AC267EF9E900088EDB /* Negative Push-Up.mp4 in Resources */,
+				2D6050AE267EF9E900088EDB /* Knee Push-Up.mp4 in Resources */,
 				2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */,
-				2DCB6233267324890040A5E3 /* test.storyboard in Resources */,
 				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
-				B89FEBA4266FAF7700640FEE /* OnBoarding.storyboard in Resources */,
 				2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,10 +387,8 @@
 			files = (
 				76F2C97A26782ED300AA1613 /* OnBoardingCollectionViewCell.swift in Sources */,
 				2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */,
-				2D16B23E266FAE0E00FD4450 /* MovementTutorialViewController.swift in Sources */,
 				608605CC267875BD00BC1AE2 /* EndProgramViewController.swift in Sources */,
 				2D0BBD85266E2FAA00C90A28 /* AppDelegate.swift in Sources */,
-				2DCB6230267324660040A5E3 /* TestViewController.swift in Sources */,
 				2D65C81A267DA7ED007E7BF8 /* MovTutorViewController.swift in Sources */,
 				2D30DEE4267348880089F8FA /* ProgramCompletedViewController.swift in Sources */,
 				2D4C1E25267AE4AE00299E73 /* DetailViewController.swift in Sources */,
@@ -388,6 +399,7 @@
 				6000BB0B2671FD8C0083F617 /* SuggestedWorkout.swift in Sources */,
 				60355C3A267C924900710B51 /* MusicHelper.swift in Sources */,
 				C23AA79D26720AA60069A409 /* ExerciseProgramListViewController.swift in Sources */,
+				2D60509F267EDB2600088EDB /* UserState.swift in Sources */,
 				C286C34D2671F5FE00416A35 /* ExerciseProgram.swift in Sources */,
 				B89FEBA6266FB1E000640FEE /* OnBoardingViewController.swift in Sources */,
 				604CEA3126779D04002384C6 /* MovementCollectionViewCell.swift in Sources */,
