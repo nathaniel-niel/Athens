@@ -20,13 +20,13 @@
 		2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D4E973226799D6C0021C4A1 /* Report.storyboard */; };
 		2D4E973526799D880021C4A1 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4E973426799D880021C4A1 /* ReportViewController.swift */; };
 		2D60509F267EDB2600088EDB /* UserState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D60509E267EDB2600088EDB /* UserState.swift */; };
-		2D6050A9267EF9E900088EDB /* Incline Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A2267EF9E900088EDB /* Incline Push-Up.mp4 */; };
-		2D6050AA267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A3267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 */; };
-		2D6050AB267EF9E900088EDB /* Table Top Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A4267EF9E900088EDB /* Table Top Push-Up.mp4 */; };
-		2D6050AC267EF9E900088EDB /* Negative Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A5267EF9E900088EDB /* Negative Push-Up.mp4 */; };
-		2D6050AD267EF9E900088EDB /* Half Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A6267EF9E900088EDB /* Half Push-Up.mp4 */; };
-		2D6050AE267EF9E900088EDB /* Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A7267EF9E900088EDB /* Knee Push-Up.mp4 */; };
-		2D6050AF267EF9E900088EDB /* Wall Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050A8267EF9E900088EDB /* Wall Push-Up.mp4 */; };
+		2D6050B7267EFC1600088EDB /* Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B0267EFC1600088EDB /* Knee Push-Up.mp4 */; };
+		2D6050B8267EFC1600088EDB /* Wall Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B1267EFC1600088EDB /* Wall Push-Up.mp4 */; };
+		2D6050B9267EFC1600088EDB /* Table Top Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B2267EFC1600088EDB /* Table Top Push-Up.mp4 */; };
+		2D6050BA267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B3267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 */; };
+		2D6050BB267EFC1600088EDB /* Negative Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B4267EFC1600088EDB /* Negative Push-Up.mp4 */; };
+		2D6050BC267EFC1600088EDB /* Half Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B5267EFC1600088EDB /* Half Push-Up.mp4 */; };
+		2D6050BD267EFC1600088EDB /* Incline Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B6267EFC1600088EDB /* Incline Push-Up.mp4 */; };
 		2D65C81A267DA7ED007E7BF8 /* MovTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73257B26773922003B53C1 /* DataManipulation.swift */; };
@@ -80,13 +80,13 @@
 		2D4E973226799D6C0021C4A1 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2D4E973426799D880021C4A1 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		2D60509E267EDB2600088EDB /* UserState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserState.swift; sourceTree = "<group>"; };
-		2D6050A2267EF9E900088EDB /* Incline Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Incline Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050A3267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knuckle Knee Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050A4267EF9E900088EDB /* Table Top Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Table Top Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050A5267EF9E900088EDB /* Negative Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Negative Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050A6267EF9E900088EDB /* Half Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Half Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050A7267EF9E900088EDB /* Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knee Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050A8267EF9E900088EDB /* Wall Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wall Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B0267EFC1600088EDB /* Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knee Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B1267EFC1600088EDB /* Wall Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wall Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B2267EFC1600088EDB /* Table Top Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Table Top Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B3267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Knuckle Knee Push-Up.mp4"; path = "../../../../../../../../../Desktop/Knuckle Knee Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B4267EFC1600088EDB /* Negative Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Negative Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B5267EFC1600088EDB /* Half Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Half Push-Up.mp4"; sourceTree = "<group>"; };
+		2D6050B6267EFC1600088EDB /* Incline Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Incline Push-Up.mp4"; path = "../../../../../../../../../Desktop/Incline Push-Up.mp4"; sourceTree = "<group>"; };
 		2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovTutorViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D73257B26773922003B53C1 /* DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulation.swift; sourceTree = "<group>"; };
@@ -227,13 +227,13 @@
 		2D6050A1267EF98700088EDB /* videoLatihan */ = {
 			isa = PBXGroup;
 			children = (
-				2D6050A6267EF9E900088EDB /* Half Push-Up.mp4 */,
-				2D6050A2267EF9E900088EDB /* Incline Push-Up.mp4 */,
-				2D6050A7267EF9E900088EDB /* Knee Push-Up.mp4 */,
-				2D6050A3267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 */,
-				2D6050A5267EF9E900088EDB /* Negative Push-Up.mp4 */,
-				2D6050A4267EF9E900088EDB /* Table Top Push-Up.mp4 */,
-				2D6050A8267EF9E900088EDB /* Wall Push-Up.mp4 */,
+				2D6050B5267EFC1600088EDB /* Half Push-Up.mp4 */,
+				2D6050B6267EFC1600088EDB /* Incline Push-Up.mp4 */,
+				2D6050B0267EFC1600088EDB /* Knee Push-Up.mp4 */,
+				2D6050B3267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 */,
+				2D6050B4267EFC1600088EDB /* Negative Push-Up.mp4 */,
+				2D6050B2267EFC1600088EDB /* Table Top Push-Up.mp4 */,
+				2D6050B1267EFC1600088EDB /* Wall Push-Up.mp4 */,
 			);
 			path = videoLatihan;
 			sourceTree = "<group>";
@@ -352,26 +352,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D6050AB267EF9E900088EDB /* Table Top Push-Up.mp4 in Resources */,
+				2D6050B9267EFC1600088EDB /* Table Top Push-Up.mp4 in Resources */,
+				2D6050BA267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 in Resources */,
 				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
-				2D6050AA267EF9E900088EDB /* Knuckle Knee Push-Up.mp4 in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
+				2D6050BC267EFC1600088EDB /* Half Push-Up.mp4 in Resources */,
 				2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */,
+				2D6050B8267EFC1600088EDB /* Wall Push-Up.mp4 in Resources */,
+				2D6050BD267EFC1600088EDB /* Incline Push-Up.mp4 in Resources */,
 				2D223F77267E5B1B00CA9326 /* music.mp3 in Resources */,
-				2D6050AF267EF9E900088EDB /* Wall Push-Up.mp4 in Resources */,
+				2D6050B7267EFC1600088EDB /* Knee Push-Up.mp4 in Resources */,
+				2D6050BB267EFC1600088EDB /* Negative Push-Up.mp4 in Resources */,
 				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
 				2D4E973326799D6C0021C4A1 /* Report.storyboard in Resources */,
 				7C7E96E52670EF53008379D5 /* analyzeReport.storyboard in Resources */,
 				2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */,
-				2D6050AD267EF9E900088EDB /* Half Push-Up.mp4 in Resources */,
 				601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */,
 				2D0BBD91266E2FAB00C90A28 /* Assets.xcassets in Resources */,
 				7C7E96E32670EEEB008379D5 /* Rest.storyboard in Resources */,
 				609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
-				2D6050A9267EF9E900088EDB /* Incline Push-Up.mp4 in Resources */,
-				2D6050AC267EF9E900088EDB /* Negative Push-Up.mp4 in Resources */,
-				2D6050AE267EF9E900088EDB /* Knee Push-Up.mp4 in Resources */,
 				2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */,
 				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
 				2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */,
