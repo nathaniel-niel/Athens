@@ -205,15 +205,6 @@
                                             <constraint firstAttribute="height" constant="180" id="hnU-iU-wAh"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXs-Eu-eGg">
-                                        <rect key="frame" x="174" y="254.66666666666666" width="42" height="42.666666666666657"/>
-                                        <state key="normal" image="play-button">
-                                            <color key="titleColor" name="Background color"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didPlayButtonTapped:" destination="j9Y-q6-ck8" eventType="touchUpInside" id="OeP-3E-5bu"/>
-                                        </connections>
-                                    </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bullets" translatesAutoresizingMaskIntoConstraints="NO" id="rUv-Gz-ZwA">
                                         <rect key="frame" x="40" y="442.66666666666663" width="9" height="10"/>
                                     </imageView>
@@ -247,18 +238,14 @@
                                     <constraint firstItem="Zf4-Qf-bS8" firstAttribute="leading" secondItem="3Zd-Sp-Htj" secondAttribute="leading" constant="40" id="GBO-rq-uip"/>
                                     <constraint firstItem="6mi-q5-lW8" firstAttribute="top" secondItem="hjn-jN-gum" secondAttribute="bottom" constant="30" id="HHu-p5-xis"/>
                                     <constraint firstItem="Soj-De-XcE" firstAttribute="leading" secondItem="3Zd-Sp-Htj" secondAttribute="leading" constant="40" id="Om9-a4-Hg2"/>
-                                    <constraint firstItem="YXs-Eu-eGg" firstAttribute="centerY" secondItem="hjn-jN-gum" secondAttribute="centerY" id="PIl-yN-yWO"/>
                                     <constraint firstItem="ssb-sB-5bn" firstAttribute="leading" secondItem="3Zd-Sp-Htj" secondAttribute="leading" constant="40" id="Tel-Oy-lBY"/>
-                                    <constraint firstItem="YXs-Eu-eGg" firstAttribute="width" secondItem="hjn-jN-gum" secondAttribute="width" multiplier="0.135484" id="UQ0-nB-ra5"/>
                                     <constraint firstItem="ozi-h6-zyb" firstAttribute="leading" secondItem="Soj-De-XcE" secondAttribute="trailing" constant="30" id="USB-4k-IDZ"/>
                                     <constraint firstAttribute="trailing" secondItem="ssb-sB-5bn" secondAttribute="trailing" constant="40" id="VAl-MX-Kzn"/>
                                     <constraint firstItem="6mi-q5-lW8" firstAttribute="leading" secondItem="3Zd-Sp-Htj" secondAttribute="leading" constant="40" id="X0G-lL-mPk"/>
-                                    <constraint firstItem="YXs-Eu-eGg" firstAttribute="top" secondItem="Zf4-Qf-bS8" secondAttribute="bottom" constant="98.666666666666686" id="ZnG-vD-hG0"/>
                                     <constraint firstAttribute="trailing" secondItem="hjn-jN-gum" secondAttribute="trailing" constant="40" id="bob-Pz-2HX"/>
                                     <constraint firstAttribute="trailing" secondItem="6mi-q5-lW8" secondAttribute="trailing" constant="40" id="i85-iz-eXj"/>
                                     <constraint firstItem="Soj-De-XcE" firstAttribute="top" secondItem="6mi-q5-lW8" secondAttribute="bottom" constant="100" id="i9c-mo-voj"/>
                                     <constraint firstAttribute="trailing" secondItem="ozi-h6-zyb" secondAttribute="trailing" constant="40" id="md7-Ol-keM"/>
-                                    <constraint firstItem="YXs-Eu-eGg" firstAttribute="centerX" secondItem="Zf4-Qf-bS8" secondAttribute="centerX" id="qD4-I3-Rhg"/>
                                     <constraint firstItem="rUv-Gz-ZwA" firstAttribute="leading" secondItem="3Zd-Sp-Htj" secondAttribute="leading" constant="40" id="vvf-k8-xNT"/>
                                     <constraint firstAttribute="trailing" secondItem="sIu-2Q-Bhs" secondAttribute="trailing" constant="40" id="wMV-c2-rh0"/>
                                     <constraint firstItem="sIu-2Q-Bhs" firstAttribute="top" secondItem="3Zd-Sp-Htj" secondAttribute="top" constant="40" id="wkT-X8-VG4"/>
@@ -282,6 +269,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="TutorImage" destination="hjn-jN-gum" id="5W5-NQ-X5l"/>
                         <outlet property="backButton" destination="Dhz-ef-aVl" id="4wO-py-kiU"/>
                         <outlet property="customModalView" destination="3Zd-Sp-Htj" id="Gcs-oN-fBK"/>
                         <outlet property="startAnalyzeButton" destination="ssb-sB-5bn" id="eC9-1b-14L"/>
@@ -378,7 +366,6 @@
         <image name="bullets" width="9" height="10"/>
         <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="james-barr-7U0yuZcS5yA-unsplash" width="390" height="235"/>
-        <image name="play-button" width="34" height="40"/>
         <image name="pushup" width="269" height="394"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.33725490196078434" blue="0.10196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
