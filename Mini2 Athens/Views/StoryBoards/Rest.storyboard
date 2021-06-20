@@ -116,6 +116,7 @@
                     <connections>
                         <outlet property="exerciseBox" destination="9yk-JP-Ndq" id="Thm-Lh-dNg"/>
                         <outlet property="nextExerciseLabel" destination="fsn-uI-7Wn" id="MYx-tg-guj"/>
+                        <outlet property="pauseButton" destination="jMV-Bd-iSC" id="pA7-em-Fg0"/>
                         <outlet property="progressLabel" destination="1n3-wT-qSz" id="bf3-X3-Oty"/>
                         <outlet property="timerLabel" destination="hcv-13-pfu" id="0SM-Fh-GNC"/>
                     </connections>

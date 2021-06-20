@@ -15,9 +15,11 @@ class restViewController: UIViewController, RestTimerDelegate {
     
     @IBOutlet weak var nextExerciseLabel: UILabel!
     
-    @IBOutlet weak var pauseResumeLabel: UILabel!
     
     @IBOutlet weak var exerciseBox: UIView!
+    
+    @IBOutlet weak var pauseButton: UIButton!
+    
     
     var exerciseTimer: ExerciseTimer!
     override func viewWillAppear(_ animated: Bool) {
@@ -58,10 +60,12 @@ class restViewController: UIViewController, RestTimerDelegate {
     @IBAction func pauseClicked(_ sender: UIButton) {
         guard let timerIsRunning = exerciseTimer?.isTimerRunning else {return}
         if timerIsRunning{
-            pauseResumeLabel.text = "Resume"
+//            pauseResumeLabel.text = "Resume"
+            pauseButton.imageView?.image = UIImage(named: "resume-btn")
             
         }else{
-            pauseResumeLabel.text = "Pause"
+//            pauseResumeLabel.text = "Pause"
+            pauseButton.imageView?.image = UIImage(named: "pause-btn")
         }
         exerciseTimer?.pauseResumeTimer()
     }
