@@ -92,6 +92,25 @@ enum ExerciseType: String, CaseIterable {
             return 12
         }
     }
+    
+    func getVideo() -> String{
+        switch self {
+        case .half:
+            return "Half Push-Up"
+        case .pushUps:
+            return "Negative Push-Up"
+        case .wall:
+            return "Wall Push-Up"
+        case .incline:
+            return "Incline Push-Up"
+        case .knee:
+            return "Knee Push-Up"
+        case .kneeWithKnuckles:
+            return "Knuckle Knee Push-Up"
+        case .tableTop:
+            return "Table Top Push-Up"
+        }
+    }
 }
 class Exercise {
     let id: String = UUID().uuidString

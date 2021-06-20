@@ -23,10 +23,8 @@
 		2D6050B7267EFC1600088EDB /* Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B0267EFC1600088EDB /* Knee Push-Up.mp4 */; };
 		2D6050B8267EFC1600088EDB /* Wall Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B1267EFC1600088EDB /* Wall Push-Up.mp4 */; };
 		2D6050B9267EFC1600088EDB /* Table Top Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B2267EFC1600088EDB /* Table Top Push-Up.mp4 */; };
-		2D6050BA267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B3267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 */; };
 		2D6050BB267EFC1600088EDB /* Negative Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B4267EFC1600088EDB /* Negative Push-Up.mp4 */; };
 		2D6050BC267EFC1600088EDB /* Half Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B5267EFC1600088EDB /* Half Push-Up.mp4 */; };
-		2D6050BD267EFC1600088EDB /* Incline Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6050B6267EFC1600088EDB /* Incline Push-Up.mp4 */; };
 		2D65C81A267DA7ED007E7BF8 /* MovTutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */; };
 		2D6FFA8126708A2F009C1438 /* testVideo1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */; };
 		2D73257C26773922003B53C1 /* DataManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73257B26773922003B53C1 /* DataManipulation.swift */; };
@@ -41,6 +39,8 @@
 		6000BB0D2671FDC40083F617 /* ExerciseTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */; };
 		6000BB0F267213B40083F617 /* WorkoutCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */; };
 		6000BB11267215460083F617 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6000BB10267215460083F617 /* HomeViewController.swift */; };
+		6019686F267F08010047ED18 /* Knuckle Knee Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6019686E267F08010047ED18 /* Knuckle Knee Push-Up.mp4 */; };
+		60196871267F08120047ED18 /* Incline Push-Up.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 60196870267F08120047ED18 /* Incline Push-Up.mp4 */; };
 		601A4E7726730C9100967581 /* StartProgramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601A4E7626730C9100967581 /* StartProgramViewController.swift */; };
 		601A4E7926730CC900967581 /* StartProgram.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601A4E7826730CC900967581 /* StartProgram.storyboard */; };
 		60355C3A267C924900710B51 /* MusicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60355C39267C924900710B51 /* MusicHelper.swift */; };
@@ -83,10 +83,8 @@
 		2D6050B0267EFC1600088EDB /* Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Knee Push-Up.mp4"; sourceTree = "<group>"; };
 		2D6050B1267EFC1600088EDB /* Wall Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wall Push-Up.mp4"; sourceTree = "<group>"; };
 		2D6050B2267EFC1600088EDB /* Table Top Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Table Top Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050B3267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Knuckle Knee Push-Up.mp4"; path = "../../../../../../../../../Desktop/Knuckle Knee Push-Up.mp4"; sourceTree = "<group>"; };
 		2D6050B4267EFC1600088EDB /* Negative Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Negative Push-Up.mp4"; sourceTree = "<group>"; };
 		2D6050B5267EFC1600088EDB /* Half Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Half Push-Up.mp4"; sourceTree = "<group>"; };
-		2D6050B6267EFC1600088EDB /* Incline Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Incline Push-Up.mp4"; path = "../../../../../../../../../Desktop/Incline Push-Up.mp4"; sourceTree = "<group>"; };
 		2D65C819267DA7ED007E7BF8 /* MovTutorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovTutorViewController.swift; sourceTree = "<group>"; };
 		2D6FFA8026708A2F009C1438 /* testVideo1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = testVideo1.mp4; sourceTree = "<group>"; };
 		2D73257B26773922003B53C1 /* DataManipulation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManipulation.swift; sourceTree = "<group>"; };
@@ -101,6 +99,8 @@
 		6000BB0C2671FDC40083F617 /* ExerciseTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExerciseTimer.swift; sourceTree = "<group>"; };
 		6000BB0E267213B40083F617 /* WorkoutCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCollectionViewCell.swift; sourceTree = "<group>"; };
 		6000BB10267215460083F617 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6019686E267F08010047ED18 /* Knuckle Knee Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Knuckle Knee Push-Up.mp4"; path = "../../../../Dropbox (DeveloperAcademy-ID)/Athens - Mini Challenge 2/Design/Video Latihan/Knuckle Knee Push-Up.mp4"; sourceTree = "<group>"; };
+		60196870267F08120047ED18 /* Incline Push-Up.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Incline Push-Up.mp4"; path = "../../../../Dropbox (DeveloperAcademy-ID)/Athens - Mini Challenge 2/Design/Video Latihan/Incline Push-Up.mp4"; sourceTree = "<group>"; };
 		601A4E7626730C9100967581 /* StartProgramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartProgramViewController.swift; sourceTree = "<group>"; };
 		601A4E7826730CC900967581 /* StartProgram.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StartProgram.storyboard; sourceTree = "<group>"; };
 		60355C39267C924900710B51 /* MusicHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicHelper.swift; sourceTree = "<group>"; };
@@ -227,10 +227,10 @@
 		2D6050A1267EF98700088EDB /* videoLatihan */ = {
 			isa = PBXGroup;
 			children = (
+				60196870267F08120047ED18 /* Incline Push-Up.mp4 */,
+				6019686E267F08010047ED18 /* Knuckle Knee Push-Up.mp4 */,
 				2D6050B5267EFC1600088EDB /* Half Push-Up.mp4 */,
-				2D6050B6267EFC1600088EDB /* Incline Push-Up.mp4 */,
 				2D6050B0267EFC1600088EDB /* Knee Push-Up.mp4 */,
-				2D6050B3267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 */,
 				2D6050B4267EFC1600088EDB /* Negative Push-Up.mp4 */,
 				2D6050B2267EFC1600088EDB /* Table Top Push-Up.mp4 */,
 				2D6050B1267EFC1600088EDB /* Wall Push-Up.mp4 */,
@@ -353,14 +353,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D6050B9267EFC1600088EDB /* Table Top Push-Up.mp4 in Resources */,
-				2D6050BA267EFC1600088EDB /* Knuckle Knee Push-Up.mp4 in Resources */,
 				6000BB092671FD7C0083F617 /* HomeStoryboard.storyboard in Resources */,
 				2D0BBD94266E2FAB00C90A28 /* LaunchScreen.storyboard in Resources */,
 				2D6050BC267EFC1600088EDB /* Half Push-Up.mp4 in Resources */,
 				2D963CE32676530F00838C51 /* MyHistoryTableViewCell.xib in Resources */,
 				2D6050B8267EFC1600088EDB /* Wall Push-Up.mp4 in Resources */,
-				2D6050BD267EFC1600088EDB /* Incline Push-Up.mp4 in Resources */,
 				2D223F77267E5B1B00CA9326 /* music.mp3 in Resources */,
+				60196871267F08120047ED18 /* Incline Push-Up.mp4 in Resources */,
 				2D6050B7267EFC1600088EDB /* Knee Push-Up.mp4 in Resources */,
 				2D6050BB267EFC1600088EDB /* Negative Push-Up.mp4 in Resources */,
 				C286C34E2671F9FC00416A35 /* exerciseProgram.storyboard in Resources */,
@@ -373,6 +372,7 @@
 				609067852676453A004753A1 /* ExerciseTableViewCell.xib in Resources */,
 				B8389022266E65D700A293A6 /* movementAnalyzer.storyboard in Resources */,
 				2D4C1E26267AE4AE00299E73 /* DetailViewController.xib in Resources */,
+				6019686F267F08010047ED18 /* Knuckle Knee Push-Up.mp4 in Resources */,
 				2D73257E26775D60003B53C1 /* MyHistory.storyboard in Resources */,
 				2D30DEE5267348880089F8FA /* ProgramCompletedViewController.xib in Resources */,
 			);

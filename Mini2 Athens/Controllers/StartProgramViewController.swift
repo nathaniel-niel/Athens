@@ -51,7 +51,8 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
     }
     
     func setVideo(){
-        guard let path = Bundle.main.path(forResource: "testVideo1", ofType: "mp4") else {return}
+        let videoName = exercises[currentExerciseIndex].type.getVideo()
+        guard let path = Bundle.main.path(forResource: videoName, ofType: "mp4") else {return}
         
         player = AVPlayer(url: URL(fileURLWithPath: path))
         playerLayer = AVPlayerLayer(player: player)
