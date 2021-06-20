@@ -79,7 +79,6 @@ class StartProgramViewController: UIViewController, ExerciseTimerDelegate {
         currentExerciseIndex += 1
         if currentExerciseIndex      == exercises.count{
             let vc = self.storyboard?.instantiateViewController(identifier: "EndProgram")
-            
             navigationController?.pushViewController(vc!, animated: true)
             return
         }
