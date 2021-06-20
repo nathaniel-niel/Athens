@@ -16,13 +16,26 @@ class MovTutorViewController: UIViewController {
     @IBOutlet weak var customModalView: UIView!
     @IBOutlet weak var backButton: UIButton!
     
+    @IBOutlet weak var TutorImage: UIImageView!
     var playerviewController = AVPlayerViewController()
     var playerView = AVPlayer() //video representation
+    
+    
+    //Image sequence var
+    var image1: UIImage!
+    var image2: UIImage!
+    var image3: UIImage!
+    var image4: UIImage!
+    
+    
+    var imageSequence: [UIImage]!
+    var animate: UIImage!
     
     let functionality = Functionality()
     override func viewDidLoad() {
         super.viewDidLoad()
         setupComponent()
+        setupImageSequence()
         
     }
     
@@ -34,6 +47,21 @@ class MovTutorViewController: UIViewController {
         backButton.layer.cornerRadius = 20
         customModalView.layer.cornerRadius = 50
         startAnalyzeButton.layer.cornerRadius = 25
+    }
+    
+    func setupImageSequence(){
+        image1 = UIImage(named: "1")
+        image2 = UIImage(named: "2")
+        image3 = UIImage(named: "3")
+        image4 = UIImage(named: "4")
+        
+        imageSequence = [image1, image2, image3, image4]
+        
+        animate = UIImage.animatedImage(with: imageSequence, duration: 1.0)
+        
+        TutorImage.image = animate
+        
+        
     }
     
     func playVideo(videoName: String){
